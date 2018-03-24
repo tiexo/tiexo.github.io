@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    
+    <title>简单可依赖</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta property="og:type" content="website">
+<meta property="og:title" content="简单可依赖">
+<meta property="og:url" content="https://www.tiexo.cn/page/8/index.html">
+<meta property="og:site_name" content="简单可依赖">
+<meta property="og:locale" content="zh-CN">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="简单可依赖">
+    
+
+	
+	
+    
+
+    
+        <link rel="icon" href="https://obbuo9upd.qnssl.com/image/favicon.webp">
+    
+
+    <link rel="stylesheet" href="https://obbuo9upd.qnssl.com/libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://obbuo9upd.qnssl.com/libs/open-sans/styles.css">
+    <link rel="stylesheet" href="https://obbuo9upd.qnssl.com/libs/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="https://obbuo9upd.qnssl.com/css/style.css">
+
+    <script src="https://obbuo9upd.qnssl.com/libs/jquery/2.1.3/jquery.min.js"></script>
+    
+    
+        <link rel="stylesheet" href="https://obbuo9upd.qnssl.com/fancybox/jquery.fancybox.css">
+    
+    
+    
+    
+
+
+</head>
+</html>
+<body>
+    <div id="container">
+        <header id="header">
+    <div id="header-main" class="header-inner">
+        <div class="outer">
+            <a href="/" id="logo">
+                <i class="logo"></i>
+                <span class="site-title">简单可依赖</span>
+            </a>
+            <nav id="main-nav">
+                
+                    <a class="main-nav-link" href="/.">首页</a>
+                
+                    <a class="main-nav-link" href="/archives">更多文章</a>
+                
+                    <a class="main-nav-link" href="/about">留言</a>
+                
+            </nav>
+            
+                
+                <nav id="sub-nav">
+                    <div class="profile" id="profile-nav">
+                        <a id="profile-anchor" href="javascript:;">
+                            <img class="avatar" src="https://obbuo9upd.qnssl.com/image/avatar.webp">
+                            <i class="fa fa-caret-down"></i>
+                        </a>
+                    </div>
+                </nav>
+            
+            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="搜索">
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="想要查找什么...">
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+            UNTITLED: '(未命名)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: 'https://obbuo9upd.qnssl.com/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="https://obbuo9upd.qnssl.com/js/insight.js"></script>
+
+</div>
+        </div>
+    </div>
+    <div id="main-nav-mobile" class="header-sub header-inner">
+        <table class="menu outer">
+            <tr>
+                
+                    <td><a class="main-nav-link" href="/.">首页</a></td>
+                
+                    <td><a class="main-nav-link" href="/archives">更多文章</a></td>
+                
+                    <td><a class="main-nav-link" href="/about">留言</a></td>
+                
+                <td>
+                    
+    <div class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="搜索">
+    </div>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script src="https://obbuo9upd.qnssl.com/aplayer/APlayer.min.js"></script>
+</header>
+
+        <div class="outer">
+            
+                
+
+<aside id="profile">
+    <div class="inner profile-inner">
+        <div class="base-info profile-block">
+            <img id="avatar" src="https://obbuo9upd.qnssl.com/image/avatar.webp">
+            <h2 id="name">唐门</h2>
+            <h3 id="title">邮箱:i@tiexo.cn</h3>
+            <span id="location"><i class="fa fa-map-marker"></i>Changsha, China</span>
+            <a id="follow" target="_blank" href="http://weibo.com/940517409/" rel="external nofollow noopener noreferrer">+关注我</a>
+        </div>
+        <div class="article-info profile-block">
+            <div class="article-info-block">
+                83
+                <div>文章</div>
+            </div>
+              <div class="article-info-block">
+           <div> 13235       
+            </div>访客
+            </div>
+        </div>
+        
+    </div>
+</aside>
+
+            
+            <section id="main">
+    <article id="post-jxj" class="article article-type-post" itemscope="" itemprop="blogPost">
+    <div class="article-inner">
+        
+            
+	
+		<a href="/jxj/" itemprop="url">
+            <img src="https://obbuo9upd.qnssl.com/20160314210653.webp" class="article-banner">
+        </a>
+	
+
+
+
+        
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/jxj/">开启京东淘宝双返利模式</a>
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/jxj/">
+            <time datetime="2016-03-14T13:02:30.000Z" itemprop="datePublished">2016-03-14</time>
+        </a>
+    </div>
+
+
+                        
+                        
+                    </div>
+                
+            </header>
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            <p></p><p>去年我才学会用淘宝返利，顿时感觉发现了一个新世界。<br>包括后来的鹊桥、插件等等，发现了隐藏在卖家身下的阴谋！</p>
+<p>但是京东一直没有类似阿里妈妈的产品，第三方的返利模式杂乱不齐，体验很不好。<br>直到昨天….<br></p>
+            <p class="article-more-link">
+                <a href="/jxj/#more">查看更多</a>
+            </p>
+        
+        </div>
+    </div>
+  
+    
+    
+</article>
+
+
+
+    <article id="post-feixun-159" class="article article-type-post" itemscope="" itemprop="blogPost">
+    <div class="article-inner">
+        
+            
+	
+		<a href="/feixun-159/" itemprop="url">
+            <img src="https://obbuo9upd.qnssl.com/20160310144055.webp" class="article-banner">
+        </a>
+	
+
+
+
+        
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/feixun-159/">斐讯无线路由器送铃铛卡159元</a>
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/feixun-159/">
+            <time datetime="2016-03-10T06:39:21.000Z" itemprop="datePublished">2016-03-10</time>
+        </a>
+    </div>
+
+
+                        
+                        
+                    </div>
+                
+            </header>
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            <p></p><p>斐讯路由器的一个活动，已经持续好几个月了。<br>以前一直没有仔细去了解，前几天听闻京东降价，就买了两台试试。</p>
+<p>刚刚已经收到一台….来记录下。<br></p>
+            <p class="article-more-link">
+                <a href="/feixun-159/#more">查看更多</a>
+            </p>
+        
+        </div>
+    </div>
+  
+    
+    
+</article>
+
+
+
+    <article id="post-baidu-disk-password" class="article article-type-post" itemscope="" itemprop="blogPost">
+    <div class="article-inner">
+        
+            
+	
+		<a href="/baidu-disk-password/" itemprop="url">
+            <img src="https://obbuo9upd.qnssl.com/1603091535.webp" class="article-banner">
+        </a>
+	
+
+
+
+        
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/baidu-disk-password/">自定义百度网盘提取密码</a>
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/baidu-disk-password/">
+            <time datetime="2016-03-09T07:28:22.000Z" itemprop="datePublished">2016-03-09</time>
+        </a>
+    </div>
+
+
+                        
+                        
+                    </div>
+                
+            </header>
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            <p></p><p>本文所涉及代码转载自<a href="https://www.giuem.com/" rel="external nofollow noopener noreferrer" target="_blank">@giuem</a>，仅供个人收集备份</p><p></p>
+            <p class="article-more-link">
+                <a href="/baidu-disk-password/#more">查看更多</a>
+            </p>
+        
+        </div>
+    </div>
+  
+    
+    
+</article>
+
+
+
+    <article id="post-sqsx-ip" class="article article-type-post" itemscope="" itemprop="blogPost">
+    <div class="article-inner">
+        
+            
+	
+		<a href="/sqsx-ip/" itemprop="url">
+            <img src="https://obbuo9upd.qnssl.com/20160307223224.webp" class="article-banner">
+        </a>
+	
+
+
+
+        
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/sqsx-ip/">免费切换电脑IP——sqsx</a>
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/sqsx-ip/">
+            <time datetime="2016-03-07T14:25:50.000Z" itemprop="datePublished">2016-03-07</time>
+        </a>
+    </div>
+
+
+                        
+                        
+                    </div>
+                
+            </header>
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            <p></p><p>现在“翻墙”的手段越来越多，也越来越容易<br>但是VPN依然很混乱，收费/速度慢/病毒等等很多问题</p>
+<p>今天偶然得知了一款免费的全局代理软件，体验很不错就记录下来。<br></p>
+            <p class="article-more-link">
+                <a href="/sqsx-ip/#more">查看更多</a>
+            </p>
+        
+        </div>
+    </div>
+  
+    
+    
+</article>
+
+
+
+    <article id="post-where-is-community" class="article article-type-post" itemscope="" itemprop="blogPost">
+    <div class="article-inner">
+        
+            
+	
+		<a href="/where-is-community/" itemprop="url">
+            <img src="https://obbuo9upd.qnssl.com/4-14100Q01203.webp" class="article-banner">
+        </a>
+	
+
+
+
+        
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/where-is-community/">社区的活跃性</a>
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/where-is-community/">
+            <time datetime="2016-03-04T12:41:39.000Z" itemprop="datePublished">2016-03-04</time>
+        </a>
+    </div>
+
+
+                        
+                        
+                    </div>
+                
+            </header>
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            <p></p><p>这几天注册了几个比较知名的社区，就来谈谈看法。<br></p>
+            <p class="article-more-link">
+                <a href="/where-is-community/#more">查看更多</a>
+            </p>
+        
+        </div>
+    </div>
+  
+    
+    
+</article>
+
+
+
+    <article id="post-hello-coding" class="article article-type-post" itemscope="" itemprop="blogPost">
+    <div class="article-inner">
+        
+            
+	
+		<a href="/hello-coding/" itemprop="url">
+            <img src="https://obbuo9upd.qnssl.com/201407245301406171800335.webp" class="article-banner">
+        </a>
+	
+
+
+
+        
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/hello-coding/">从Gitcafe迁移至Coding</a>
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/hello-coding/">
+            <time datetime="2016-03-02T09:13:45.000Z" itemprop="datePublished">2016-03-02</time>
+        </a>
+    </div>
+
+
+                        
+                        
+                    </div>
+                
+            </header>
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            <p></p><p>下午打开微博就看到<a href="https://t.cn/RGlgRkc" rel="external nofollow noopener noreferrer" target="_blank">@Gitcafe</a> 发布的一条微博，要求将项目迁移至Coding.net。<br></p>
+            <p class="article-more-link">
+                <a href="/hello-coding/#more">查看更多</a>
+            </p>
+        
+        </div>
+    </div>
+  
+    
+    
+</article>
+
+
+
+    <article id="post-qcloud-amh" class="article article-type-post" itemscope="" itemprop="blogPost">
+    <div class="article-inner">
+        
+            
+	
+		<a href="/qcloud-amh/" itemprop="url">
+            <img src="https://obbuo9upd.qnssl.com/php7-logo.webp" class="article-banner">
+        </a>
+	
+
+
+
+        
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/qcloud-amh/">腾讯云服务器安装AMH面板部署WordPress</a>
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/qcloud-amh/">
+            <time datetime="2016-02-28T12:06:58.000Z" itemprop="datePublished">2016-02-28</time>
+        </a>
+    </div>
+
+
+                        
+                        
+                    </div>
+                
+            </header>
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            <p></p><p>前文已经提过关于腾讯云服务器的由来</p>
+<blockquote>
+<p><a href="https://www.tiexo.cn/tiexo-domain/">《启用新域名www.tiexo.cn》</a></p>
+</blockquote>
+<p>思考过后准备安装AMH面板，用来部署一些wp、discuz或其他程序玩玩，当作一个测试站吧。<br>折腾了两天，不知道重装多少次…总算成功了。<br></p>
+            <p class="article-more-link">
+                <a href="/qcloud-amh/#more">查看更多</a>
+            </p>
+        
+        </div>
+    </div>
+  
+    
+    
+</article>
+
+
+
+    <article id="post-tiexo-domain" class="article article-type-post" itemscope="" itemprop="blogPost">
+    <div class="article-inner">
+        
+            
+	
+		<a href="/tiexo-domain/" itemprop="url">
+            <img src="https://obbuo9upd.qnssl.com/3bf33a87e950352a3f3c72275743fbf2b2118b44.webp" class="article-banner">
+        </a>
+	
+
+
+
+        
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/tiexo-domain/">启用新域名www.tiexo.cn</a>
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/tiexo-domain/">
+            <time datetime="2016-02-25T11:30:42.000Z" itemprop="datePublished">2016-02-25</time>
+        </a>
+    </div>
+
+
+                        
+                        
+                    </div>
+                
+            </header>
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            <p></p><p>注册的第一个域名是dospytang.com，第二个是tiebo.net<br>这是我注册的第三个，希望可以陪我更久一点。<br></p>
+            <p class="article-more-link">
+                <a href="/tiexo-domain/#more">查看更多</a>
+            </p>
+        
+        </div>
+    </div>
+  
+    
+    
+</article>
+
+
+
+    <article id="post-music-test" class="article article-type-post" itemscope="" itemprop="blogPost">
+    <div class="article-inner">
+        
+            
+	
+		<a href="/music-test/" itemprop="url">
+            <img src="https://obbuo9upd.qnssl.com/20160225135325.webp" class="article-banner">
+        </a>
+	
+
+
+
+        
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/music-test/">hexo插入音乐测试</a>
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/music-test/">
+            <time datetime="2016-02-25T05:39:12.000Z" itemprop="datePublished">2016-02-25</time>
+        </a>
+    </div>
+
+
+                        
+                        
+                    </div>
+                
+            </header>
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            <p></p><p>经过两天的反复部署，总算升级到博客V2.0了。</p>
+<blockquote>
+<p><strong>强势更新：<a href="https://www.tiexo.cn/http-https-music/">《Hexo插入背景音乐的正确姿势》</a></strong><br></p>
+            <p class="article-more-link">
+                <a href="/music-test/#more">查看更多</a>
+            </p>
+        
+        </blockquote></div>
+    </div>
+  
+    
+    
+</article>
+
+
+
+    <article id="post-what-apps" class="article article-type-post" itemscope="" itemprop="blogPost">
+    <div class="article-inner">
+        
+            
+	
+		<a href="/what-apps/" itemprop="url">
+            <img src="https://obbuo9upd.qnssl.com/e4dde71190ef76c67a9160b69d16fdfaae5167e8.webp" class="article-banner">
+        </a>
+	
+
+
+
+        
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/what-apps/">关于系统自带应用和第三方APP的选择和矛盾</a>
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/what-apps/">
+            <time datetime="2016-02-06T11:19:47.000Z" itemprop="datePublished">2016-02-06</time>
+        </a>
+    </div>
+
+
+                        
+                        
+                    </div>
+                
+            </header>
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            <p></p><p>由于Android的开源特性，绝大多数国产手机厂商都自行研制定制ROM，包括MIUI和Flyme这两个行业的佼佼者。</p>
+<p>但是随着系统功能的逐渐完善，大家的差异化越来越少，服务和生态成为一个新的发力点，这直接导致了系统预装应用增加。</p>
+<p>然而作为一个用户，如何在第三方APP和自带应用进行抉择呢？<br></p>
+            <p class="article-more-link">
+                <a href="/what-apps/#more">查看更多</a>
+            </p>
+        
+        </div>
+    </div>
+  
+    
+    
+</article>
+
+
+
+    <nav id="page-nav">
+        <a class="extend prev" rel="prev" href="/page/7/">&laquo; 上一页</a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/">6</a><a class="page-number" href="/page/7/">7</a><span class="page-number current">8</span><a class="page-number" href="/page/9/">9</a><a class="extend next" rel="next" href="/page/9/">下一页 &raquo;</a>
+    </nav>
+</section>
+            
+        </div>
+        <footer id="footer">
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            	<a rel="external nofollow noopener noreferrer" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img alt="知识共享许可协议" style="border-width:0" src="https://obbuo9upd.qnssl.com/cc4.0.png?imageMogr2/format/webp"></a>
+     <a href="https://pages.coding.me" rel="external nofollow noopener noreferrer" target="_blank"><img style="border-width:0" src="https://obbuo9upd.qnssl.com/hosted.jpg?imageMogr2/format/webp"></a>
+            	<br>本作品采用<a rel="external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>进行许可。
+            </div>
+  
+    </div>
+ 
+ <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?0beefceb7e65e8de55a196e428dd0e03";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+ <script src="https://obbuo9upd.qnssl.com/aplayer/Meting.min.js"></script>  
+</footer>
+        
+    
+	<link rel="stylesheet" href="https://obbuo9upd.qnssl.com/gitalk/gitalk.css">
+    <script src="https://obbuo9upd.qnssl.com/gitalk/gitalk.min.js"></script>
+	<script>
+		var gitalk = new Gitalk({
+          clientID:  '3c1cce4e0b2d881a50e9',
+          clientSecret: 'fb8126e4cf49359c69804cac35dae6a8e7683068',
+          repo: 'comments',
+		  id: window.location.pathname,
+          owner: 'tiexo',
+          admin: 'tiexo',
+		  distractionFreeMode: 'true',
+     })
+        gitalk.render('gitalk-container')
+	</script>
+
+
+
+
+    
+        <script src="https://obbuo9upd.qnssl.com/fancybox/jquery.fancybox.pack.js"></script>
+    
+
+
+<!-- Custom Scripts -->
+<script src="https://obbuo9upd.qnssl.com/js/main.js"></script>
+
+    </div>
+</body>

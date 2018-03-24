@@ -1,0 +1,10 @@
+<% if (theme.comment.disqus) { %>
+    <%- partial('comment/disqus', { script: true }) %>
+<% } else if (theme.comment.gitalk &&
+    theme.comment.gitalk.owner &&
+    theme.comment.gitalk.repo &&
+	theme.comment.gitalk.admin &&
+    theme.comment.gitalk.clientID &&
+    theme.comment.gitalk.clientSecret) { %>
+    <%- partial('comment/gitalk', { script: true }) %>
+<% } %>

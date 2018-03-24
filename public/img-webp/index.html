@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    
+    <title>图片压缩：使用WebP格式 | 简单可依赖</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="虽然coding+七牛cdn的速度不错，但是偶尔也会出现头图加载不出来的现象今天就从源头上压缩一下图片的体积，加快图片加载速度">
+<meta property="og:type" content="article">
+<meta property="og:title" content="图片压缩：使用WebP格式">
+<meta property="og:url" content="https://www.tiexo.cn/img-webp/index.html">
+<meta property="og:site_name" content="简单可依赖">
+<meta property="og:description" content="虽然coding+七牛cdn的速度不错，但是偶尔也会出现头图加载不出来的现象今天就从源头上压缩一下图片的体积，加快图片加载速度">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://obbuo9upd.qnssl.com/201605241917.webp">
+<meta property="og:updated_time" content="2017-08-09T12:01:37.187Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="图片压缩：使用WebP格式">
+<meta name="twitter:description" content="虽然coding+七牛cdn的速度不错，但是偶尔也会出现头图加载不出来的现象今天就从源头上压缩一下图片的体积，加快图片加载速度">
+<meta name="twitter:image" content="https://obbuo9upd.qnssl.com/201605241917.webp">
+    
+
+	
+    <link rel="amphtml" href="https://www.tiexo.cn/img-webp//amp/index.html">
+    
+	
+    
+
+    
+        <link rel="icon" href="https://obbuo9upd.qnssl.com/image/favicon.webp">
+    
+
+    <link rel="stylesheet" href="https://obbuo9upd.qnssl.com/libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://obbuo9upd.qnssl.com/libs/open-sans/styles.css">
+    <link rel="stylesheet" href="https://obbuo9upd.qnssl.com/libs/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="https://obbuo9upd.qnssl.com/css/style.css">
+
+    <script src="https://obbuo9upd.qnssl.com/libs/jquery/2.1.3/jquery.min.js"></script>
+    
+    
+        <link rel="stylesheet" href="https://obbuo9upd.qnssl.com/fancybox/jquery.fancybox.css">
+    
+    
+    
+    
+
+
+</head>
+</html>
+<body>
+    <div id="container">
+        <header id="header">
+    <div id="header-main" class="header-inner">
+        <div class="outer">
+            <a href="/" id="logo">
+                <i class="logo"></i>
+                <span class="site-title">简单可依赖</span>
+            </a>
+            <nav id="main-nav">
+                
+                    <a class="main-nav-link" href="/.">首页</a>
+                
+                    <a class="main-nav-link" href="/archives">更多文章</a>
+                
+                    <a class="main-nav-link" href="/about">留言</a>
+                
+            </nav>
+            
+                
+                <nav id="sub-nav">
+                    <div class="profile" id="profile-nav">
+                        <a id="profile-anchor" href="javascript:;">
+                            <img class="avatar" src="https://obbuo9upd.qnssl.com/image/avatar.webp">
+                            <i class="fa fa-caret-down"></i>
+                        </a>
+                    </div>
+                </nav>
+            
+            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="搜索">
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="想要查找什么...">
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+            UNTITLED: '(未命名)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: 'https://obbuo9upd.qnssl.com/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="https://obbuo9upd.qnssl.com/js/insight.js"></script>
+
+</div>
+        </div>
+    </div>
+    <div id="main-nav-mobile" class="header-sub header-inner">
+        <table class="menu outer">
+            <tr>
+                
+                    <td><a class="main-nav-link" href="/.">首页</a></td>
+                
+                    <td><a class="main-nav-link" href="/archives">更多文章</a></td>
+                
+                    <td><a class="main-nav-link" href="/about">留言</a></td>
+                
+                <td>
+                    
+    <div class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="搜索">
+    </div>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+    <script src="https://obbuo9upd.qnssl.com/aplayer/APlayer.min.js"></script>
+</header>
+
+        <div class="outer">
+            
+                
+
+<aside id="profile">
+    <div class="inner profile-inner">
+        <div class="base-info profile-block">
+            <img id="avatar" src="https://obbuo9upd.qnssl.com/image/avatar.webp">
+            <h2 id="name">唐门</h2>
+            <h3 id="title">邮箱:i@tiexo.cn</h3>
+            <span id="location"><i class="fa fa-map-marker"></i>Changsha, China</span>
+            <a id="follow" target="_blank" href="http://weibo.com/940517409/" rel="external nofollow noopener noreferrer">+关注我</a>
+        </div>
+        <div class="article-info profile-block">
+            <div class="article-info-block">
+                83
+                <div>文章</div>
+            </div>
+              <div class="article-info-block">
+           <div> 13235       
+            </div>访客
+            </div>
+        </div>
+        
+    </div>
+</aside>
+
+            
+            <section id="main"><article id="post-img-webp" class="article article-type-post" itemscope="" itemprop="blogPost">
+    <div class="article-inner">
+        
+            
+	
+		<img src="https://obbuo9upd.qnssl.com/201605241917.webp" class="article-banner">
+	
+
+
+
+        
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 class="article-title" itemprop="name">
+            图片压缩：使用WebP格式
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/img-webp/">
+            <time datetime="2016-05-24T11:16:29.000Z" itemprop="datePublished">2016-05-24</time>
+        </a>
+    </div>
+
+
+                        
+                        
+                    </div>
+                
+            </header>
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <p>虽然coding+七牛cdn的速度不错，但是偶尔也会出现头图加载不出来的现象<br>今天就从源头上压缩一下图片的体积，加快图片加载速度</p>
+<a id="more"></a>
+<h1 id="头图"><a href="#头图" class="headerlink" title="头图"></a>头图</h1><p>如果网站图片少当然加载速度快，但是同时也减少了内容丰富性和美观性，所以必须做出妥协。</p>
+<p>本站主题自带的头图banner功能我很喜欢，但是1000x400的分辨率确实比较大<br>以往我都是保存为jpg格式，然后调整图片质量为70，最后大小也有五六十K吧，如果遇到网络差点就会加载不出来。</p>
+<h1 id="WebP"><a href="#WebP" class="headerlink" title="WebP"></a>WebP</h1><p>搜索的时候知道了这个图片格式，于是立马测试了一番。<br>随便选择了一篇文章的头图，JPG格式的大小是53K</p>
+<p><img src="https://obbuo9upd.qnssl.com/20160524180333.webp" alt=""></p>
+<p>压缩后则只有23K啦，足足减少一半还多</p>
+<p><img src="https://obbuo9upd.qnssl.com/20160524180403.webp" alt=""></p>
+<p>最关键的是图片质量并没有什么差别…</p>
+<h1 id="转换"><a href="#转换" class="headerlink" title="转换"></a>转换</h1><p>我使用的是一款名叫<strong>Isparta</strong>的软件，可以直接批量一键转换</p>
+<p><img src="https://obbuo9upd.qnssl.com/20160524180436.webp" alt=""></p>
+<p>比较麻烦的就是上传到七牛了…原本我用的极简图床，貌似不支持webp格式<br>又恢复到手动模式了，这个以后再研究吧</p>
+<h1 id="浏览器支持"><a href="#浏览器支持" class="headerlink" title="浏览器支持"></a>浏览器支持</h1><p>这个格式的图片之所以没有广泛运用，最主要的原因就是需要浏览器支持<br>像chrome以及相同内核的360极速都是可以的，但IE就不行…</p>
+<p>使用IE浏览本站的话，你会看到这样子</p>
+<p><img src="https://obbuo9upd.qnssl.com/20160524183319.webp" alt=""></p>
+<p>凡是webp格式的图片都看不见，所以我在此建议</p>
+<blockquote>
+<p>请使用Chrome浏览本站</p>
+</blockquote>
+<p>好在chrome现在已经成为全球使用量最多的一款浏览器啦，相信没有什么问题的<br>连魅族自带的手机浏览器都可以正常浏览</p>
+<p><img src="https://obbuo9upd.qnssl.com/20160524191001.webp" alt=""></p>
+<h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><p>后面再研究下压缩CSS、HTML、JS等等，今天用了一个插件结果报错了<br>生命不息，优化不止。</p>
+
+        
+        </div>
+    </div>
+  
+    
+    
+        
+<nav id="article-nav">
+    
+        <a href="/html-css-js/" id="article-nav-newer" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">上一篇</strong>
+            <div class="article-nav-title">
+                
+                    Hexo优化：压缩Html、CSS、JS文件
+                
+            </div>
+        </a>
+    
+    
+        <a href="/novel-tieba/" id="article-nav-older" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">下一篇</strong>
+            <div class="article-nav-title">为什么我要在百度贴吧看盗版小说？</div>
+        </a>
+    
+</nav>
+
+
+    
+</article>
+
+
+    
+    
+        <section id="comments">
+    <div id="gitalk-container"></div>
+
+</section>
+    
+
+</section>
+            
+        </div>
+        <footer id="footer">
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            	<a rel="external nofollow noopener noreferrer" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img alt="知识共享许可协议" style="border-width:0" src="https://obbuo9upd.qnssl.com/cc4.0.png?imageMogr2/format/webp"></a>
+     <a href="https://pages.coding.me" rel="external nofollow noopener noreferrer" target="_blank"><img style="border-width:0" src="https://obbuo9upd.qnssl.com/hosted.jpg?imageMogr2/format/webp"></a>
+            	<br>本作品采用<a rel="external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>进行许可。
+            </div>
+  
+    </div>
+ 
+ <script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?0beefceb7e65e8de55a196e428dd0e03";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+ <script src="https://obbuo9upd.qnssl.com/aplayer/Meting.min.js"></script>  
+</footer>
+        
+    
+	<link rel="stylesheet" href="https://obbuo9upd.qnssl.com/gitalk/gitalk.css">
+    <script src="https://obbuo9upd.qnssl.com/gitalk/gitalk.min.js"></script>
+	<script>
+		var gitalk = new Gitalk({
+          clientID:  '3c1cce4e0b2d881a50e9',
+          clientSecret: 'fb8126e4cf49359c69804cac35dae6a8e7683068',
+          repo: 'comments',
+		  id: window.location.pathname,
+          owner: 'tiexo',
+          admin: 'tiexo',
+		  distractionFreeMode: 'true',
+     })
+        gitalk.render('gitalk-container')
+	</script>
+
+
+
+
+    
+        <script src="https://obbuo9upd.qnssl.com/fancybox/jquery.fancybox.pack.js"></script>
+    
+
+
+<!-- Custom Scripts -->
+<script src="https://obbuo9upd.qnssl.com/js/main.js"></script>
+
+    </div>
+</body>

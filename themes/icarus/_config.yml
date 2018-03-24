@@ -1,0 +1,66 @@
+# Menus
+menu:
+  首页: .
+  更多文章: archives
+  留言: about
+
+# Customize
+customize:
+    logo:
+        enabled: true
+        width: 40
+        height: 40
+        url: https://obbuo9upd.qnssl.com/image/logo.webp
+    profile:
+        enabled: true # Whether to show profile bar
+        avatar: https://obbuo9upd.qnssl.com/image/avatar.webp
+        gravatar: # Gravatar email address, if you enable Gravatar, your avatar config will be overriden
+        author: 唐门
+        author_title: 邮箱:i@tiexo.cn 
+        location: Changsha, China
+        follow: http://weibo.com/940517409/
+    highlight: monokai
+    sidebar:  # sidebar position, options: left, right
+    thumbnail: true # enable posts thumbnail, options: true, false
+    favicon:  https://obbuo9upd.qnssl.com/image/favicon.webp # path to favicon
+
+# Widgets
+widgets:
+    - 
+    
+# Search
+search:
+    insight: true  # you need to install `hexo-generator-json-content` before using Insight Search
+
+# Comment
+comment:
+    disqus:  # enter disqus shortname here
+    gitalk: 
+       clientID: '3c1cce4e0b2d881a50e9'
+       clientSecret: 'fb8126e4cf49359c69804cac35dae6a8e7683068'
+       repo: 'comments'
+       owner: 'tiexo'
+       admin: 'tiexo'
+       distractionFreeMode: 'true'
+       
+# Share
+share: false  # options: jiathis, bdshare, addtoany, default
+
+rss: /atom.xml
+
+# Plugins
+plugins:
+    fancybox: true # options: true, false
+    google_analytics: # enter the tracking ID for your Google Analytics
+    google_site_verification: # enter Google site verification code
+    baidu_analytics:  # enter Baidu Analytics hash key
+
+# Miscellaneous
+miscellaneous:
+    open_graph: # see http://ogp.me
+        fb_app_id:
+        fb_admins:
+        twitter_id:
+        google_plus:
+    links:
+        - 
