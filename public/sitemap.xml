@@ -100,7 +100,7 @@
   </url>
   
   <url>
-    <loc>https://www.tiexo.cn/yaoxia-qd/</loc>
+    <loc>https://www.tiexo.cn/wsl-and-archlinux/</loc>
     
     <lastmod>2017-08-09T12:01:37.200Z</lastmod>
     
@@ -114,21 +114,21 @@
   </url>
   
   <url>
-    <loc>https://www.tiexo.cn/wsl-and-archlinux/</loc>
+    <loc>https://www.tiexo.cn/yaoxia-qd/</loc>
     
     <lastmod>2017-08-09T12:01:37.200Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://www.tiexo.cn/what-website/</loc>
+    <loc>https://www.tiexo.cn/what-apps/</loc>
     
     <lastmod>2017-08-09T12:01:37.199Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://www.tiexo.cn/what-apps/</loc>
+    <loc>https://www.tiexo.cn/what-website/</loc>
     
     <lastmod>2017-08-09T12:01:37.199Z</lastmod>
     
@@ -142,6 +142,13 @@
   </url>
   
   <url>
+    <loc>https://www.tiexo.cn/update-6-4-7/</loc>
+    
+    <lastmod>2017-08-09T12:01:37.198Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.tiexo.cn/url-setting/</loc>
     
     <lastmod>2017-08-09T12:01:37.198Z</lastmod>
@@ -150,13 +157,6 @@
   
   <url>
     <loc>https://www.tiexo.cn/vendor-to-libs/</loc>
-    
-    <lastmod>2017-08-09T12:01:37.198Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.tiexo.cn/update-6-4-7/</loc>
     
     <lastmod>2017-08-09T12:01:37.198Z</lastmod>
     
@@ -191,14 +191,14 @@
   </url>
   
   <url>
-    <loc>https://www.tiexo.cn/qiniu-cdn/</loc>
+    <loc>https://www.tiexo.cn/qiniu-imageview2/</loc>
     
     <lastmod>2017-08-09T12:01:37.193Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://www.tiexo.cn/qiniu-imageview2/</loc>
+    <loc>https://www.tiexo.cn/qiniu-cdn/</loc>
     
     <lastmod>2017-08-09T12:01:37.193Z</lastmod>
     
@@ -219,7 +219,7 @@
   </url>
   
   <url>
-    <loc>https://www.tiexo.cn/novel-tieba/</loc>
+    <loc>https://www.tiexo.cn/pro-6-plus/</loc>
     
     <lastmod>2017-08-09T12:01:37.191Z</lastmod>
     
@@ -233,16 +233,9 @@
   </url>
   
   <url>
-    <loc>https://www.tiexo.cn/pro-6-plus/</loc>
+    <loc>https://www.tiexo.cn/novel-tieba/</loc>
     
     <lastmod>2017-08-09T12:01:37.191Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.tiexo.cn/nofollow-301/</loc>
-    
-    <lastmod>2017-08-09T12:01:37.190Z</lastmod>
     
   </url>
   
@@ -254,9 +247,9 @@
   </url>
   
   <url>
-    <loc>https://www.tiexo.cn/new-article/</loc>
+    <loc>https://www.tiexo.cn/nofollow-301/</loc>
     
-    <lastmod>2017-08-09T12:01:37.189Z</lastmod>
+    <lastmod>2017-08-09T12:01:37.190Z</lastmod>
     
   </url>
   
@@ -275,14 +268,21 @@
   </url>
   
   <url>
-    <loc>https://www.tiexo.cn/mi-note2/</loc>
+    <loc>https://www.tiexo.cn/new-article/</loc>
+    
+    <lastmod>2017-08-09T12:01:37.189Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.tiexo.cn/music-test/</loc>
     
     <lastmod>2017-08-09T12:01:37.188Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://www.tiexo.cn/music-test/</loc>
+    <loc>https://www.tiexo.cn/mi-note2/</loc>
     
     <lastmod>2017-08-09T12:01:37.188Z</lastmod>
     
@@ -296,13 +296,6 @@
   </url>
   
   <url>
-    <loc>https://www.tiexo.cn/jxj/</loc>
-    
-    <lastmod>2017-08-09T12:01:37.187Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://www.tiexo.cn/img-webp/</loc>
     
     <lastmod>2017-08-09T12:01:37.187Z</lastmod>
@@ -311,6 +304,13 @@
   
   <url>
     <loc>https://www.tiexo.cn/jintiao-jiebei/</loc>
+    
+    <lastmod>2017-08-09T12:01:37.187Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.tiexo.cn/jxj/</loc>
     
     <lastmod>2017-08-09T12:01:37.187Z</lastmod>
     
@@ -394,13 +394,6 @@
   </url>
   
   <url>
-    <loc>https://www.tiexo.cn/drzx/</loc>
-    
-    <lastmod>2017-08-09T12:01:37.172Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://www.tiexo.cn/duoshuo-https/</loc>
     
     <lastmod>2017-08-09T12:01:37.172Z</lastmod>
@@ -408,9 +401,9 @@
   </url>
   
   <url>
-    <loc>https://www.tiexo.cn/coding-webide/</loc>
+    <loc>https://www.tiexo.cn/drzx/</loc>
     
-    <lastmod>2017-08-09T12:01:37.171Z</lastmod>
+    <lastmod>2017-08-09T12:01:37.172Z</lastmod>
     
   </url>
   
@@ -423,6 +416,13 @@
   
   <url>
     <loc>https://www.tiexo.cn/changyan/</loc>
+    
+    <lastmod>2017-08-09T12:01:37.171Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.tiexo.cn/coding-webide/</loc>
     
     <lastmod>2017-08-09T12:01:37.171Z</lastmod>
     
@@ -443,14 +443,14 @@
   </url>
   
   <url>
-    <loc>https://www.tiexo.cn/baidu-submitter/</loc>
+    <loc>https://www.tiexo.cn/baidu-pcs/</loc>
     
     <lastmod>2017-08-09T12:01:37.169Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://www.tiexo.cn/baidu-pcs/</loc>
+    <loc>https://www.tiexo.cn/baidu-submitter/</loc>
     
     <lastmod>2017-08-09T12:01:37.169Z</lastmod>
     
@@ -499,14 +499,14 @@
   </url>
   
   <url>
-    <loc>https://www.tiexo.cn/1702-p2p/</loc>
+    <loc>https://www.tiexo.cn/1704-p2p/</loc>
     
     <lastmod>2017-08-09T12:01:37.164Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://www.tiexo.cn/1704-p2p/</loc>
+    <loc>https://www.tiexo.cn/1702-p2p/</loc>
     
     <lastmod>2017-08-09T12:01:37.164Z</lastmod>
     
@@ -527,14 +527,14 @@
   </url>
   
   <url>
-    <loc>https://www.tiexo.cn/1612-p2p/</loc>
+    <loc>https://www.tiexo.cn/1611-p2p/</loc>
     
     <lastmod>2017-08-09T12:01:37.149Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://www.tiexo.cn/1611-p2p/</loc>
+    <loc>https://www.tiexo.cn/1612-p2p/</loc>
     
     <lastmod>2017-08-09T12:01:37.149Z</lastmod>
     
