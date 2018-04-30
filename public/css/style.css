@@ -642,6 +642,7 @@ code {
   width: 28.000000000000004%;
   margin: 0 1%;
   display: none;
+  margin-bottom: 40px;
 }
 @media screen and (min-width: 1200px) {
   #profile {
@@ -706,8 +707,7 @@ code {
 #profile .inner .article-info:after {
   clear: both;
 }
-#profile .inner .article-info .article-info-block,
-#profile .inner .article-info .base-info profile-block {
+#profile .inner .article-info .article-info-block {
   width: 50%;
   float: left;
   padding: 20px 15px;
@@ -715,16 +715,14 @@ code {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  font-size: 18px;
+  font-size: 22px;
 }
-#profile .inner .article-info .article-info-block span,
-#profile .inner .article-info .base-info profile-block span {
+#profile .inner .article-info .article-info-block span {
   display: block;
   font-size: 16px;
   text-transform: uppercase;
 }
-#profile .inner .article-info .article-info-block:first-child,
-#profile .inner .article-info .base-info profile-block:first-child {
+#profile .inner .article-info .article-info-block:first-child {
   border-right: 1px solid #eceff2;
 }
 #profile .inner .social-links > table {
@@ -800,6 +798,52 @@ code {
 #profile.card .profile-inner:after {
   z-index: 0;
   border-color: transparent transparent #dbdee1 transparent;
+}
+#profile .anim-fade-in {
+  -webkit-animation-name: fadeIn;
+  -moz-animation-name: fadeIn;
+  -ms-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 0.3s;
+  -moz-animation-duration: 0.3s;
+  -ms-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+}
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 .article {
   margin: 40px 0;

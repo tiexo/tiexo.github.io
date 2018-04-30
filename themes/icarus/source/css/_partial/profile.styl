@@ -21,6 +21,7 @@
 #profile
     column(profile-column)
     display: none
+    margin-bottom: block-margin
     @media mq-normal
         display: block
     .inner
@@ -63,13 +64,12 @@
             clearfix()
             padding: 0px
             .article-info-block
-            .base-info profile-block
                 width: 50%
                 float: left
                 padding: 20px 15px
                 text-align: center
                 box-sizing: border-box
-                font-size: font-size + 2px
+                font-size: font-size + 6px
                 span
                     display: block
                     font-size: font-size
@@ -136,3 +136,14 @@
             &:after
                 z-index: 0
                 border-color: transparent transparent color-border - #111 transparent
+
+    .anim-fade-in
+        animation-name: fadeIn
+        animation-fill-mode: both
+        animation-duration: .3s
+
+    @keyframes fadeIn
+        0%
+            opacity: 0
+        to
+            opacity: 1
