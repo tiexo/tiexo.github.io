@@ -31,11 +31,11 @@ layout: "page"
 - [弋牧](http://emuia.com/)—— 行多久，方显执着；思多久，方能远见！
 - <i class="fa fa-lock" style="color: #00bb00;"></i> [MoeYi's Blog](https://b.gao4.pw/)—— 无
 - <i class="fa fa-lock" style="color: #00bb00;"></i> [Zidone](https://blog.zidone.cn/)—— 深自缄默 如云漂泊
-- <i class="fa fa-lock" style="color: #00bb00;"></i> [Jestom](https://blog.jestom.com/)—— 无
+- <i class="fa fa-lock" style="color: #00bb00;"></i> [Jestom](https://blog.jestom.com/)—— 即使被判出局也要讓夢想回家！
 
 ### 每日推荐
 
-<div class="aplayer" data-id="000C0joK1H4ZMY" data-server="tencent" data-type="song" data-autoplay="true"></div>  
+<div class="aplayer" data-id="001KfZgl2P8AaH" data-server="tencent" data-type="song" data-autoplay="true"></div>  
 
 ### 一言
 
