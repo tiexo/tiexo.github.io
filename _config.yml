@@ -97,24 +97,6 @@ baidu_url_submit:
   host: www.tiexo.cn ## 在百度站长平台中注册的域名
   token: 9NwyY6c4txgORlo6 ## 请注意这是您的秘钥， 所以请不要把博客源代码发布在公众仓库里!
   path: baidu_urls.txt ## 文本文档的地址， 新链接会保存在此文本文档里  
-  mip: false
-  amp: true
-
-  # hexo-generator-amp
-# The following settings is the quick start options.
-
-generator_amp:
-  templateDir:  amp-template
-  assetDistDir: amp-dist
-  logo:
-    path:   sample/sample-logo.png
-    width:  600
-    height: 60
-  substituteTitleImage:
-    path:   sample/sample-substituteTitleImage.png
-    width:  1024
-    height: 800
-  warningLog: false   # To display warning, please set true.  
   
   
 # Deployment

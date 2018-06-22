@@ -20,14 +20,14 @@ banner: https://obbuo9upd.qnssl.com/201707242203.jpg?imageMogr2/format/webp
 毫无疑问今天介绍的方法是目前最完美的，既支持https还支持多平台
 我们需要引用两个JS文件和一个CSS文件：
 
-1. APlayer.min.js和APlayer.min.css
+1.APlayer.min.js和APlayer.min.css
 
 ```
  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.css">
  <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.js"></script> 
 ```
 
-2. Meting.min.js
+2.Meting.min.js
 
 ```
 <script src="https://cdn.jsdelivr.net/npm/meting@1.2/dist/Meting.min.js"></script>
@@ -37,7 +37,7 @@ banner: https://obbuo9upd.qnssl.com/201707242203.jpg?imageMogr2/format/webp
 将`Meting.min.js`代码插入到`/layout/common/footer.ejs`里面
 
 需要注意的是，`Meting.min.js`必须在`jquery.min.js`后面，大家可以查看网页源代码进行调整。
-当然js文件的地址也可以更改，如先将文件上传到七牛，再将地址替换为七牛外链地址即可，我就是这么操作的。
+当然js文件的地址也可以更改，如先将文件上传到七牛，再将地址替换为七牛外链地址即可。
 
 上述准备工作做完后，只需在插入音乐的地方添加：
 
@@ -62,17 +62,13 @@ banner: https://obbuo9upd.qnssl.com/201707242203.jpg?imageMogr2/format/webp
  - playlist （歌单）
  - search （搜索）
 
-- data-mode: 播放模式
+- data-order: 播放模式
  - random （随机）
- - single （单曲）
- - circulation （列表循环）
- - order （列表）
+ - list （列表）
 
 - data-autoplay: 自动播放
  - false
  - true
-
-更多参数详见 [https://aplayer.js.org/docs/#/?id=options](https://aplayer.js.org/docs/#/?id=options)
 
 # 示范
 
@@ -86,11 +82,11 @@ banner: https://obbuo9upd.qnssl.com/201707242203.jpg?imageMogr2/format/webp
 
 
 ```
-<div class="aplayer" data-id="11100236" data-server="netease" data-type="playlist" data-mode="random"></div>
+<div class="aplayer" data-id="2262234122" data-server="netease" data-type="playlist"></div>
 ```
 
-<div class="aplayer" data-id="11100236" data-server="netease" data-type="playlist" data-mode="random"></div>
+<div class="aplayer" data-id="2262234122" data-server="netease" data-type="playlist"></div>
 
 
 另外也是支持外链文件播放的，如上传到七牛，再引用也可以...但是太耗流量了
-赶紧给你的网站添加BGM吧！
+现在赶紧给你的网站添加BGM吧！

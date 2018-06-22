@@ -13,15 +13,11 @@
 <meta property="og:description" content="本站的BGM终于满血复活啦，感谢 @新垣结衣 的广播和 @萨摩公园 的技术支持。">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https://obbuo9upd.qnssl.com/201707242203.jpg?imageMogr2/format/webp">
-<meta property="og:updated_time" content="2018-06-22T12:27:34.088Z">
+<meta property="og:updated_time" content="2018-06-22T16:04:58.922Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo音乐播放完美支持https和多平台">
 <meta name="twitter:description" content="本站的BGM终于满血复活啦，感谢 @新垣结衣 的广播和 @萨摩公园 的技术支持。">
 <meta name="twitter:image" content="https://obbuo9upd.qnssl.com/201707242203.jpg?imageMogr2/format/webp">
-    
-
-	
-    <link rel="amphtml" href="https://www.tiexo.cn/aplayer//amp/index.html">
     
 	
     
@@ -136,11 +132,6 @@
             </tr>
         </table>
     </div>
-	<style>
-    li {margin: 0em 0;}
-    button {min-height: 0px;}
-    .aplayer {margin: 0 0 1.75em 0 !important;}
-    </style>
     <link rel="stylesheet" href="https://obbuo9upd.qnssl.com/aplayer/APlayer.min.css">
     <script src="https://obbuo9upd.qnssl.com/aplayer/APlayer.min.js"></script>	
 </header>
@@ -222,16 +213,12 @@
 </blockquote>
 <p>只是可惜这个项目GG了，目前访问都是502状态<br>于是之后很长一段时间，来到这里是听不到音乐的~~~</p>
 <h1 id="Aplayer"><a href="#Aplayer" class="headerlink" title="Aplayer"></a>Aplayer</h1><p>毫无疑问今天介绍的方法是目前最完美的，既支持https还支持多平台<br>我们需要引用两个JS文件和一个CSS文件：</p>
-<ol>
-<li>APlayer.min.js和APlayer.min.css</li>
-</ol>
+<p>1.APlayer.min.js和APlayer.min.css</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.css&quot;&gt;</span><br><span class="line">&lt;script src=&quot;https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.js&quot;&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure>
-<ol>
-<li>Meting.min.js</li>
-</ol>
+<p>2.Meting.min.js</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;script src=&quot;https://cdn.jsdelivr.net/npm/meting@1.2/dist/Meting.min.js&quot;&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure>
 <p>拿<code>Icarus</code>主题为例，将<code>APlayer.min.css</code>和<code>APlayer.min.js</code>代码插入到<code>/layout/common/header.ejs</code>里面<br>将<code>Meting.min.js</code>代码插入到<code>/layout/common/footer.ejs</code>里面</p>
-<p>需要注意的是，<code>Meting.min.js</code>必须在<code>jquery.min.js</code>后面，大家可以查看网页源代码进行调整。<br>当然js文件的地址也可以更改，如先将文件上传到七牛，再将地址替换为七牛外链地址即可，我就是这么操作的。</p>
+<p>需要注意的是，<code>Meting.min.js</code>必须在<code>jquery.min.js</code>后面，大家可以查看网页源代码进行调整。<br>当然js文件的地址也可以更改，如先将文件上传到七牛，再将地址替换为七牛外链地址即可。</p>
 <p>上述准备工作做完后，只需在插入音乐的地方添加：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;aplayer&quot; data-id=&quot;373559&quot; data-server=&quot;xiami&quot; data-type=&quot;song&quot;&gt;&lt;/div&gt;</span><br></pre></td></tr></table></figure>
 <p>其中的参数如下，<strong>加粗</strong>表示必须填写</p>
@@ -255,12 +242,10 @@
 <li>search （搜索）</li>
 </ul>
 </li>
-<li><p>data-mode: 播放模式</p>
+<li><p>data-order: 播放模式</p>
 <ul>
 <li>random （随机）</li>
-<li>single （单曲）</li>
-<li>circulation （列表循环）</li>
-<li>order （列表）</li>
+<li>list （列表）</li>
 </ul>
 </li>
 <li><p>data-autoplay: 自动播放</p>
@@ -270,17 +255,16 @@
 </ul>
 </li>
 </ul>
-<p>更多参数详见 <a href="https://aplayer.js.org/docs/#/?id=options" rel="external nofollow noopener noreferrer" target="_blank">https://aplayer.js.org/docs/#/?id=options</a></p>
 <h1 id="示范"><a href="#示范" class="headerlink" title="示范"></a>示范</h1><p>这里我稍微示范下，如果下面的音乐可以正常播放，则此方法未失效。</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;aplayer&quot; data-id=&quot;31673404&quot; data-server=&quot;netease&quot; data-type=&quot;song&quot;&gt;&lt;/div&gt;</span><br></pre></td></tr></table></figure>
 <div class="aplayer" data-id="31673404" data-server="netease" data-type="song"></div>
 
 
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;aplayer&quot; data-id=&quot;11100236&quot; data-server=&quot;netease&quot; data-type=&quot;playlist&quot; data-mode=&quot;random&quot;&gt;&lt;/div&gt;</span><br></pre></td></tr></table></figure>
-<div class="aplayer" data-id="11100236" data-server="netease" data-type="playlist" data-mode="random"></div>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class=&quot;aplayer&quot; data-id=&quot;2262234122&quot; data-server=&quot;netease&quot; data-type=&quot;playlist&quot;&gt;&lt;/div&gt;</span><br></pre></td></tr></table></figure>
+<div class="aplayer" data-id="2262234122" data-server="netease" data-type="playlist"></div>
 
 
-<p>另外也是支持外链文件播放的，如上传到七牛，再引用也可以…但是太耗流量了<br>赶紧给你的网站添加BGM吧！</p>
+<p>另外也是支持外链文件播放的，如上传到七牛，再引用也可以…但是太耗流量了<br>现在赶紧给你的网站添加BGM吧！</p>
 
         
         </div>

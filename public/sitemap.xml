@@ -2,16 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://www.tiexo.cn/about/index.html</loc>
+    <loc>https://www.tiexo.cn/aplayer/</loc>
     
-    <lastmod>2018-06-22T12:32:03.009Z</lastmod>
+    <lastmod>2018-06-22T16:04:58.922Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://www.tiexo.cn/aplayer/</loc>
+    <loc>https://www.tiexo.cn/about/index.html</loc>
     
-    <lastmod>2018-06-22T12:27:34.088Z</lastmod>
+    <lastmod>2018-06-22T12:32:03.009Z</lastmod>
     
   </url>
   
@@ -100,7 +100,7 @@
   </url>
   
   <url>
-    <loc>https://www.tiexo.cn/win10-fonts/</loc>
+    <loc>https://www.tiexo.cn/yaoxia-qd/</loc>
     
     <lastmod>2017-08-09T12:01:37.200Z</lastmod>
     
@@ -114,14 +114,14 @@
   </url>
   
   <url>
-    <loc>https://www.tiexo.cn/yaoxia-qd/</loc>
+    <loc>https://www.tiexo.cn/win10-fonts/</loc>
     
     <lastmod>2017-08-09T12:01:37.200Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://www.tiexo.cn/where-is-community/</loc>
+    <loc>https://www.tiexo.cn/what-apps/</loc>
     
     <lastmod>2017-08-09T12:01:37.199Z</lastmod>
     
@@ -135,14 +135,14 @@
   </url>
   
   <url>
-    <loc>https://www.tiexo.cn/what-apps/</loc>
+    <loc>https://www.tiexo.cn/where-is-community/</loc>
     
     <lastmod>2017-08-09T12:01:37.199Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://www.tiexo.cn/url-setting/</loc>
+    <loc>https://www.tiexo.cn/update-6-4-7/</loc>
     
     <lastmod>2017-08-09T12:01:37.198Z</lastmod>
     
@@ -156,7 +156,7 @@
   </url>
   
   <url>
-    <loc>https://www.tiexo.cn/update-6-4-7/</loc>
+    <loc>https://www.tiexo.cn/url-setting/</loc>
     
     <lastmod>2017-08-09T12:01:37.198Z</lastmod>
     
@@ -205,14 +205,14 @@
   </url>
   
   <url>
-    <loc>https://www.tiexo.cn/qidian-app/</loc>
+    <loc>https://www.tiexo.cn/qcloud-amh/</loc>
     
     <lastmod>2017-08-09T12:01:37.192Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://www.tiexo.cn/qcloud-amh/</loc>
+    <loc>https://www.tiexo.cn/qidian-app/</loc>
     
     <lastmod>2017-08-09T12:01:37.192Z</lastmod>
     
@@ -226,14 +226,14 @@
   </url>
   
   <url>
-    <loc>https://www.tiexo.cn/pro-6-plus/</loc>
+    <loc>https://www.tiexo.cn/p2p-and-zfb/</loc>
     
     <lastmod>2017-08-09T12:01:37.191Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://www.tiexo.cn/p2p-and-zfb/</loc>
+    <loc>https://www.tiexo.cn/pro-6-plus/</loc>
     
     <lastmod>2017-08-09T12:01:37.191Z</lastmod>
     
@@ -282,6 +282,13 @@
   </url>
   
   <url>
+    <loc>https://www.tiexo.cn/mi-note2/</loc>
+    
+    <lastmod>2017-08-09T12:01:37.188Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.tiexo.cn/lastpass/</loc>
     
     <lastmod>2017-08-09T12:01:37.188Z</lastmod>
@@ -289,9 +296,9 @@
   </url>
   
   <url>
-    <loc>https://www.tiexo.cn/mi-note2/</loc>
+    <loc>https://www.tiexo.cn/jxj/</loc>
     
-    <lastmod>2017-08-09T12:01:37.188Z</lastmod>
+    <lastmod>2017-08-09T12:01:37.187Z</lastmod>
     
   </url>
   
@@ -304,13 +311,6 @@
   
   <url>
     <loc>https://www.tiexo.cn/jintiao-jiebei/</loc>
-    
-    <lastmod>2017-08-09T12:01:37.187Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.tiexo.cn/jxj/</loc>
     
     <lastmod>2017-08-09T12:01:37.187Z</lastmod>
     
@@ -338,13 +338,6 @@
   </url>
   
   <url>
-    <loc>https://www.tiexo.cn/hosted-by-coding/</loc>
-    
-    <lastmod>2017-08-09T12:01:37.185Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://www.tiexo.cn/http-https-music/</loc>
     
     <lastmod>2017-08-09T12:01:37.185Z</lastmod>
@@ -352,7 +345,14 @@
   </url>
   
   <url>
-    <loc>https://www.tiexo.cn/hexo-3-2-2/</loc>
+    <loc>https://www.tiexo.cn/hosted-by-coding/</loc>
+    
+    <lastmod>2017-08-09T12:01:37.185Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.tiexo.cn/hello-git-hexo/</loc>
     
     <lastmod>2017-08-09T12:01:37.184Z</lastmod>
     
@@ -366,7 +366,7 @@
   </url>
   
   <url>
-    <loc>https://www.tiexo.cn/hello-git-hexo/</loc>
+    <loc>https://www.tiexo.cn/hexo-3-2-2/</loc>
     
     <lastmod>2017-08-09T12:01:37.184Z</lastmod>
     
@@ -387,14 +387,14 @@
   </url>
   
   <url>
-    <loc>https://www.tiexo.cn/duan-zu/</loc>
+    <loc>https://www.tiexo.cn/duoshuo-https/</loc>
     
     <lastmod>2017-08-09T12:01:37.172Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://www.tiexo.cn/duoshuo-https/</loc>
+    <loc>https://www.tiexo.cn/duan-zu/</loc>
     
     <lastmod>2017-08-09T12:01:37.172Z</lastmod>
     
