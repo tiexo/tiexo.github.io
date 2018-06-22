@@ -13,6 +13,7 @@ layout: "page"
 - [Dnspod](https://www.dnspod.cn/) ，提供域名解析
 - [Gitalk](https://github.com/gitalk/gitalk)，提供评论支持
 - [Aplayer](https://github.com/DIYgod/APlayer)，提供音乐播放功能
+- [MetingJS](https://github.com/metowolf/MetingJS)，提供BGM API接口
 
 
 ### 免责申明
@@ -35,7 +36,7 @@ layout: "page"
 
 ### 每日推荐
 
-<div class="aplayer" data-id="001KfZgl2P8AaH" data-server="tencent" data-type="song" data-autoplay="true"></div>  
+<div class="aplayer" data-id="002yb2dR2nB3Re" data-server="tencent" data-type="song" data-autoplay="true"></div>  
 
 ### 一言
 

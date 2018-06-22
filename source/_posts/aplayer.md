@@ -18,21 +18,22 @@ banner: https://obbuo9upd.qnssl.com/201707242203.jpg?imageMogr2/format/webp
 # Aplayer
 
 毫无疑问今天介绍的方法是目前最完美的，既支持https还支持多平台
-我们需要引用两个JS文件：
+我们需要引用两个JS文件和一个CSS文件：
 
-1. APlayer.min.js
+1. APlayer.min.js和APlayer.min.css
 
 ```
- <script src="https://cdnjs.cloudflare.com/ajax/libs/aplayer/1.6.0/APlayer.min.js"></script> 
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.css">
+ <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10/dist/APlayer.min.js"></script> 
 ```
 
 2. Meting.min.js
 
 ```
-<script src="https://cdn.jsdelivr.net/npm/meting@1.0.1/dist/Meting.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@1.2/dist/Meting.min.js"></script>
 ```
 
-拿`Icarus`主题为例，将`APlayer.min.js`代码插入到`/layout/common/header.ejs`里面
+拿`Icarus`主题为例，将`APlayer.min.css`和`APlayer.min.js`代码插入到`/layout/common/header.ejs`里面
 将`Meting.min.js`代码插入到`/layout/common/footer.ejs`里面
 
 需要注意的是，`Meting.min.js`必须在`jquery.min.js`后面，大家可以查看网页源代码进行调整。
