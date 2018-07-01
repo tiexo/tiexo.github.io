@@ -36,7 +36,7 @@ layout: "page"
 
 ### 每日推荐
 
-<div class="aplayer" data-id="002yb2dR2nB3Re" data-server="tencent" data-type="song" data-autoplay="true"></div>  
+<div class="aplayer" data-id="526464145" data-server="netease" data-type="song" data-autoplay="true"></div>  
 
 ### 一言
 
