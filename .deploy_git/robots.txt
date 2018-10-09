@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+Allow: /archives/
+Allow: /about/
+
+Disallow: /libs/
+Disallow: /js/
+Disallow: /css/
+Disallow: /content.json
+
+Sitemap: https://www.tiexo.cn/sitemap.xml
