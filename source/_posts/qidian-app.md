@@ -1,7 +1,8 @@
 ---
 title: 我在起点APP免费看小说
+banner: 'https://obbuo9upd.qnssl.com/201609121403.jpg?imageMogr2/format/webp'
+abbrlink: 1a94a5c0
 date: 2016-09-12 14:00:49
-banner: https://obbuo9upd.qnssl.com/201609121403.jpg?imageMogr2/format/webp
 ---
 
 自从百度贴吧禁止更新小说后，正版阅读又向前走了一步

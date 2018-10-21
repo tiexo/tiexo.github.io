@@ -1,7 +1,8 @@
 ---
 title: 尝试使用七牛图片基本处理 (imageView2)
+banner: 'https://obbuo9upd.qnssl.com/16-6-2/36444154.jpg?imageMogr2/format/webp'
+abbrlink: b539cd88
 date: 2016-06-02 18:46:38
-banner: https://obbuo9upd.qnssl.com/16-6-2/36444154.jpg?imageMogr2/format/webp
 ---
 
 一篇文章最重要的两个因素就是：文字+图片

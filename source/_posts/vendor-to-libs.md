@@ -1,7 +1,8 @@
 ---
 title: 站点日常更新V6.11.19
+banner: 'https://obbuo9upd.qnssl.com/20161119160016.png?imageMogr2/format/webp'
+abbrlink: dc71247c
 date: 2016-11-19 16:03:06
-banner: https://obbuo9upd.qnssl.com/20161119160016.png?imageMogr2/format/webp
 ---
 
 前几天我还在为博客的正常运行沾沾自喜，今天就发现部分css和js没有加载。

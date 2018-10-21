@@ -1,8 +1,9 @@
 ---
 title: 斐讯无线路由器送铃铛卡159元
+banner: 'https://obbuo9upd.qnssl.com/20160310144055.webp'
+abbrlink: b20e820a
 date: 2016-03-10 14:39:21
 tags:
-banner: https://obbuo9upd.qnssl.com/20160310144055.webp
 ---
 斐讯路由器的一个活动，已经持续好几个月了。
 以前一直没有仔细去了解，前几天听闻京东降价，就买了两台试试。

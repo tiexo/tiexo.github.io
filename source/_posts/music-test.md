@@ -1,9 +1,9 @@
 ---
 title: hexo插入音乐测试
+banner: 'https://obbuo9upd.qnssl.com/20160225135325.webp'
+abbrlink: 6016ecef
 date: 2016-02-25 13:39:12
-tags: 
-banner: https://obbuo9upd.qnssl.com/20160225135325.webp
-
+tags:
 ---
 经过两天的反复部署，总算升级到博客V2.0了。
 

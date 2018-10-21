@@ -1,8 +1,9 @@
 ---
 title: 社区的活跃性
+banner: 'https://obbuo9upd.qnssl.com/4-14100Q01203.webp'
+abbrlink: 6da371d
 date: 2016-03-04 20:41:39
 tags:
-banner: https://obbuo9upd.qnssl.com/4-14100Q01203.webp
 ---
 这几天注册了几个比较知名的社区，就来谈谈看法。
 <!--more-->

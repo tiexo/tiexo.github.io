@@ -1,8 +1,9 @@
 ---
 title: 京东金条和蚂蚁借呗
+banner: 'https://obbuo9upd.qnssl.com/20160329144629.webp'
+abbrlink: ef8b4822
 date: 2016-03-29 14:42:48
 tags:
-banner: https://obbuo9upd.qnssl.com/20160329144629.webp
 ---
 两个产品这几天都发生了变化，顺便来谈谈自己的经验和看法。
 

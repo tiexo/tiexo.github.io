@@ -1,8 +1,9 @@
 ---
 title: 浅谈小说吧管理理念
+banner: 'https://obbuo9upd.qnssl.com/201604250000.webp'
+abbrlink: a5f04e70
 date: 2016-04-24 23:52:25
 tags:
-banner: https://obbuo9upd.qnssl.com/201604250000.webp
 ---
 “嘿，你是大神吗？”
 “不是...”

@@ -1,7 +1,8 @@
 ---
 title: 更新Hexo V3.2.2版本
+banner: 'https://obbuo9upd.qnssl.com/201606290957.jpg?imageMogr2/format/webp'
+abbrlink: 88d1a8f9
 date: 2016-06-29 09:56:20
-banner: https://obbuo9upd.qnssl.com/201606290957.jpg?imageMogr2/format/webp
 ---
 貌似是增加了对Nodejs V6的支持
 

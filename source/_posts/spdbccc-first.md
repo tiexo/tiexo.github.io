@@ -1,7 +1,8 @@
 ---
 title: 人生首卡，意义重大
+banner: 'https://obbuo9upd.qnssl.com/66246846.webp'
+abbrlink: efd40338
 date: 2016-05-15 20:27:37
-banner: https://obbuo9upd.qnssl.com/66246846.webp
 ---
 今天我正式宣布：我也是有卡一族啦！
 因为支付宝申请浦发白金梦卡通过了`(*∩_∩*)′

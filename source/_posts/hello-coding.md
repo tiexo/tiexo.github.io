@@ -1,8 +1,9 @@
 ---
 title: 从Gitcafe迁移至Coding
+banner: 'https://obbuo9upd.qnssl.com/201407245301406171800335.webp'
+abbrlink: 66f13004
 date: 2016-03-02 17:13:45
 tags:
-banner: https://obbuo9upd.qnssl.com/201407245301406171800335.webp
 ---
 下午打开微博就看到[@Gitcafe](https://t.cn/RGlgRkc) 发布的一条微博，要求将项目迁移至Coding.net。
 <!--more-->

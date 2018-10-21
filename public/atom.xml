@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tiexo.coding.me/"/>
-  <updated>2018-10-21T09:36:50.853Z</updated>
+  <updated>2018-10-21T15:19:16.014Z</updated>
   <id>https://tiexo.coding.me/</id>
   
   <author>
@@ -17,11 +17,27 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>网站恢复二级域名</title>
+    <link href="https://tiexo.coding.me/5cf6b291/"/>
+    <id>https://tiexo.coding.me/5cf6b291/</id>
+    <published>2018-10-21T14:27:06.000Z</published>
+    <updated>2018-10-21T15:19:16.014Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;某天突然收到七牛发送的邮件，提醒我系统即将收回测试域名时，我就一直在思考如何处理由此引发的一系列问题，顺便再好好规划下网站以后的定位。今晚，我终于作出了决定并付诸了行动。&lt;br&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>适配谷歌AMP页面</title>
-    <link href="https://tiexo.coding.me/google-amp/"/>
-    <id>https://tiexo.coding.me/google-amp/</id>
+    <link href="https://tiexo.coding.me/81598807/"/>
+    <id>https://tiexo.coding.me/81598807/</id>
     <published>2018-02-06T00:24:33.000Z</published>
-    <updated>2018-10-21T09:36:50.853Z</updated>
+    <updated>2018-10-21T15:15:33.658Z</updated>
     
     <summary type="html">
     
@@ -34,10 +50,10 @@
   
   <entry>
     <title>淘宝联盟返佣和隐藏优惠券</title>
-    <link href="https://tiexo.coding.me/tblm-app/"/>
-    <id>https://tiexo.coding.me/tblm-app/</id>
+    <link href="https://tiexo.coding.me/bb5ff40c/"/>
+    <id>https://tiexo.coding.me/bb5ff40c/</id>
     <published>2018-02-05T18:23:49.000Z</published>
-    <updated>2018-10-21T09:36:51.541Z</updated>
+    <updated>2018-10-21T15:15:33.698Z</updated>
     
     <summary type="html">
     
@@ -50,10 +66,10 @@
   
   <entry>
     <title>利用M3U8原理下载网页在线视频</title>
-    <link href="https://tiexo.coding.me/m3u8/"/>
-    <id>https://tiexo.coding.me/m3u8/</id>
+    <link href="https://tiexo.coding.me/4b12741d/"/>
+    <id>https://tiexo.coding.me/4b12741d/</id>
     <published>2017-10-25T22:41:03.000Z</published>
-    <updated>2018-10-21T09:36:50.917Z</updated>
+    <updated>2018-10-21T15:15:33.678Z</updated>
     
     <summary type="html">
     
@@ -66,10 +82,10 @@
   
   <entry>
     <title>暂时使用微博HTTPS图床</title>
-    <link href="https://tiexo.coding.me/sinaimg/"/>
-    <id>https://tiexo.coding.me/sinaimg/</id>
+    <link href="https://tiexo.coding.me/4da600e6/"/>
+    <id>https://tiexo.coding.me/4da600e6/</id>
     <published>2017-09-25T16:20:48.000Z</published>
-    <updated>2018-10-21T09:36:52.045Z</updated>
+    <updated>2018-10-21T15:15:33.694Z</updated>
     
     <summary type="html">
     
@@ -82,10 +98,10 @@
   
   <entry>
     <title>服务体验更棒的Gitalk评论系统</title>
-    <link href="https://tiexo.coding.me/gitalk/"/>
-    <id>https://tiexo.coding.me/gitalk/</id>
+    <link href="https://tiexo.coding.me/8469e667/"/>
+    <id>https://tiexo.coding.me/8469e667/</id>
     <published>2017-09-13T21:49:31.000Z</published>
-    <updated>2018-10-21T09:36:49.601Z</updated>
+    <updated>2018-10-21T15:15:33.654Z</updated>
     
     <summary type="html">
     
@@ -98,10 +114,10 @@
   
   <entry>
     <title>强迫症选择放弃不蒜子</title>
-    <link href="https://tiexo.coding.me/bye-busuanzi/"/>
-    <id>https://tiexo.coding.me/bye-busuanzi/</id>
+    <link href="https://tiexo.coding.me/82d74d79/"/>
+    <id>https://tiexo.coding.me/82d74d79/</id>
     <published>2017-08-22T18:48:58.000Z</published>
-    <updated>2018-10-21T09:36:49.829Z</updated>
+    <updated>2018-10-21T15:15:33.642Z</updated>
     
     <summary type="html">
     
@@ -114,10 +130,10 @@
   
   <entry>
     <title>IDE迁移至SourceTree管理Hexo</title>
-    <link href="https://tiexo.coding.me/sourcetree/"/>
-    <id>https://tiexo.coding.me/sourcetree/</id>
+    <link href="https://tiexo.coding.me/1ee8c4bf/"/>
+    <id>https://tiexo.coding.me/1ee8c4bf/</id>
     <published>2017-08-09T21:44:54.000Z</published>
-    <updated>2018-10-21T09:36:50.649Z</updated>
+    <updated>2018-10-21T15:15:33.694Z</updated>
     
     <summary type="html">
     
@@ -130,10 +146,10 @@
   
   <entry>
     <title>由一个报错引发的连串报错</title>
-    <link href="https://tiexo.coding.me/0725-error/"/>
-    <id>https://tiexo.coding.me/0725-error/</id>
+    <link href="https://tiexo.coding.me/c6fac71e/"/>
+    <id>https://tiexo.coding.me/c6fac71e/</id>
     <published>2017-07-25T03:52:44.000Z</published>
-    <updated>2018-10-21T09:36:52.221Z</updated>
+    <updated>2018-10-21T15:15:33.610Z</updated>
     
     <summary type="html">
     
@@ -146,10 +162,10 @@
   
   <entry>
     <title>Hexo音乐播放完美支持https和多平台</title>
-    <link href="https://tiexo.coding.me/aplayer/"/>
-    <id>https://tiexo.coding.me/aplayer/</id>
+    <link href="https://tiexo.coding.me/2be1fd9/"/>
+    <id>https://tiexo.coding.me/2be1fd9/</id>
     <published>2017-07-24T22:01:24.000Z</published>
-    <updated>2018-10-21T09:36:51.897Z</updated>
+    <updated>2018-10-21T15:15:33.634Z</updated>
     
     <summary type="html">
     
@@ -162,10 +178,10 @@
   
   <entry>
     <title>微信接收评论提醒并回复</title>
-    <link href="https://tiexo.coding.me/github-reply/"/>
-    <id>https://tiexo.coding.me/github-reply/</id>
+    <link href="https://tiexo.coding.me/31b640a4/"/>
+    <id>https://tiexo.coding.me/31b640a4/</id>
     <published>2017-07-14T16:06:24.000Z</published>
-    <updated>2018-10-21T09:36:51.861Z</updated>
+    <updated>2018-10-21T15:15:33.654Z</updated>
     
     <summary type="html">
     
@@ -178,10 +194,10 @@
   
   <entry>
     <title>PCS破解百度网盘下载限速</title>
-    <link href="https://tiexo.coding.me/baidu-pcs/"/>
-    <id>https://tiexo.coding.me/baidu-pcs/</id>
+    <link href="https://tiexo.coding.me/81abca70/"/>
+    <id>https://tiexo.coding.me/81abca70/</id>
     <published>2017-06-25T21:06:17.000Z</published>
-    <updated>2018-10-21T09:36:51.941Z</updated>
+    <updated>2018-10-21T15:15:33.638Z</updated>
     
     <summary type="html">
     
@@ -195,10 +211,10 @@
   
   <entry>
     <title>站点日常更新V7.6.5</title>
-    <link href="https://tiexo.coding.me/baidu-submitter/"/>
-    <id>https://tiexo.coding.me/baidu-submitter/</id>
+    <link href="https://tiexo.coding.me/5466ecfd/"/>
+    <id>https://tiexo.coding.me/5466ecfd/</id>
     <published>2017-06-05T16:27:57.000Z</published>
-    <updated>2018-10-21T09:36:50.549Z</updated>
+    <updated>2018-10-21T15:15:33.642Z</updated>
     
     <summary type="html">
     
@@ -217,10 +233,10 @@
   
   <entry>
     <title>Hosted by Coding Pages</title>
-    <link href="https://tiexo.coding.me/hosted-by-coding/"/>
-    <id>https://tiexo.coding.me/hosted-by-coding/</id>
+    <link href="https://tiexo.coding.me/b9fd43c/"/>
+    <id>https://tiexo.coding.me/b9fd43c/</id>
     <published>2017-06-04T19:18:14.000Z</published>
-    <updated>2018-10-21T09:36:50.269Z</updated>
+    <updated>2018-10-21T15:15:33.666Z</updated>
     
     <summary type="html">
     
@@ -233,10 +249,10 @@
   
   <entry>
     <title>17年5月份P2P总结</title>
-    <link href="https://tiexo.coding.me/1705-p2p/"/>
-    <id>https://tiexo.coding.me/1705-p2p/</id>
+    <link href="https://tiexo.coding.me/30733c0e/"/>
+    <id>https://tiexo.coding.me/30733c0e/</id>
     <published>2017-06-03T15:47:29.000Z</published>
-    <updated>2018-10-21T09:36:51.565Z</updated>
+    <updated>2018-10-21T15:15:33.630Z</updated>
     
     <summary type="html">
     
@@ -249,10 +265,10 @@
   
   <entry>
     <title>体验GitHub Issues的评论系统——Gitment</title>
-    <link href="https://tiexo.coding.me/gitment/"/>
-    <id>https://tiexo.coding.me/gitment/</id>
+    <link href="https://tiexo.coding.me/860dcef4/"/>
+    <id>https://tiexo.coding.me/860dcef4/</id>
     <published>2017-06-03T15:13:32.000Z</published>
-    <updated>2018-10-21T09:36:50.197Z</updated>
+    <updated>2018-10-21T15:15:33.654Z</updated>
     
     <summary type="html">
     
@@ -265,10 +281,10 @@
   
   <entry>
     <title>百度网盘之殇——Win10安装Linux子系统</title>
-    <link href="https://tiexo.coding.me/wsl-and-archlinux/"/>
-    <id>https://tiexo.coding.me/wsl-and-archlinux/</id>
+    <link href="https://tiexo.coding.me/f329b91e/"/>
+    <id>https://tiexo.coding.me/f329b91e/</id>
     <published>2017-05-13T11:09:19.000Z</published>
-    <updated>2018-10-21T09:36:49.801Z</updated>
+    <updated>2018-10-21T15:15:33.706Z</updated>
     
     <summary type="html">
     
@@ -282,10 +298,10 @@
   
   <entry>
     <title>本站启用畅言评论系统</title>
-    <link href="https://tiexo.coding.me/changyan/"/>
-    <id>https://tiexo.coding.me/changyan/</id>
+    <link href="https://tiexo.coding.me/a9600728/"/>
+    <id>https://tiexo.coding.me/a9600728/</id>
     <published>2017-05-03T22:50:21.000Z</published>
-    <updated>2018-10-21T09:36:49.293Z</updated>
+    <updated>2018-10-21T15:15:33.646Z</updated>
     
     <summary type="html">
     
@@ -298,10 +314,10 @@
   
   <entry>
     <title>17年4月份P2P总结</title>
-    <link href="https://tiexo.coding.me/1704-p2p/"/>
-    <id>https://tiexo.coding.me/1704-p2p/</id>
+    <link href="https://tiexo.coding.me/9e1bad9f/"/>
+    <id>https://tiexo.coding.me/9e1bad9f/</id>
     <published>2017-05-03T22:17:12.000Z</published>
-    <updated>2018-10-21T09:36:50.429Z</updated>
+    <updated>2018-10-21T15:15:33.630Z</updated>
     
     <summary type="html">
     
@@ -314,30 +330,14 @@
   
   <entry>
     <title>17年2月份P2P总结</title>
-    <link href="https://tiexo.coding.me/1702-p2p/"/>
-    <id>https://tiexo.coding.me/1702-p2p/</id>
+    <link href="https://tiexo.coding.me/cd8ac47b/"/>
+    <id>https://tiexo.coding.me/cd8ac47b/</id>
     <published>2017-03-01T16:17:12.000Z</published>
-    <updated>2018-10-21T09:36:51.413Z</updated>
+    <updated>2018-10-21T15:15:33.630Z</updated>
     
     <summary type="html">
     
       &lt;p&gt;这个月由于资金、过年、工作等事情影响，基本没操作…&lt;br&gt;
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>尝试使用LastPass来管理密码</title>
-    <link href="https://tiexo.coding.me/lastpass/"/>
-    <id>https://tiexo.coding.me/lastpass/</id>
-    <published>2017-02-06T21:33:12.000Z</published>
-    <updated>2018-10-21T09:36:51.349Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;很久以前就有这种想法，但是一直没有付诸行动，一来觉得没必要二来觉得很麻烦。&lt;br&gt;可是前两天，突然就做了，我也讲不清缘由&lt;/p&gt;
     
     </summary>
     

@@ -1,8 +1,9 @@
 ---
 title: 一键生成新浪短链接（书签版）
+banner: 'https://obbuo9upd.qnssl.com/201604141848.webp'
+abbrlink: 4f6dc809
 date: 2016-04-14 18:37:14
 tags:
-banner: https://obbuo9upd.qnssl.com/201604141848.webp
 ---
 这个问题我已经默默关注好几年了...但是一直没有找到心仪的解决方式
 虽然现在依然不是很满意吧

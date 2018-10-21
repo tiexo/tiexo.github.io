@@ -1,7 +1,8 @@
 ---
-title:  P2P的那些事儿——百家财富
+title: P2P的那些事儿——百家财富
+banner: 'https://obbuo9upd.qnssl.com/78682901.webp'
+abbrlink: '54790e85'
 date: 2016-05-23 19:29:04
-banner: https://obbuo9upd.qnssl.com/78682901.webp
 ---
 我要点名批评 [@百家财富](http://www.baijiacaifu.com/) 
 <!--more-->

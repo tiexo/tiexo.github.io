@@ -1,8 +1,8 @@
-
 ---
 title: 妥协的艺术
+banner: 'https://obbuo9upd.qnssl.com/201611052043.jpg?imageMogr2/format/webp'
+abbrlink: b5dcefd0
 date: 2016-11-05 20:28:48
-banner: https://obbuo9upd.qnssl.com/201611052043.jpg?imageMogr2/format/webp
 ---
 
 本来，我们可选择的就不多。

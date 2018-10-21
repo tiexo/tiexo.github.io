@@ -1,7 +1,8 @@
 ---
 title: 本站重启多说评论支持HTTPS头像&表情
+banner: 'https://obbuo9upd.qnssl.com/201608211734.jpg?imageMogr2/format/webp'
+abbrlink: e171392a
 date: 2016-08-21 17:36:32
-banner: https://obbuo9upd.qnssl.com/201608211734.jpg?imageMogr2/format/webp
 ---
 经过了半个月的“怠惰”终于重新开启评论啦~
 主要是解决了多说头像和表情支持https的问题

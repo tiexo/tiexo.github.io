@@ -1,8 +1,9 @@
 ---
 title: 自定义百度网盘提取密码
+banner: 'https://obbuo9upd.qnssl.com/1603091535.webp'
+abbrlink: dda14519
 date: 2016-03-09 15:28:22
 tags:
-banner: https://obbuo9upd.qnssl.com/1603091535.webp
 ---
 本文所涉及代码转载自[@giuem](https://www.giuem.com/)，仅供个人收集备份
 

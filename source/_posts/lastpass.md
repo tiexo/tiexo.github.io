@@ -1,8 +1,8 @@
 ---
 title: 尝试使用LastPass来管理密码
+banner: 'https://obbuo9upd.qnssl.com/201702062130.jpg?imageMogr2/format/webp'
+abbrlink: f6765288
 date: 2017-02-06 21:33:12
-banner: https://obbuo9upd.qnssl.com/201702062130.jpg?imageMogr2/format/webp
-
 ---
 很久以前就有这种想法，但是一直没有付诸行动，一来觉得没必要二来觉得很麻烦。
 可是前两天，突然就做了，我也讲不清缘由

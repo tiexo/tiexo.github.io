@@ -1,7 +1,8 @@
 ---
 title: 微信接收评论提醒并回复
+banner: 'https://obbuo9upd.qnssl.com/201707141607.jpg?imageMogr2/format/webp'
+abbrlink: 31b640a4
 date: 2017-07-14 16:06:24
-banner:  https://obbuo9upd.qnssl.com/201707141607.jpg?imageMogr2/format/webp
 ---
 
 最近一则网易云跟贴停止服务的公告又引起大家的讨论，这让我有了一些思考。

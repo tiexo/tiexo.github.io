@@ -1,8 +1,9 @@
 ---
 title: 开启京东淘宝双返利模式
+banner: 'https://obbuo9upd.qnssl.com/20160314210653.webp'
+abbrlink: bc5493f7
 date: 2016-03-14 21:02:30
 tags:
-banner: https://obbuo9upd.qnssl.com/20160314210653.webp
 ---
 去年我才学会用淘宝返利，顿时感觉发现了一个新世界。
 包括后来的鹊桥、插件等等，发现了隐藏在卖家身下的阴谋！

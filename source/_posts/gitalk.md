@@ -1,7 +1,8 @@
 ---
 title: 服务体验更棒的Gitalk评论系统
+banner: 'https://obbuo9upd.qnssl.com/201709132209jpg.jpg?imageMogr2/format/webp'
+abbrlink: '8469e667'
 date: 2017-09-13 21:49:31
-banner: https://obbuo9upd.qnssl.com/201709132209jpg.jpg?imageMogr2/format/webp
 ---
 咳咳，本站又更换评论系统啦！
 从之前的gitment改为gitalk，两者原理一致，但在技术支持和界面显示上有了更好的体验，因此推荐给大家！

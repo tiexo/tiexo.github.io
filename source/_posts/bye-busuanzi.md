@@ -1,7 +1,8 @@
 ---
 title: 强迫症选择放弃不蒜子
+banner: 'https://obbuo9upd.qnssl.com/201708221850.jpg?imageMogr2/format/webp'
+abbrlink: 82d74d79
 date: 2017-08-22 18:48:58
-banner: https://obbuo9upd.qnssl.com/201708221850.jpg?imageMogr2/format/webp
 ---
 前文提到过不蒜子统计在本人网络环境下加载非常非常非常慢的问题，最终我还是选择了放弃，转而替换成百度统计。
 

@@ -1,7 +1,8 @@
 ---
 title: Win10的字体渲染日记
+banner: 'https://obbuo9upd.qnssl.com/201607171845.jpg?imageMogr2/format/webp'
+abbrlink: ffb4d337
 date: 2016-07-17 18:38:28
-banner: https://obbuo9upd.qnssl.com/201607171845.jpg?imageMogr2/format/webp
 ---
 
 之前的win7系统一直安装不了hexo，估计是被我玩坏了，加上系统一直提示我更新就满足它吧

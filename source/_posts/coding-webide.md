@@ -1,8 +1,9 @@
 ---
 title: 通过Coding提供的WebIDE来使用Hexo
+banner: 'https://obbuo9upd.qnssl.com/201604151542.webp'
+abbrlink: adfec812
 date: 2016-04-15 14:17:59
 tags:
-banner: https://obbuo9upd.qnssl.com/201604151542.webp
 ---
 Hexo这类静态博客，最不方便的就是跨平台使用
 因为你必须安装npm、git、hexo、nodejs以及源码同步，这些条件一般只有自己的电脑符合

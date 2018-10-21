@@ -1,7 +1,8 @@
 ---
 title: IDE迁移至SourceTree管理Hexo
+banner: 'https://obbuo9upd.qnssl.com/201708092146.jpg?imageMogr2/format/webp'
+abbrlink: 1ee8c4bf
 date: 2017-08-09 21:44:54
-banner: https://obbuo9upd.qnssl.com/201708092146.jpg?imageMogr2/format/webp
 ---
 使用IDE将近一年半，的确给了我很不错的体验，基本上做到了和管理WP一样方便.
 <!--more-->

@@ -1,8 +1,9 @@
 ---
 title: '站点日常更新V6.4.7 '
+banner: 'https://obbuo9upd.qnssl.com/Konachan.com%20-%20218037%20sample.webp'
+abbrlink: 79575ea4
 date: 2016-04-07 16:57:11
 tags:
-banner: https://obbuo9upd.qnssl.com/Konachan.com%20-%20218037%20sample.webp
 ---
 模仿Flyme固件的命名方式
 

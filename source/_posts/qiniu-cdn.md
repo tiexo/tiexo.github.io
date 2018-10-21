@@ -1,7 +1,8 @@
 ---
 title: 站点日常更新V7.1.9
+banner: 'https://obbuo9upd.qnssl.com/201701091627.jpg?imageMogr2/format/webp'
+abbrlink: 589fb653
 date: 2017-01-09 16:24:00
-banner: https://obbuo9upd.qnssl.com/201701091627.jpg?imageMogr2/format/webp
 ---
 
 主要是将部分JS和CSS替换为七牛CDN加速

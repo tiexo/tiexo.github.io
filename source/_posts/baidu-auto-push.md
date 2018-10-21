@@ -1,7 +1,8 @@
 ---
 title: 添加百度自动推送JS代码
+banner: 'https://obbuo9upd.qnssl.com/201604272118.webp'
+abbrlink: bcfcf1f6
 date: 2016-04-27 21:17:30
-banner: https://obbuo9upd.qnssl.com/201604272118.webp
 ---
 感觉网站可以更新和优化的地方不多了...
 最近比较关注的就是SEO优化，想提高百度的索引量和文章收录数

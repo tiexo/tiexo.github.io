@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+    
+    <title>网站恢复二级域名 | 简单可依赖</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="某天突然收到七牛发送的邮件，提醒我系统即将收回测试域名时，我就一直在思考如何处理由此引发的一系列问题，顺便再好好规划下网站以后的定位。今晚，我终于作出了决定并付诸了行动。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="网站恢复二级域名">
+<meta property="og:url" content="https://tiexo.coding.me/5cf6b291/index.html">
+<meta property="og:site_name" content="简单可依赖">
+<meta property="og:description" content="某天突然收到七牛发送的邮件，提醒我系统即将收回测试域名时，我就一直在思考如何处理由此引发的一系列问题，顺便再好好规划下网站以后的定位。今晚，我终于作出了决定并付诸了行动。">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://ws1.sinaimg.cn/large/902eb75fgy1fwg93kcatdj20rr0b40wj.jpg">
+<meta property="og:updated_time" content="2018-10-21T15:19:16.014Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="网站恢复二级域名">
+<meta name="twitter:description" content="某天突然收到七牛发送的邮件，提醒我系统即将收回测试域名时，我就一直在思考如何处理由此引发的一系列问题，顺便再好好规划下网站以后的定位。今晚，我终于作出了决定并付诸了行动。">
+<meta name="twitter:image" content="https://ws1.sinaimg.cn/large/902eb75fgy1fwg93kcatdj20rr0b40wj.jpg">
+    
+	
+    
+
+    
+        <link rel="icon" href="/css/images/favicon.jpg">
+    
+
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/libs/open-sans/styles.css">
+    <link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="/libs/jquery/2.1.3/jquery.min.js"></script>
+    
+    
+        <link rel="stylesheet" href="/libs/fancybox/jquery.fancybox.css">
+    
+    
+    
+    
+
+
+</head>
+</html>
+<body>
+    <div id="container">
+        <header id="header">
+    <div id="header-main" class="header-inner">
+        <div class="outer">
+            <a href="/" id="logo">
+                <i class="logo"></i>
+                <span class="site-title">简单可依赖</span>
+            </a>
+            <nav id="main-nav">
+                
+                    <a class="main-nav-link" href="/.">首页</a>
+                
+                    <a class="main-nav-link" href="/archives">更多文章</a>
+                
+                    <a class="main-nav-link" href="/about">留言</a>
+                
+            </nav>
+            
+                
+                <nav id="sub-nav">
+                    <div class="profile" id="profile-nav">
+                        <a id="profile-anchor" href="javascript:;">
+                            <img class="avatar" src="https://ws1.sinaimg.cn/large/902eb75fgy1fwg2y3231hj20m40m4q5e.jpg">
+                            <i class="fa fa-caret-down"></i>
+                        </a>
+                    </div>
+                </nav>
+            
+            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="搜索">
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="想要查找什么...">
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+            UNTITLED: '(未命名)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+</div>
+        </div>
+    </div>
+    <div id="main-nav-mobile" class="header-sub header-inner">
+        <table class="menu outer">
+            <tr>
+                
+                    <td><a class="main-nav-link" href="/.">首页</a></td>
+                
+                    <td><a class="main-nav-link" href="/archives">更多文章</a></td>
+                
+                    <td><a class="main-nav-link" href="/about">留言</a></td>
+                
+                <td>
+                    
+    <div class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="搜索">
+    </div>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+    <link rel="stylesheet" href="/css/APlayer.min.css">
+    <script src="/js/APlayer.min.js"></script>	
+</header>
+
+        <div class="outer">
+            
+                
+
+<aside id="profile" class="profile-fixed">
+    <div class="inner profile-inner">
+        <div class="base-info profile-block">
+            <img id="avatar" src="https://ws1.sinaimg.cn/large/902eb75fgy1fwg2y3231hj20m40m4q5e.jpg">
+            <h2 id="name">唐门</h2>
+            <h3 id="title"></h3>
+            <span id="location"><i class="fa fa-map-marker"></i>Changsha, China</span>
+            <a id="follow" target="_blank" href="http://weibo.com/940517409/" rel="external nofollow noopener noreferrer">+关注我</a>
+        </div>
+        <div class="article-info profile-block">
+            <div class="article-info-block">
+                84
+                <div>文章</div>
+            </div>
+              <div class="article-info-block">
+           <div> 21075      
+            </div>访客
+            </div>
+        </div>
+        
+    </div>
+</aside>
+
+            
+            <section id="main"><article id="post-网站恢复二级域名" class="article article-type-post" itemscope="" itemprop="blogPost">
+    <div class="article-inner">
+        
+            
+	
+		<img src="https://ws1.sinaimg.cn/large/902eb75fgy1fwg93kcatdj20rr0b40wj.jpg" class="article-banner">
+	
+
+
+
+        
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 class="article-title" itemprop="name">
+            网站恢复二级域名
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/5cf6b291/">
+            <time datetime="2018-10-21T14:27:06.000Z" itemprop="datePublished">2018-10-21</time>
+        </a>
+    </div>
+
+
+                        
+                        
+                    </div>
+                
+            </header>
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <p>某天突然收到七牛发送的邮件，提醒我系统即将收回测试域名时，我就一直在思考如何处理由此引发的一系列问题，顺便再好好规划下网站以后的定位。今晚，我终于作出了决定并付诸了行动。<br><a id="more"></a></p>
+<h2 id="七牛测试域名被回收"><a href="#七牛测试域名被回收" class="headerlink" title="七牛测试域名被回收"></a>七牛测试域名被回收</h2><p>实际上我在七牛云注册过两个测试域名，一个是http另一个是https，而前者早在之前就被回收了，没想到后面这个一直在付费的域名也会被回收。<br><img src="https://ws1.sinaimg.cn/large/902eb75fgy1fwg7yapzeyj20tb12176l.jpg" alt=""><br>根据七牛云的规定，自定义域名必须进行备案，这意味着我将不能再使用七牛云的图床和CDN加速。</p>
+<h3 id="回归二级域名"><a href="#回归二级域名" class="headerlink" title="回归二级域名"></a>回归二级域名</h3><p>在这个时候我意识到，越来越多的平台需要备案域名，自定义域名反而成为了一种负担，这与我创建静态博客的初衷背道而驰，于是我决定回归到二级域名。<br>依然是使用Coding提供的Pages服务，即从：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">www.tiexo.cn ==&gt; tiexo.coding.me</span><br></pre></td></tr></table></figure>
+<h3 id="使用Cloud-Studio管理Hexo"><a href="#使用Cloud-Studio管理Hexo" class="headerlink" title="使用Cloud Studio管理Hexo"></a>使用Cloud Studio管理Hexo</h3><p>最近Coding将自己卖身给了腾讯云，于是我又开始使用Cloud Studio来管理Hexo，其实就是网站之前介绍过的WebIDE。<br>当然，之所以这么做的一个主要原因是，解决多平台管理的繁琐流程，况且每次电脑重装系统后又要重新安装Git、Hexo让我烦不胜烦。<br><img src="https://ws1.sinaimg.cn/large/902eb75fgy1fwg8dm0gvcj21h50obwoy.jpg" alt=""><br>如果它保持不收费的话，我必须推荐给大家。</p>
+<h3 id="解决的问题"><a href="#解决的问题" class="headerlink" title="解决的问题"></a>解决的问题</h3><p>这次修改网站，中间也遇到了不少问题，例如：</p>
+<ul>
+<li><strong>cloud studio推送后网站不更新</strong></li>
+</ul>
+<p>明明在仓库中看到推送成功，源文件也更新了，但网站页面一直没变化。<br>为此我还找coding反馈过，但是并没有解决这个问题。<br>今晚我突然发现，当我使用<code>hexo d</code>推送后，竟然整个hexo目录出现在<code>coding-pages</code>分支，按道理应该<code>git push</code>命令才会如此。<br>最后是手动将delopy和public两个文件夹删除，重新推送就好了…可能是某次同步分支时错乱导致的。</p>
+<ul>
+<li><strong>CDN资源引用地址变更</strong></li>
+</ul>
+<p>之前我都是将图片、JS和CSS文件直接上传到七牛云空间，然后引用外链生效，但七牛域名回收后必须将资源取回来。<br>好在测试域名虽然回收了，但之前上传的图片资源并没有失效，因此只要把CS和JS文件地址解决就行。<br>中间碰到的问题主要是，JS和CSS文件引用的相对路径，最终解决方案是分别扔到主题<code>source/css</code>和<code>/js</code>文件夹中。</p>
+<ul>
+<li><strong>页面布局</strong></li>
+</ul>
+<p>在最开始，我是打算将网站改成单页布局，但实际效果并不满意，无奈自己不懂CSS只能放弃了。<br>目前我心中比较满意的是微博头条文章的布局，可惜没看到类似的主题。</p>
+<ul>
+<li><strong>百度</strong></li>
+</ul>
+<p>包括百度统计和百度站长平台都需要修改配置，其中站长平台的<code>网站改版</code>还没弄好，因为之前直接将自定义域名解绑了，审核没通过，待会儿再试试。</p>
+<h3 id="网站定位"><a href="#网站定位" class="headerlink" title="网站定位"></a>网站定位</h3><p>之前本站都是以分享教程和记录折腾日记为主，但是今年来折腾的少，所以许久都没更新。<br>以后决定把自己的一些评论和总结都搬过来，因为受不了百度贴吧的删帖啦~</p>
+<p>最后，希望自己能加油更新，不忘初心！</p>
+
+        
+        </div>
+    </div>
+  
+    
+    
+        
+<nav id="article-nav">
+    
+    
+        <a href="/81598807/" id="article-nav-older" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">下一篇</strong>
+            <div class="article-nav-title">适配谷歌AMP页面</div>
+        </a>
+    
+</nav>
+
+
+    
+</article>
+
+
+    
+    
+        <section id="comments">
+    <div id="gitalk-container"></div>
+
+</section>
+    
+
+</section>
+            
+        </div>
+        <footer id="footer">
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            	<a rel="external nofollow noopener noreferrer" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img alt="知识共享许可协议" style="border-width:0" src="https://ws1.sinaimg.cn/large/902eb75fgy1fwg0lsz2c0j202g00v742.jpg"></a>
+     <a href="https://pages.coding.me" rel="external nofollow noopener noreferrer" target="_blank"><img style="border-width:0" src="https://ws1.sinaimg.cn/large/902eb75fgy1fwg0mopm4wj202g00sdfm.jpg"></a>
+            	<br>本作品采用<a rel="external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>进行许可。
+            </div>
+  
+    </div>
+ 
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?066fa7a0be494a134c82c9e64f821f86";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+ <script src="/js/Meting.min.js"></script>  
+</footer>
+        
+    
+	<link rel="stylesheet" href="/css/gitalk.css">
+    <script src="/js/gitalk.min.js"></script>
+<script>
+		var gitalk = new Gitalk({
+          clientID:  '3c1cce4e0b2d881a50e9',
+          clientSecret: 'fb8126e4cf49359c69804cac35dae6a8e7683068',
+          repo: 'comments',
+		  id: window.location.pathname,
+          owner: 'tiexo',
+          admin: 'tiexo',
+		  distractionFreeMode: 'true',
+     })
+        gitalk.render('gitalk-container')
+	</script>
+
+
+
+
+    
+        <script src="/libs/fancybox/jquery.fancybox.pack.js"></script>
+    
+
+
+<!-- Custom Scripts -->
+<script src="/js/main.js"></script>
+
+    </div>
+</body>

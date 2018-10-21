@@ -1,7 +1,8 @@
 ---
 title: 百度网盘之殇——Win10安装Linux子系统
+banner: 'https://obbuo9upd.qnssl.com/201705131105.jpg?imageMogr2/format/webp'
+abbrlink: f329b91e
 date: 2017-05-13 11:09:19
-banner:  https://obbuo9upd.qnssl.com/201705131105.jpg?imageMogr2/format/webp
 ---
 
 百度网盘从8秒教育片到限速，一步一步的吞噬着我们的耐心...

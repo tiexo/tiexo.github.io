@@ -1,7 +1,8 @@
 ---
 title: 适配谷歌AMP页面
+banner: 'https://ws1.sinaimg.cn/large/902eb75fgy1fo61c2p5yuj20rs0b440p.jpg'
+abbrlink: '81598807'
 date: 2018-02-06 00:24:33
-banner: https://ws1.sinaimg.cn/large/902eb75fgy1fo61c2p5yuj20rs0b440p.jpg
 ---
 刚刚在新闻APP上面看见了一篇关于AMP的文章，心血来潮开始适配！
 <!--more-->

@@ -1,8 +1,9 @@
 ---
 title: 腾讯云服务器安装AMH面板部署WordPress
+banner: 'https://obbuo9upd.qnssl.com/php7-logo.webp'
+abbrlink: ccf9eb28
 date: 2016-02-28 20:06:58
-tags: 
-banner: https://obbuo9upd.qnssl.com/php7-logo.webp
+tags:
 ---
 前文已经提过关于腾讯云服务器的由来
 

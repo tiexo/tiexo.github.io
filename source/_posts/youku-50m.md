@@ -1,7 +1,8 @@
 ---
 title: 优酷会员宽带加速50M
+banner: 'https://obbuo9upd.qnssl.com/201606280940.jpg?imageMogr2/format/webp'
+abbrlink: 6283b311
 date: 2016-06-28 09:35:58
-banner: https://obbuo9upd.qnssl.com/201606280940.jpg?imageMogr2/format/webp
 ---
 
 本来对这方面的信息都不太关注，偶然在优酷看见了这项会员特权

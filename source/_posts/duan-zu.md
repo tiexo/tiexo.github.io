@@ -1,7 +1,8 @@
 ---
 title: 我的短租体验
+banner: 'https://obbuo9upd.qnssl.com/201609272255.jpg?imageMogr2/format/webp'
+abbrlink: b9cda688
 date: 2016-09-27 22:53:18
-banner: https://obbuo9upd.qnssl.com/201609272255.jpg?imageMogr2/format/webp
 ---
 
 出门在外，衣食住行，最麻烦的自然是住

@@ -1,7 +1,8 @@
 ---
 title: 体验GitHub Issues的评论系统——Gitment
+banner: 'https://obbuo9upd.qnssl.com/201706031515.jpg?imageMogr2/format/webp'
+abbrlink: 860dcef4
 date: 2017-06-03 15:13:32
-banner:  https://obbuo9upd.qnssl.com/201706031515.jpg?imageMogr2/format/webp
 ---
 
 不折腾会死吗？才刚换畅言没多久呢...但是恰巧碰见主题那边提了Pull requests，按耐不住想试试。

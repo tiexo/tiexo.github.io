@@ -1,8 +1,8 @@
 ---
 title: 由一个报错引发的连串报错
+banner: 'https://obbuo9upd.qnssl.com/201707250348.jpg?imageMogr2/format/webp'
+abbrlink: c6fac71e
 date: 2017-07-25 03:52:44
-banner: https://obbuo9upd.qnssl.com/201707250348.jpg?imageMogr2/format/webp
-
 ---
 故事要从上一篇文章说起...
 在解决了bgm的问题后，我按照习惯在IDE提交和推送代码，然后突然报错了。

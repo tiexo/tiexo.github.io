@@ -14,7 +14,7 @@ timezone:
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url:  https://tiexo.coding.me/
 root: /
-permalink: :title/
+permalink: :abbrlink/
 permalink_defaults:
 
 # Directory
@@ -96,7 +96,12 @@ baidu_url_submit:
   host: tiexo.coding.me ## 在百度站长平台中注册的域名
   token: 9NwyY6c4txgORlo6 ## 请注意这是您的秘钥， 所以请不要把博客源代码发布在公众仓库里!
   path: baidu_urls.txt ## 文本文档的地址， 新链接会保存在此文本文档里  
-  
+
+# abbrlink config
+abbrlink:
+  alg: crc32 #support crc16(default) and crc32
+  rep: hex    #support dec(default) and hex
+ 
   
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
