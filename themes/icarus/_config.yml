@@ -10,20 +10,20 @@ customize:
         enabled: true
         width: 40
         height: 40
-        url: https://obbuo9upd.qnssl.com/image/logo.webp
+        url: /css/images/logo.jpg
     profile:
         enabled: true # Whether to show profile bar
-        fixed: true
-        avatar: https://ws1.sinaimg.cn/large/902eb75fgy1fw1wetk8exj203k03kjrg.jpg
+        fixed: ture
+        avatar: https://ws1.sinaimg.cn/large/902eb75fgy1fwg2y3231hj20m40m4q5e.jpg
         gravatar: # Gravatar email address, if you enable Gravatar, your avatar config will be overriden
         author: 唐门
-        author_title: 邮箱:i@tiexo.cn 
+        author_title: 
         location: Changsha, China
         follow: http://weibo.com/940517409/
-    highlight: monokai
+    highlight: github
     sidebar:  # sidebar position, options: left, right
     thumbnail: true # enable posts thumbnail, options: true, false
-    favicon:  https://obbuo9upd.qnssl.com/image/favicon.webp # path to favicon
+    favicon:  /css/images/favicon.jpg # path to favicon
 
 # Widgets
 widgets:
