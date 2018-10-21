@@ -21,9 +21,9 @@
             UNTITLED: '<%= __("insight.untitled") %>',
         },
         ROOT_URL: '<%= config.root %>',
-        CONTENT_URL: '<%- url_for("https://obbuo9upd.qnssl.com/content.json")%>',
+        CONTENT_URL: '<%- url_for("/content.json")%>',
     };
     window.INSIGHT_CONFIG = INSIGHT_CONFIG;
 })(window);
 </script>
-<%- js('https://obbuo9upd.qnssl.com/js/insight.js') %>
+<%- js('/js/insight.js') %>

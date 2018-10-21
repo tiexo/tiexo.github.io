@@ -1,6 +1,6 @@
 <% if (typeof(isHead) !== 'undefined' && isHead) { %>
     <% if (theme.plugins.fancybox) { %>
-        <%- css('https://obbuo9upd.qnssl.com/fancybox/jquery.fancybox.css') %>
+        <%- css('libs/fancybox/jquery.fancybox.css') %>
     <% } %>
     <% if (theme.plugins.google_analytics) { %>
         <%- partial('plugin/google-analytics') %>
@@ -13,6 +13,6 @@
     <% } %>
 <% } else { %>
     <% if (theme.plugins.fancybox) { %>
-        <%- js('https://obbuo9upd.qnssl.com/fancybox/jquery.fancybox.pack.js') %>
+        <%- js('libs/fancybox/jquery.fancybox.pack.js') %>
     <% } %>
 <% } %>

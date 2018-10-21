@@ -3,12 +3,12 @@ layout: "page"
 ---
 
 ### 让我们以热烈的掌声感谢以下赞助商：
-- [Coding](https://coding.net/) ，提供代码托管空间
+- [Coding Pages](https://coding.net/v2/pages//) ，提供代码托管空间
 - [Hexo](https://hexo.io/zh-cn/) ，提供程序源码
 - [icarus](https://github.com/ppoffice/hexo-theme-icarus) ，提供主题美化
-- [七牛云存储](http://www.qiniu.com/) ，提供图片存储空间
+- [新浪微博图床](http://www.weibo.com/) ，提供图片外链
 - [百度统计](https://tongji.baidu.com) ，提供统计功能
-- [腾讯云](https://cloud.tencent.com/)，提供域名注册&续费
+- [腾讯云](https://cloud.tencent.com/)，提供Cloud Studio管理
 - [Json-content](https://github.com/alexbruno/hexo-generator-json-content)，提供本地搜索功能
 - [Dnspod](https://www.dnspod.cn/) ，提供域名解析
 - [Gitalk](https://github.com/gitalk/gitalk)，提供评论支持
@@ -30,7 +30,7 @@ layout: "page"
 - <i class="fa fa-lock" style="color: #00bb00;"></i> [哔哩萌](https://www.bilimoe.com/)—— 是不是选择任何一个方向，都会游向同一个宿命呢？
 - <i class="fa fa-lock" style="color: #00bb00;"></i> [清风小墨](https://windy.ink/)—— 此时相望不相闻，愿逐月华流照君。
 - [弋牧](http://emuia.com/)—— 行多久，方显执着；思多久，方能远见！
-- <i class="fa fa-lock" style="color: #00bb00;"></i> [MoeYi's Blog](https://b.gao4.pw/)—— 无
+- <i class="fa fa-ban" style="color: #FF0000;"></i> <i class="fa fa-lock" style="color: #00bb00;"></i> [MoeYi's Blog](https://b.gao4.pw/)—— 无
 - <i class="fa fa-lock" style="color: #00bb00;"></i> [Zidone](https://blog.zidone.cn/)—— 深自缄默 如云漂泊
 - <i class="fa fa-lock" style="color: #00bb00;"></i> [Jestom](https://blog.jestom.com/)—— 即使被判出局也要讓夢想回家！
 
