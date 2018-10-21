@@ -1,8 +1,9 @@
 ---
 title: 启用新域名www.tiexo.cn
+banner: 'https://obbuo9upd.qnssl.com/3bf33a87e950352a3f3c72275743fbf2b2118b44.webp'
+abbrlink: 41458d25
 date: 2016-02-25 19:30:42
 tags:
-banner: https://obbuo9upd.qnssl.com/3bf33a87e950352a3f3c72275743fbf2b2118b44.webp
 ---
 注册的第一个域名是dospytang.com，第二个是tiebo.net
 这是我注册的第三个，希望可以陪我更久一点。

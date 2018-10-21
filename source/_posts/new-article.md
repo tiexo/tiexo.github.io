@@ -1,8 +1,9 @@
 ---
 title: 我是如何发表一篇文章的
+banner: 'https://obbuo9upd.qnssl.com/20150718222715_h2mRV.webp'
+abbrlink: ef9ceb09
 date: 2016-03-27 22:39:21
-tags: 
-banner: https://obbuo9upd.qnssl.com/20150718222715_h2mRV.webp
+tags:
 ---
 最近有过想写一些东西，开头后却不知道如何接下去
 心里在想的是，这一刻我的心情记录下来有什么意义？

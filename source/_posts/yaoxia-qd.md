@@ -1,8 +1,9 @@
 ---
 title: 直播重建云签到网站
+banner: 'https://obbuo9upd.qnssl.com/201303302118.webp'
+abbrlink: 2d0d67d8
 date: 2016-03-30 21:14:34
-tags: 
-banner: https://obbuo9upd.qnssl.com/201303302118.webp
+tags:
 ---
 今天心痛的发现贴吧竟然漏签了...花了我十几张补签卡
 一怒之下决定换一个云签程序

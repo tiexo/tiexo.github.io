@@ -1,7 +1,9 @@
+---
 title: 风险与收益并存
+banner: 'https://obbuo9upd.qnssl.com/1-130P2110548.webp'
+abbrlink: 32fc090f
 date: 2016-01-21 20:28:20
 tags:
-banner: https://obbuo9upd.qnssl.com/1-130P2110548.webp
 ---
 
 从余额宝到P2P让我切身体会了这个道理...

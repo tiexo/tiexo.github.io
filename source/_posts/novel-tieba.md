@@ -1,7 +1,8 @@
 ---
 title: 为什么我要在百度贴吧看盗版小说？
+banner: 'https://obbuo9upd.qnssl.com/85602152.webp'
+abbrlink: ac5fcf1d
 date: 2016-05-23 23:22:54
-banner: https://obbuo9upd.qnssl.com/85602152.webp
 ---
 今天 [@全民举报处理组](https://tieba.baidu.com/home/main?un=%E5%85%A8%E6%B0%91%E4%B8%BE%E6%8A%A5%E5%A4%84%E7%90%86%E7%BB%84&ie=utf-8&fr=pb&ie=utf-8) 发布了一则公告，宣布将全面展开清查盗版侵权行动，持续大力度对侵权内容进行排查整顿。
 

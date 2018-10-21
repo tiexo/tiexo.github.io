@@ -1,9 +1,9 @@
-
 ---
 title: 网商银行APP体验报告
+banner: 'https://obbuo9upd.qnssl.com/20160420171650.webp'
+abbrlink: ac9d76fb
 date: 2016-04-20 17:19:40
 tags:
-banner: https://obbuo9upd.qnssl.com/20160420171650.webp
 ---
 作为[@网商银行](https://tieba.baidu.com/f?kw=%E7%BD%91%E5%95%86%E9%93%B6%E8%A1%8C&fr=home&fp=0&ie=utf-8) 的吧主，对此款APP一直很关注
 从三月份正式上架到昨日更新大版本，它变得越来越完善，数据和产品也逐渐统一整合

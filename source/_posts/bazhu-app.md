@@ -1,8 +1,9 @@
 ---
 title: 百度贴吧吧主版APP体验
+banner: 'https://obbuo9upd.qnssl.com/201604182140.webp'
+abbrlink: fbfb85eb
 date: 2016-04-18 20:37:41
-tags: 
-banner: https://obbuo9upd.qnssl.com/201604182140.webp
+tags:
 ---
 很早就相传贴吧要推出一款吧主专版APP来支撑商业化进程，今天终于正式露面了。
 那么就让我来体验一下，究竟是个什么鬼。

@@ -1,8 +1,9 @@
 ---
 title: Icarus主题个性化定制
+banner: 'https://obbuo9upd.qnssl.com/Konachan.com%20-%20217370%20sample.webp'
+abbrlink: b2dbb778
 date: 2016-03-20 19:37:19
 tags:
-banner: https://obbuo9upd.qnssl.com/Konachan.com%20-%20217370%20sample.webp
 ---
 icarus——也就是本站所用的主题，作者很多设计都是遵循大众标准，但是对我来说则并非完美。
 因此我自己在一些细微的地方进行修改，此篇文章主要是为了备份。

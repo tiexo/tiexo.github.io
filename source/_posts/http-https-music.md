@@ -1,7 +1,8 @@
 ---
 title: Hexo插入背景音乐的正确姿势
+banner: 'https://obbuo9upd.qnssl.com/20161010232.jpg?imageMogr2/format/webp'
+abbrlink: ea919457
 date: 2016-10-10 23:22:24
-banner: https://obbuo9upd.qnssl.com/20161010232.jpg?imageMogr2/format/webp
 ---
 
 根据百度统计结果，我发现搜索`"hexo插入背景音乐"`的人好多好多...

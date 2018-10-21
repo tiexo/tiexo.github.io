@@ -1,7 +1,8 @@
 ---
 title: 网易云音乐生成本地音乐外链
+banner: 'https://obbuo9upd.qnssl.com/201607302238.jpg?imageMogr2/format/webp'
+abbrlink: e941ac38
 date: 2016-07-30 22:35:15
-banner: https://obbuo9upd.qnssl.com/201607302238.jpg?imageMogr2/format/webp
 ---
 本站的BGM一直是用网易云音乐生成的外链，今天尝试了下播放本地音乐竟然也成功了，必须好评啊
 

@@ -1,9 +1,9 @@
 ---
 title: 东虹桥金融在线逾期事件
+banner: 'https://obbuo9upd.qnssl.com/8c1001e93901213f38858d8853e736d12f2e9534.webp'
+abbrlink: '277639e6'
 date: 2016-04-08 21:52:13
-tags: 
-banner: https://obbuo9upd.qnssl.com/8c1001e93901213f38858d8853e736d12f2e9534.webp
-
+tags:
 ---
 开开心心的过完清明假期后，发现4月3日到期的项目还没回款
 接着我就被卷入了一个巨大的漩涡之中....

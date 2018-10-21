@@ -1,7 +1,8 @@
 ---
 title: QQ聊天群的管理心得
+banner: 'https://obbuo9upd.qnssl.com/201605021357.webp'
+abbrlink: 821953d
 date: 2016-05-02 14:00:47
-banner: https://obbuo9upd.qnssl.com/201605021357.webp
 ---
 
 很遗憾，我在昨天解散了当初下定决心才创建的QQ群，历时半年

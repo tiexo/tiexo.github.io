@@ -1,8 +1,9 @@
+---
 title: 关于系统自带应用和第三方APP的选择和矛盾
+banner: 'https://obbuo9upd.qnssl.com/e4dde71190ef76c67a9160b69d16fdfaae5167e8.webp'
+abbrlink: 193547f2
 date: 2016-02-06 19:19:47
 tags:
-banner: https://obbuo9upd.qnssl.com/e4dde71190ef76c67a9160b69d16fdfaae5167e8.webp
-
 ---
 由于Android的开源特性，绝大多数国产手机厂商都自行研制定制ROM，包括MIUI和Flyme这两个行业的佼佼者。
 

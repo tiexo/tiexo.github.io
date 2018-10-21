@@ -1,7 +1,8 @@
 ---
 title: 等额本金的计算方法
+banner: 'https://obbuo9upd.qnssl.com/201610091819.jpg?imageMogr2/format/webp'
+abbrlink: 3f391ff0
 date: 2016-10-09 18:18:42
-banner: https://obbuo9upd.qnssl.com/201610091819.jpg?imageMogr2/format/webp
 ---
 
 一般在贷款中用到等额本金的方式比较多，可是我最近遇到一个投资项目，还款方式类似等额本金。

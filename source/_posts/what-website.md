@@ -1,7 +1,9 @@
+---
 title: 我究竟想要一个什么样的网站
+banner: 'https://obbuo9upd.qnssl.com/aa64034f78f0f736b840999c0a55b319eac413f4.webp'
+abbrlink: 196f07de
 date: 2016-01-18 16:58:01
 tags:
-banner: https://obbuo9upd.qnssl.com/aa64034f78f0f736b840999c0a55b319eac413f4.webp
 ---
 这是我第三次重新开始在Hexo写文章
 

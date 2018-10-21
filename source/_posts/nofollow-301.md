@@ -1,7 +1,8 @@
 ---
 title: 站点日常更新V6.5.30
+banner: 'https://obbuo9upd.qnssl.com/201605301928.webp'
+abbrlink: b830eca1
 date: 2016-05-30 19:27:19
-banner: https://obbuo9upd.qnssl.com/201605301928.webp
 ---
 链接添加了nofollow属性&域名使用301重定向
 <!--more-->

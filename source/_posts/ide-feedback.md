@@ -1,8 +1,9 @@
 ---
 title: WebIDE使用反馈
+banner: 'https://obbuo9upd.qnssl.com/201604191453.webp'
+abbrlink: '9926e436'
 date: 2016-04-19 14:13:16
 tags:
-banner: https://obbuo9upd.qnssl.com/201604191453.webp
 ---
 经过几天的使用，我对WebIDE有了初步的认识
 今天进行一些反馈和总结，同时也改变了我的写作方式

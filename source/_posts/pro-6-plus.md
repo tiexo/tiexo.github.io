@@ -1,7 +1,8 @@
 ---
 title: 我的P6P时尚时尚最时尚
+banner: 'https://obbuo9upd.qnssl.com/20161231153133.png?imageMogr2/format/webp'
+abbrlink: bcf1629e
 date: 2016-12-31 15:28:17
-banner: https://obbuo9upd.qnssl.com/20161231153133.png?imageMogr2/format/webp
 ---
 
 十月份就有换手机的念头，一直熬到现在终于搞定了。

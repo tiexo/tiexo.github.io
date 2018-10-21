@@ -1,7 +1,8 @@
 ---
 title: URL网址统一修正
+banner: 'https://obbuo9upd.qnssl.com/201608241630.jpg?imageMogr2/format/webp'
+abbrlink: f0b7b721
 date: 2016-08-24 16:28:42
-banner: https://obbuo9upd.qnssl.com/201608241630.jpg?imageMogr2/format/webp
 ---
 前文提到过301重定向的问题，后来又加上强制https的设置，导致博客的网址比较混乱
 

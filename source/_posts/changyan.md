@@ -1,7 +1,8 @@
 ---
 title: 本站启用畅言评论系统
+banner: 'https://obbuo9upd.qnssl.com/201705032250.jpg?imageMogr2/format/webp'
+abbrlink: a9600728
 date: 2017-05-03 22:50:21
-banner:  https://obbuo9upd.qnssl.com/201705032250.jpg?imageMogr2/format/webp
 ---
 
 多说评论停止运营了，心里还是挺遗憾的，毕竟为它做了不少工作，如今全都没用啦。

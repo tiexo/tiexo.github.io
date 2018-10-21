@@ -1,8 +1,9 @@
+---
 title: 你好，Git & Hexo
+banner: 'https://obbuo9upd.qnssl.com/20160223212542.webp'
+abbrlink: d91c8fe7
 date: 2016-01-17 22:11:02
-tags:  
-banner: https://obbuo9upd.qnssl.com/20160223212542.webp 
-
+tags:
 ---
 博客本身是一个消遣的平台，我们要付出时间和精力，或许我不再愿意付出金钱。
 

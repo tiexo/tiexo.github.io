@@ -1,7 +1,8 @@
 ---
 title: Hexo音乐播放完美支持https和多平台
+banner: 'https://obbuo9upd.qnssl.com/201707242203.jpg?imageMogr2/format/webp'
+abbrlink: 2be1fd9
 date: 2017-07-24 22:01:24
-banner: https://obbuo9upd.qnssl.com/201707242203.jpg?imageMogr2/format/webp
 ---
 本站的BGM终于满血复活啦，感谢 [@新垣结衣](https://www.bilimoe.com/) 的广播和 [@萨摩公园](https://i-meto.com/) 的技术支持。
 

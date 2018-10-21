@@ -1,7 +1,8 @@
 ---
 title: 图片压缩：使用WebP格式
+banner: 'https://obbuo9upd.qnssl.com/201605241917.webp'
+abbrlink: 7171ab32
 date: 2016-05-24 19:16:29
-banner: https://obbuo9upd.qnssl.com/201605241917.webp
 ---
 
 虽然coding+七牛cdn的速度不错，但是偶尔也会出现头图加载不出来的现象

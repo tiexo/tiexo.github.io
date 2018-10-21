@@ -1,7 +1,8 @@
 ---
 title: 站点日常更新V7.6.5
+banner: 'https://obbuo9upd.qnssl.com/201706051630.jpg?imageMogr2/format/webp'
+abbrlink: 5466ecfd
 date: 2017-06-05 16:27:57
-banner:  https://obbuo9upd.qnssl.com/201706051630.jpg?imageMogr2/format/webp
 ---
 
 本次更新日志如下：

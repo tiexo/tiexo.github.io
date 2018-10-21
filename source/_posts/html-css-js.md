@@ -1,7 +1,8 @@
 ---
 title: Hexo优化：压缩Html、CSS、JS文件
+banner: 'https://obbuo9upd.qnssl.com/201605292233.webp'
+abbrlink: 37be2bef
 date: 2016-05-29 22:30:06
-banner: https://obbuo9upd.qnssl.com/201605292233.webp
 ---
 前几天曾使用`hexo-all-minifier`插件，结果却报错了
 今晚一狠心就逐个添加测试，应该算是成功了吧

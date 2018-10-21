@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head><meta name="generator" content="Hexo 3.8.0">
+    <meta charset="utf-8">
+    
+    <title>体验GitHub Issues的评论系统——Gitment | 简单可依赖</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="不折腾会死吗？才刚换畅言没多久呢…但是恰巧碰见主题那边提了Pull requests，按耐不住想试试。虽然评论门槛高了很多，目前也不够完善，但是反正也没人评论啊。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="体验GitHub Issues的评论系统——Gitment">
+<meta property="og:url" content="https://tiexo.coding.me/860dcef4/index.html">
+<meta property="og:site_name" content="简单可依赖">
+<meta property="og:description" content="不折腾会死吗？才刚换畅言没多久呢…但是恰巧碰见主题那边提了Pull requests，按耐不住想试试。虽然评论门槛高了很多，目前也不够完善，但是反正也没人评论啊。">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="https://obbuo9upd.qnssl.com/201706031515.jpg?imageMogr2/format/webp">
+<meta property="og:updated_time" content="2018-10-21T15:15:33.654Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="体验GitHub Issues的评论系统——Gitment">
+<meta name="twitter:description" content="不折腾会死吗？才刚换畅言没多久呢…但是恰巧碰见主题那边提了Pull requests，按耐不住想试试。虽然评论门槛高了很多，目前也不够完善，但是反正也没人评论啊。">
+<meta name="twitter:image" content="https://obbuo9upd.qnssl.com/201706031515.jpg?imageMogr2/format/webp">
+    
+	
+    
+
+    
+        <link rel="icon" href="/css/images/favicon.jpg">
+    
+
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/libs/open-sans/styles.css">
+    <link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="/libs/jquery/2.1.3/jquery.min.js"></script>
+    
+    
+        <link rel="stylesheet" href="/libs/fancybox/jquery.fancybox.css">
+    
+    
+    
+    
+
+
+</head>
+</html>
+<body>
+    <div id="container">
+        <header id="header">
+    <div id="header-main" class="header-inner">
+        <div class="outer">
+            <a href="/" id="logo">
+                <i class="logo"></i>
+                <span class="site-title">简单可依赖</span>
+            </a>
+            <nav id="main-nav">
+                
+                    <a class="main-nav-link" href="/.">首页</a>
+                
+                    <a class="main-nav-link" href="/archives">更多文章</a>
+                
+                    <a class="main-nav-link" href="/about">留言</a>
+                
+            </nav>
+            
+                
+                <nav id="sub-nav">
+                    <div class="profile" id="profile-nav">
+                        <a id="profile-anchor" href="javascript:;">
+                            <img class="avatar" src="https://ws1.sinaimg.cn/large/902eb75fgy1fwg2y3231hj20m40m4q5e.jpg">
+                            <i class="fa fa-caret-down"></i>
+                        </a>
+                    </div>
+                </nav>
+            
+            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="搜索">
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="想要查找什么...">
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+            UNTITLED: '(未命名)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+<script src="/js/insight.js"></script>
+
+</div>
+        </div>
+    </div>
+    <div id="main-nav-mobile" class="header-sub header-inner">
+        <table class="menu outer">
+            <tr>
+                
+                    <td><a class="main-nav-link" href="/.">首页</a></td>
+                
+                    <td><a class="main-nav-link" href="/archives">更多文章</a></td>
+                
+                    <td><a class="main-nav-link" href="/about">留言</a></td>
+                
+                <td>
+                    
+    <div class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="搜索">
+    </div>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+    <link rel="stylesheet" href="/css/APlayer.min.css">
+    <script src="/js/APlayer.min.js"></script>	
+</header>
+
+        <div class="outer">
+            
+                
+
+<aside id="profile" class="profile-fixed">
+    <div class="inner profile-inner">
+        <div class="base-info profile-block">
+            <img id="avatar" src="https://ws1.sinaimg.cn/large/902eb75fgy1fwg2y3231hj20m40m4q5e.jpg">
+            <h2 id="name">唐门</h2>
+            <h3 id="title"></h3>
+            <span id="location"><i class="fa fa-map-marker"></i>Changsha, China</span>
+            <a id="follow" target="_blank" href="http://weibo.com/940517409/" rel="external nofollow noopener noreferrer">+关注我</a>
+        </div>
+        <div class="article-info profile-block">
+            <div class="article-info-block">
+                84
+                <div>文章</div>
+            </div>
+              <div class="article-info-block">
+           <div> 21075      
+            </div>访客
+            </div>
+        </div>
+        
+    </div>
+</aside>
+
+            
+            <section id="main"><article id="post-gitment" class="article article-type-post" itemscope="" itemprop="blogPost">
+    <div class="article-inner">
+        
+            
+	
+		<img src="https://obbuo9upd.qnssl.com/201706031515.jpg?imageMogr2/format/webp" class="article-banner">
+	
+
+
+
+        
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 class="article-title" itemprop="name">
+            体验GitHub Issues的评论系统——Gitment
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/860dcef4/">
+            <time datetime="2017-06-03T15:13:32.000Z" itemprop="datePublished">2017-06-03</time>
+        </a>
+    </div>
+
+
+                        
+                        
+                    </div>
+                
+            </header>
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            
+            <p>不折腾会死吗？才刚换畅言没多久呢…但是恰巧碰见主题那边提了Pull requests，按耐不住想试试。<br>虽然评论门槛高了很多，目前也不够完善，但是反正也没人评论啊。<br><a id="more"></a></p>
+<h1 id="项目"><a href="#项目" class="headerlink" title="项目"></a>项目</h1><p><a href="https://github.com/imsun/gitment" rel="external nofollow noopener noreferrer" target="_blank">Gitment</a> 是作者实现的一款基于 GitHub Issues 的评论系统。支持在前端直接引入，不需要任何后端代码。可以在页面进行登录、查看、评论、点赞等操作，同时有完整的 Markdown / GFM 和代码高亮支持。尤为适合各种基于 GitHub Pages 的静态博客或项目页面。</p>
+<p>这么棒的项目我竟然今天才知道，总之先试试吧。</p>
+<h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><p>首先注册OAuth Application，记得以前在WP实现QQ和微博第三方登陆的时候也有这样的接口API，应该差不多类似吧。</p>
+<p><img src="https://obbuo9upd.qnssl.com/201706021854.PNG?imageMogr2/format/webp" alt=""></p>
+<p> 其中callback URL（一般是评论页面对应的域名，如 <a href="https://www.tiexo.cn" rel="external nofollow noopener noreferrer" target="_blank">https://www.tiexo.cn</a>）</p>
+<blockquote>
+<p>PS：repo应该填写仓库名称，而非仓库地址</p>
+</blockquote>
+<p>由于我这边主题已经适配了…所以直接在配置文件里面填写相关参数即可，如果你的主题没有适配，则需要去项目那边按照步骤安装</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">gitment:</span><br><span class="line">       owner: #your github ID</span><br><span class="line">       repo: #the repo to store comments</span><br><span class="line">	#Register an OAuth application, and you will get a client ID and a client secret.</span><br><span class="line">       client_id: #your client ID</span><br><span class="line">       client_secret: #your client</span><br></pre></td></tr></table></figure>
+<p>然后访问评论页面，也就是任意一篇文章，登录创建github仓库的账号</p>
+<p><img src="https://obbuo9upd.qnssl.com/201706031509.PNG?imageMogr2/format/webp" alt=""></p>
+<p>授权完成后会看到一个初始化的按钮</p>
+<p><img src="https://obbuo9upd.qnssl.com/201706031456.PNG?imageMogr2/format/webp" alt=""></p>
+<p>然后就可以随意评论啦，还支持MD语法喔</p>
+<p><img src="https://obbuo9upd.qnssl.com/201706031500.PNG?imageMogr2/format/webp" alt=""></p>
+<p>其实原来就是在git仓库那边，会自动创建一条issue，这个想法确实挺棒的</p>
+<p><img src="https://obbuo9upd.qnssl.com/201706031503.PNG?imageMogr2/format/webp" alt=""></p>
+<h1 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h1><p>目前这个项目还不完善，属于强行可用的状态<br>譬如：</p>
+<ul>
+<li>只支持github账户登录，对于普通网民来说，恐怕不知道这个同性交友网站吧。这就注定了评论的门槛较高。</li>
+<li>每篇文章都需要单独初始化，也就是创建一条issue，对于文章数很多的人来说也比较麻烦</li>
+<li>每个不同的网站登录都需要授权</li>
+</ul>
+<p>或许还有些其他我没发现的问题，当然作者承诺下个版本会解决一些，我也期待着。</p>
+<h1 id="为什么"><a href="#为什么" class="headerlink" title="为什么"></a>为什么</h1><p>为什么要换掉畅言？<br>一个原因是畅言加载的JS太多了，几十个….虽然速度还行，看着不太爽<br>另外一个原因自然是gitment逼格更高，这才是我们永恒的追求。</p>
+
+        
+        </div>
+    </div>
+  
+    
+    
+        
+<nav id="article-nav">
+    
+        <a href="/30733c0e/" id="article-nav-newer" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">上一篇</strong>
+            <div class="article-nav-title">
+                
+                    17年5月份P2P总结
+                
+            </div>
+        </a>
+    
+    
+        <a href="/f329b91e/" id="article-nav-older" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">下一篇</strong>
+            <div class="article-nav-title">百度网盘之殇——Win10安装Linux子系统</div>
+        </a>
+    
+</nav>
+
+
+    
+</article>
+
+
+    
+    
+        <section id="comments">
+    <div id="gitalk-container"></div>
+
+</section>
+    
+
+</section>
+            
+        </div>
+        <footer id="footer">
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            	<a rel="external nofollow noopener noreferrer" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img alt="知识共享许可协议" style="border-width:0" src="https://ws1.sinaimg.cn/large/902eb75fgy1fwg0lsz2c0j202g00v742.jpg"></a>
+     <a href="https://pages.coding.me" rel="external nofollow noopener noreferrer" target="_blank"><img style="border-width:0" src="https://ws1.sinaimg.cn/large/902eb75fgy1fwg0mopm4wj202g00sdfm.jpg"></a>
+            	<br>本作品采用<a rel="external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank">知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>进行许可。
+            </div>
+  
+    </div>
+ 
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?066fa7a0be494a134c82c9e64f821f86";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+ <script src="/js/Meting.min.js"></script>  
+</footer>
+        
+    
+	<link rel="stylesheet" href="/css/gitalk.css">
+    <script src="/js/gitalk.min.js"></script>
+<script>
+		var gitalk = new Gitalk({
+          clientID:  '3c1cce4e0b2d881a50e9',
+          clientSecret: 'fb8126e4cf49359c69804cac35dae6a8e7683068',
+          repo: 'comments',
+		  id: window.location.pathname,
+          owner: 'tiexo',
+          admin: 'tiexo',
+		  distractionFreeMode: 'true',
+     })
+        gitalk.render('gitalk-container')
+	</script>
+
+
+
+
+    
+        <script src="/libs/fancybox/jquery.fancybox.pack.js"></script>
+    
+
+
+<!-- Custom Scripts -->
+<script src="/js/main.js"></script>
+
+    </div>
+</body>
