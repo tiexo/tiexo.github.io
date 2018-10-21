@@ -103,6 +103,6 @@ baidu_url_submit:
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   - type: git
-    repo: git@git.coding.net:tiexo/tiexo.git
+    repo: git@git.dev.tencent.com:tiexo/tiexo.git
     branch: coding-pages
   - type: baidu_url_submitter
