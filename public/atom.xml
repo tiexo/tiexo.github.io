@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://tiexo.coding.me/"/>
-  <updated>2018-10-21T15:19:16.014Z</updated>
+  <updated>2018-10-22T13:56:55.599Z</updated>
   <id>https://tiexo.coding.me/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>降低评论门槛：使用Valine评论系统</title>
+    <link href="https://tiexo.coding.me/b23226a5/"/>
+    <id>https://tiexo.coding.me/b23226a5/</id>
+    <published>2018-10-22T13:49:52.000Z</published>
+    <updated>2018-10-22T13:56:55.599Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;这次从Gitalk更换至Valine评论，主要出于两方面的因素考虑：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;降低评论门槛，后者甚至不需要填写任何信息即可评论；&lt;/li&gt;
+&lt;li&gt;文章链接重新生成，导致之前的Gitalk评论数据丢失。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;从昨晚开始折腾到现在，总算把基本功能设置好啦~&lt;br&gt;
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>网站恢复二级域名</title>
@@ -322,22 +343,6 @@
     <summary type="html">
     
       &lt;p&gt;为什么没有3月份总结？因为3月负收入(╥╯^╰╥)&lt;/p&gt;
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>17年2月份P2P总结</title>
-    <link href="https://tiexo.coding.me/cd8ac47b/"/>
-    <id>https://tiexo.coding.me/cd8ac47b/</id>
-    <published>2017-03-01T16:17:12.000Z</published>
-    <updated>2018-10-21T15:15:33.630Z</updated>
-    
-    <summary type="html">
-    
-      &lt;p&gt;这个月由于资金、过年、工作等事情影响，基本没操作…&lt;br&gt;
     
     </summary>
     

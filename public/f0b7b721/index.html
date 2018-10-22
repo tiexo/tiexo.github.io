@@ -151,7 +151,7 @@
         </div>
         <div class="article-info profile-block">
             <div class="article-info-block">
-                84
+                85
                 <div>文章</div>
             </div>
               <div class="article-info-block">
@@ -283,8 +283,7 @@
     
     
         <section id="comments">
-    <div id="gitalk-container"></div>
-
+    <div id="valine-thread"></div>
 </section>
     
 
@@ -314,21 +313,18 @@ var _hmt = _hmt || [];
 </footer>
         
     
-	<link rel="stylesheet" href="/css/gitalk.css">
-    <script src="/js/gitalk.min.js"></script>
-<script>
-		var gitalk = new Gitalk({
-          clientID:  '3c1cce4e0b2d881a50e9',
-          clientSecret: 'fb8126e4cf49359c69804cac35dae6a8e7683068',
-          repo: 'comments',
-		  id: window.location.pathname,
-          owner: 'tiexo',
-          admin: 'tiexo',
-		  distractionFreeMode: 'true',
-     })
-        gitalk.render('gitalk-container')
-	</script>
-
+    <script src="/js/av-min.js"></script>
+    <script src="/js/Valine.min.js"></script>
+    <script>
+        new Valine({
+            el: '#valine-thread' ,
+            notify:false,
+            verify:false,
+            app_id: 'abgFVBqdMOLN6JUSYDzs65l7-gzGzoHsz',
+            app_key: 'ABNl0bM58BsayDkGQeombaXF',
+            placeholder: '(゜-゜)つロ 干杯~'
+        });
+    </script>
 
 
 
