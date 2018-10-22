@@ -35,15 +35,14 @@ search:
 
 # Comment
 comment:
-    disqus:  # enter disqus shortname here
-    gitalk: 
-       clientID: '3c1cce4e0b2d881a50e9'
-       clientSecret: 'fb8126e4cf49359c69804cac35dae6a8e7683068'
-       repo: 'comments'
-       owner: 'tiexo'
-       admin: 'tiexo'
-       distractionFreeMode: 'true'
-       
+    valine: # Valine Comment System https://github.com/xCss/Valine
+        on: true # enter true to enable
+        appId: abgFVBqdMOLN6JUSYDzs65l7-gzGzoHsz 
+        appKey: ABNl0bM58BsayDkGQeombaXF 
+        notify: false # enter true to enable <Mail notifier> 
+        verify: false # enter true to enable <Validation code>
+        placeholder:  (゜-゜)つロ 干杯~
+        
 # Share
 share: false  # options: jiathis, bdshare, addtoany, default
 
