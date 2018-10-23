@@ -11,7 +11,8 @@ layout: "page"
 - [腾讯云](https://cloud.tencent.com/)，提供Cloud Studio管理
 - [Json-content](https://github.com/alexbruno/hexo-generator-json-content)，提供本地搜索功能
 - [Dnspod](https://www.dnspod.cn/) ，提供域名解析
-- [Gitalk](https://github.com/gitalk/gitalk)，提供评论支持
+- [Valine](https://valine.js.org)，提供评论支持
+- [Valine-Admin](https://github.com/panjunwen/Valine-Admin)，负责评论管理和邮件通知
 - [Aplayer](https://github.com/DIYgod/APlayer)，提供音乐播放功能
 - [MetingJS](https://github.com/metowolf/MetingJS)，提供BGM API接口
 
