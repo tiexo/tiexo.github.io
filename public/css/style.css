@@ -118,7 +118,7 @@ body,
 body {
   color: #565a5f;
   background: #f5f8f9;
-  font: 16px "open sans", "Helvetica Neue", "Microsoft Yahei", Helvetica, Arial, sans-serif;
+  font: 16px sans-serif;
   -webkit-text-size-adjust: 100%;
 }
 a {
@@ -134,7 +134,7 @@ code {
   padding: 3px 5px;
   font-size: 0.8em;
   border-radius: 2px;
-  font-family: "Source Code Pro", Consolas, Monaco, Menlo, Consolas, monospace;
+  font-family: monospace;
   background-color: #f8f8f8;
 }
 .outer {
@@ -563,7 +563,7 @@ code {
   line-height: 1.7em;
   outline: none !important;
   background: none !important;
-  font: 16px "open sans", "Helvetica Neue", "Microsoft Yahei", Helvetica, Arial, sans-serif;
+  font: 16px sans-serif;
   border: 1px solid #eceff2 !important;
 }
 .search-form-input:focus,
@@ -988,7 +988,7 @@ a.article-title:hover {
 }
 .article-entry blockquote {
   position: relative;
-  font-family: Georgia, "Times New Roman", "Microsoft Yahei", serif;
+  font-family: serif;
   font-size: 1.1em;
   margin: 0 -20px;
   padding: 10px 20px 10px 54px;
@@ -1008,7 +1008,7 @@ a.article-title:hover {
 .article-entry blockquote footer {
   font-size: 16px;
   margin: 1.7em 0;
-  font-family: "open sans", "Helvetica Neue", "Microsoft Yahei", Helvetica, Arial, sans-serif;
+  font-family: sans-serif;
 }
 .article-entry blockquote footer cite:before {
   content: "—";
@@ -1205,7 +1205,7 @@ a.article-title:hover {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  font: 14px "open sans", "Helvetica Neue", "Microsoft Yahei", Helvetica, Arial, sans-serif;
+  font: 14px sans-serif;
   padding: 0 10px;
   color: #565a5f;
   outline: none;
@@ -2111,7 +2111,7 @@ ol.toc {
   overflow-x: auto;
   padding: 15px 20px;
   font-size: 16px;
-  font-family: "Source Code Pro", Consolas, Monaco, Menlo, Consolas, monospace;
+  font-family: monospace;
   line-height: 27.2px;
 }
 .highlight table {
