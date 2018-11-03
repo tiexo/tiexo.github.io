@@ -1,9 +1,8 @@
 ---
 title: 降低评论门槛：使用Valine评论系统
-thumbnail: https://ws1.sinaimg.cn/large/902eb75fgy1fwhcgbza7cj20rs0b4jtq.jpg
+thumbnail: https://i.loli.net/2018/11/03/5bdd8c9e47fe9.jpg
 abbrlink: b23226a5
 date: 2018-10-22 13:49:52
-toc: true
 ---
 这次从Gitalk更换至Valine评论，主要出于两方面的因素考虑：
 - 降低评论门槛，后者甚至不需要填写任何信息即可评论；

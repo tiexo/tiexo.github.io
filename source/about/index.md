@@ -7,7 +7,8 @@ layout: "page"
 - [Coding Pages](https://coding.net/v2/pages//) ，提供代码托管空间
 - [Hexo](https://hexo.io/zh-cn/) ，提供程序源码
 - [Icarus](https://github.com/ppoffice/hexo-theme-icarus) ，提供主题美化
-- [新浪微博图床](http://www.weibo.com/) ，生成图片外链
+- [新浪微博图床](http://www.weibo.com/) ，生成文章图片外链
+- [SM](https://sm.ms)，生成封面图片外链
 - [百度统计](https://tongji.baidu.com) ，负责统计功能
 - [腾讯云开发者平台](https://cloud.tencent.com/)，提供Cloud Studio管理
 - [Json-content](https://github.com/alexbruno/hexo-generator-json-content)，生成本地搜索数据
