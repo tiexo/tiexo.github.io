@@ -1,66 +1,106 @@
-# Menus
-menu:
-  首页: .
-  更多文章: archives
-  留言: about
+# Version of the Icarus theme that is currently used
+version: 2.0.0
+# Path or URL to the website's icon
+favicon: /images/favicon.svg
+# Path or URL to RSS atom.xml
+rss: 
+# Path or URL to the website's logo to be shown on the left of the navigation bar or footer
+logo: /images/logo.svg
 
-# Customize
-customize:
-    logo:
-        enabled: true
-        width: 40
-        height: 40
-        url: /css/images/logo.jpg
-    profile:
-        enabled: true # Whether to show profile bar
-        fixed: ture
-        avatar: https://ws1.sinaimg.cn/large/902eb75fgy1fwg2y3231hj20m40m4q5e.jpg
-        gravatar: # Gravatar email address, if you enable Gravatar, your avatar config will be overriden
-        author: 唐门
-        author_title: 
-        location: Changsha, China
-        follow: http://weibo.com/940517409/
-    highlight: github
-    sidebar:  # sidebar position, options: left, right
-    thumbnail: true # enable posts thumbnail, options: true, false
-    favicon:  /css/images/favicon.jpg # path to favicon
-
-# Widgets
-widgets:
-    - 
-    
-# Search
-search:
-    insight: true  # you need to install `hexo-generator-json-content` before using Insight Search
-
-# Comment
-comment:
-    valine: 
-        el: true # enter true to enable
-        app_id: abgFVBqdMOLN6JUSYDzs65l7-gzGzoHsz 
-        app_key: ABNl0bM58BsayDkGQeombaXF 
-        notify: false # enter true to enable <Mail notifier> 
-        verify: false # enter true to enable <Validation code>
-        placeholder:  (゜-゜)つロ 干杯~
-        
-# Share
-share: false  # options: jiathis, bdshare, addtoany, default
-
-rss: /atom.xml
-
-# Plugins
-plugins:
-    fancybox: true # options: true, false
-    google_analytics: # enter the tracking ID for your Google Analytics
-    google_site_verification: # enter Google site verification code
-    baidu_analytics:  # enter Baidu Analytics hash key
-
-# Miscellaneous
-miscellaneous:
-    open_graph: # see http://ogp.me
-        fb_app_id:
-        fb_admins:
-        twitter_id:
-        google_plus:
+# Open Graph metadata (https://hexo.io/docs/helpers.html#open-graph)
+open_graph:
+    # Facebook App ID
+    fb_app_id: 
+    # Facebook Admin ID
+    fb_admins: 
+    # Twitter ID
+    twitter_id: 
+    # Twitter site
+    twitter_site: 
+    # Google+ profile link
+    google_plus: 
+# Navigation bar link settings
+navbar:
+    # Navigation bar menu links
+    menu:
+        首页: /
+        更多文章: /archives
+        留言: /about
+    # Navigation bar links to be shown on the right
     links:
-        - 
+        关注我:
+            icon: fab fa-weibo
+            url: 'https://weibo.com/940517409'
+# Footer section link settings
+footer:
+    # Links to be shown on the right of the footer section
+    links:
+        Creative Commons:
+            icon: fab fa-creative-commons
+            url: 'https://creativecommons.org/'
+        Attribution 4.0 International:
+            icon: fab fa-creative-commons-by
+            url: 'https://creativecommons.org/licenses/by/4.0/'
+        
+# Article display settings
+article:
+    # Code highlight theme (https://github.com/highlightjs/highlight.js/tree/master/src/styles)
+    highlight: github
+    # Whether to show article thumbnail images
+    thumbnail: true
+    # Whether to show estimate article reading time
+    readtime: true
+# Search plugin settings (http://ppoffice.github.io/hexo-theme-icarus/categories/Configuration/Search-Plugins)
+search:
+    # Name of the search plugin
+    type: insight
+# Comment plugin settings (http://ppoffice.github.io/hexo-theme-icarus/categories/Configuration/Comment-Plugins)
+comment:
+    type: valine
+    app_id: abgFVBqdMOLN6JUSYDzs65l7-gzGzoHsz      
+    app_key: ABNl0bM58BsayDkGQeombaXF     
+    notify: false           
+    verify: false           
+    placeholder: 友情提醒：你甚至不需要填写昵称、邮箱、网址就能匿名评论！（邮箱可接收回复提醒）  
+
+
+# Share plugin settings (http://ppoffice.github.io/hexo-theme-icarus/categories/Configuration/Share-Plugins)
+share:
+    # Share plugin name
+    type: 
+# Sidebar widget settings (http://ppoffice.github.io/hexo-theme-icarus/categories/Widgets/)
+widgets:
+       
+
+# Other plugin settings
+plugins:
+    # Enable the lightGallery and Justified Gallery plugins (http://ppoffice.github.io/hexo-theme-icarus/2016/07/08/plugin/Gallery/)
+    gallery: true
+    # Enable the Outdated Browser plugin (http://outdatedbrowser.com/)
+    outdated-browser: false
+    # Enable page animations (http://animejs.com/)
+    animejs: false
+    # Enable the MathJax plugin (http://ppoffice.github.io/hexo-theme-icarus/2018/01/01/plugin/MathJax/)
+    mathjax: false
+    # Show the back to top button on mobile devices
+    back-to-top: true
+    # Google Analytics plugin settings (http://ppoffice.github.io/hexo-theme-icarus/2018/01/01/plugin/Analytics/#Google-Analytics)
+    google-analytics:
+        # Google Analytics tracking id
+        tracking_id: 
+    # Baidu Analytics plugin settings (http://ppoffice.github.io/hexo-theme-icarus/2018/01/01/plugin/Analytics/#Baidu-Analytics)
+    baidu-analytics:
+        # Baidu Analytics tracking id
+        tracking_id: 066fa7a0be494a134c82c9e64f821f86
+    # Hotjar user feedback plugin (http://ppoffice.github.io/hexo-theme-icarus/2018/01/01/plugin/Analytics/#Hotjar)
+    hotjar:
+        # Hotjar site id
+        site_id: 
+# CDN provider settings
+providers:
+    # Name or URL of the JavaScript and/or stylesheet CDN provider
+    cdn: jsdelivr
+    # Name or URL of the webfont CDN provider
+    fontcdn: google
+    # Name or URL of the webfont Icon CDN provider
+    iconcdn: fontawesome
