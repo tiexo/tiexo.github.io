@@ -3,9 +3,13 @@ Allow: /
 Allow: /archives/
 Allow: /about/
 
-Disallow: /libs/
+Disallow: /categories/
+Disallow: /tags/
 Disallow: /js/
 Disallow: /css/
 Disallow: /content.json
+Disallow: /images/
+Disallow: /404.html
+Disallow: /baidu_urls.txt/
 
 Sitemap: https://www.tiexo.cn/sitemap.xml
