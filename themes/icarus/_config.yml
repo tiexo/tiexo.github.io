@@ -35,10 +35,10 @@ search:
 
 # Comment
 comment:
-    valine: # Valine Comment System https://github.com/xCss/Valine
-        on: true # enter true to enable
-        appId: abgFVBqdMOLN6JUSYDzs65l7-gzGzoHsz 
-        appKey: ABNl0bM58BsayDkGQeombaXF 
+    valine: 
+        el: true # enter true to enable
+        app_id: abgFVBqdMOLN6JUSYDzs65l7-gzGzoHsz 
+        app_key: ABNl0bM58BsayDkGQeombaXF 
         notify: false # enter true to enable <Mail notifier> 
         verify: false # enter true to enable <Validation code>
         placeholder:  (゜-゜)つロ 干杯~
