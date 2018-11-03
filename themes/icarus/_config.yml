@@ -99,7 +99,7 @@ plugins:
 # CDN provider settings
 providers:
     # Name or URL of the JavaScript and/or stylesheet CDN provider
-    cdn: jsdelivr
+    cdn: cdnjs
     # Name or URL of the webfont CDN provider
     fontcdn: google
     # Name or URL of the webfont Icon CDN provider
