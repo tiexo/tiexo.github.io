@@ -6,6 +6,7 @@ favicon: /images/favicon.svg
 rss: 
 # Path or URL to the website's logo to be shown on the left of the navigation bar or footer
 logo: /images/logo.svg
+title: 简单可依赖
 
 # Open Graph metadata (https://hexo.io/docs/helpers.html#open-graph)
 open_graph:
