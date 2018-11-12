@@ -26,7 +26,6 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
 <link rel="stylesheet" href="https://fonts.loli.net/css?family=Ubuntu:400,600|Source+Code+Pro">
 <link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
-<link rel="stylesheet" href="/css/style.css">
 
 
     
@@ -44,6 +43,8 @@
     
     
     
+
+<link rel="stylesheet" href="/css/back-to-top.css">
 
 
     
@@ -66,6 +67,8 @@ var _hmt = _hmt || [];
 
     
 
+
+<link rel="stylesheet" href="/css/style.css">
 </head>
 <body class="is-1-column">
     <nav class="navbar navbar-main">
@@ -73,7 +76,7 @@ var _hmt = _hmt || [];
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/logo.svg" alt="" height="28">
+                 <img src="/images/logo.svg" alt="简单可依赖" height="28">
             
             </a>
         </div>
@@ -262,20 +265,9 @@ var _hmt = _hmt || [];
     
     
     
-    <script src="https://cdnjs.loli.net/ajax/libs/lightgallery/1.6.8/js/lightgallery.min.js"></script>
-    <script src="https://cdnjs.loli.net/ajax/libs/justifiedGallery/3.7.0/js/jquery.justifiedGallery.min.js"></script>
-    <script>
-        (function ($) {
-            $(document).ready(function () {
-                if (typeof($.fn.lightGallery) === 'function') {
-                    $('.article').lightGallery({ selector: '.gallery-item' });
-                }
-                if (typeof($.fn.justifiedGallery) === 'function') {
-                    $('.justified-gallery').justifiedGallery();
-                }
-            });
-        })(jQuery);
-    </script>
+    <script src="https://cdnjs.loli.net/ajax/libs/lightgallery/1.6.8/js/lightgallery.min.js" defer></script>
+    <script src="https://cdnjs.loli.net/ajax/libs/justifiedGallery/3.7.0/js/jquery.justifiedGallery.min.js" defer></script>
+    <script src="/js/gallery.js" defer></script>
     
 
     
@@ -288,26 +280,9 @@ var _hmt = _hmt || [];
     
 
 <a id="back-to-top" title="回到顶端" href="javascript:;">
-     <i class="fas fa-chevron-up"></i>
+    <i class="fas fa-chevron-up"></i>
 </a>
-<style>
-#back-to-top {
-    position: fixed;
-    padding: 8px 0;
-    transition: 0.4s ease opacity, 0.4s ease width, 0.4s ease transform, 0.4s ease border-radius;
-    opacity: 0;
-    line-height: 24px;
-    outline: none;
-    transform: translateY(120px);
-}
-#back-to-top.fade-in {
-    opacity: 1;
-}
-#back-to-top.rise-up {
-    transform: translateY(0);
-}
-</style>
-<script src="/js/back-to-top.js"></script>
+<script src="/js/back-to-top.js" defer></script>
 
 
     
@@ -321,7 +296,7 @@ var _hmt = _hmt || [];
     
 
 
-<script src="/js/main.js"></script>
+<script src="/js/main.js" defer></script>
 
     
     <div class="searchbox ins-search">
@@ -350,9 +325,9 @@ var _hmt = _hmt || [];
         window.INSIGHT_CONFIG = INSIGHT_CONFIG;
     })(window);
 </script>
-<script src="/js/insight.js"></script>
+<script src="/js/insight.js" defer></script>
 <link rel="stylesheet" href="/css/search.css">
-<link rel="stylesheet" href="/css/insight.css">
+<link rel="stylesheet" href="/css/insight.css"> 
     
 </body>
 </html>

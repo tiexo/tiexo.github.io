@@ -17,7 +17,7 @@
 <meta property="og:image" content="https://r.photo.store.qq.com/psb?/V11rnv1t2fVV1f/pMNIVnCwfKt8GVtB05P7REGs2RmOxToyev9cu78WtU4!/r/dFQBAAAAAAAAnull&bo=0AKzANACswADCSw!&rf=photolist&t=5qzoneimgout.png">
 <meta property="og:image" content="https://r.photo.store.qq.com/psb?/V11rnv1t2fVV1f/phMDoUQk4qls17QsKBtEi41RoICkdx6Cn*ZEuboVKPo!/r/dDQBAAAAAAAAnull&bo=EgHZABIB2QADCSw!&rf=photolist&t=5qzoneimgout.png">
 <meta property="og:image" content="https://r.photo.store.qq.com/psb?/V11rnv1t2fVV1f/8gZTpF0TMZ6kKVg4gzhEP84nIslgaK2m*iguj1*FLrU!/r/dFIBAAAAAAAAnull&bo=tAK7AbQCuwEDCSw!&rf=photolist&t=5qzoneimgout.png">
-<meta property="og:updated_time" content="2018-11-03T16:49:37.260Z">
+<meta property="og:updated_time" content="2018-11-05T13:23:04.662Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="使用QQ空间相册生成图片外链">
 <meta name="twitter:description" content="图片外链是每个博客都要折腾的项目，我曾经使用过七牛、SM图床、微博图床等等，但七牛域名需要备案并且HTTPS流量收费，SM和微博则对图片尺度限制较大，连本站不露点的动漫图片都会被和谐。这个时候，我终于回想起曾经在狐吧看到的QQ空间相册外链项目…">
@@ -34,7 +34,6 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
 <link rel="stylesheet" href="https://fonts.loli.net/css?family=Ubuntu:400,600|Source+Code+Pro">
 <link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
-<link rel="stylesheet" href="/css/style.css">
 
 
     
@@ -52,6 +51,8 @@
     
     
     
+
+<link rel="stylesheet" href="/css/back-to-top.css">
 
 
     
@@ -74,6 +75,8 @@ var _hmt = _hmt || [];
 
     
 
+
+<link rel="stylesheet" href="/css/style.css">
 </head>
 <body class="is-1-column">
     <nav class="navbar navbar-main">
@@ -81,7 +84,7 @@ var _hmt = _hmt || [];
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/logo.svg" alt="" height="28">
+                 <img src="/images/logo.svg" alt="使用QQ空间相册生成图片外链" height="28">
             
             </a>
         </div>
@@ -279,20 +282,9 @@ var _hmt = _hmt || [];
     
     
     
-    <script src="https://cdnjs.loli.net/ajax/libs/lightgallery/1.6.8/js/lightgallery.min.js"></script>
-    <script src="https://cdnjs.loli.net/ajax/libs/justifiedGallery/3.7.0/js/jquery.justifiedGallery.min.js"></script>
-    <script>
-        (function ($) {
-            $(document).ready(function () {
-                if (typeof($.fn.lightGallery) === 'function') {
-                    $('.article').lightGallery({ selector: '.gallery-item' });
-                }
-                if (typeof($.fn.justifiedGallery) === 'function') {
-                    $('.justified-gallery').justifiedGallery();
-                }
-            });
-        })(jQuery);
-    </script>
+    <script src="https://cdnjs.loli.net/ajax/libs/lightgallery/1.6.8/js/lightgallery.min.js" defer></script>
+    <script src="https://cdnjs.loli.net/ajax/libs/justifiedGallery/3.7.0/js/jquery.justifiedGallery.min.js" defer></script>
+    <script src="/js/gallery.js" defer></script>
     
 
     
@@ -305,26 +297,9 @@ var _hmt = _hmt || [];
     
 
 <a id="back-to-top" title="回到顶端" href="javascript:;">
-     <i class="fas fa-chevron-up"></i>
+    <i class="fas fa-chevron-up"></i>
 </a>
-<style>
-#back-to-top {
-    position: fixed;
-    padding: 8px 0;
-    transition: 0.4s ease opacity, 0.4s ease width, 0.4s ease transform, 0.4s ease border-radius;
-    opacity: 0;
-    line-height: 24px;
-    outline: none;
-    transform: translateY(120px);
-}
-#back-to-top.fade-in {
-    opacity: 1;
-}
-#back-to-top.rise-up {
-    transform: translateY(0);
-}
-</style>
-<script src="/js/back-to-top.js"></script>
+<script src="/js/back-to-top.js" defer></script>
 
 
     
@@ -338,7 +313,7 @@ var _hmt = _hmt || [];
     
 
 
-<script src="/js/main.js"></script>
+<script src="/js/main.js" defer></script>
 
     
     <div class="searchbox ins-search">
@@ -367,9 +342,9 @@ var _hmt = _hmt || [];
         window.INSIGHT_CONFIG = INSIGHT_CONFIG;
     })(window);
 </script>
-<script src="/js/insight.js"></script>
+<script src="/js/insight.js" defer></script>
 <link rel="stylesheet" href="/css/search.css">
-<link rel="stylesheet" href="/css/insight.css">
+<link rel="stylesheet" href="/css/insight.css"> 
     
 </body>
 </html>
