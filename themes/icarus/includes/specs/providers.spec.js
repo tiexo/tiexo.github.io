@@ -5,7 +5,7 @@ module.exports = {
     [doc]: 'CDN provider settings',
     cdn: {
         [type]: 'string',
-        [doc]: 'Name or URL of the JavaScript and/or stylesheet CDN provider',
+        [doc]: 'CDN provider settings\nhttp://ppoffice.github.io/hexo-theme-icarus/Configuration/Theme/speed-up-your-site-with-custom-cdn/',
         [defaultValue]: 'jsdelivr'
     },
     fontcdn: {
