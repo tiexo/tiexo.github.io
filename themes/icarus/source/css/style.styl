@@ -48,7 +48,9 @@ body, button, input, select, textarea
      .column-right-shadow
          &.is-sticky
              top: 1.5rem
-
+.tag
+	    &.is-grey
+	        background: #e7e7e7
 .card
     border-radius: 4px
     box-shadow: 0 4px 10px rgba(0,0,0,0.05), 0 0 1px rgba(0,0,0,0.1)
@@ -201,10 +203,10 @@ img.thumbnail
 	    &:hover
 	        .qrcode
 	            display: block
-	    &:first-child
+	    &:first-child:not(:last-child)
 	        .qrcode
 	            left: -0.75rem
-	    &:last-child
+	    &:last-child:not(:first-child)
 	        .qrcode
 	            right: -0.75rem
 @media screen and (max-width: screen-tablet - 1)
