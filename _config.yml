@@ -107,6 +107,6 @@ abbrlink:
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   - type: git
-    repo: git@git.dev.tencent.com:tiexo/tiexo.git
-    branch: coding-pages
+    repo: git@github.com:tiexo/tiexo.github.io.git
+    branch: master
   - type: baidu_url_submitter
