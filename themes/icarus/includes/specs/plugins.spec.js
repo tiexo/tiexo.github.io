@@ -60,6 +60,11 @@ module.exports = {
         [doc]: 'Show a loading progress bar at top of the page',
         [defaultValue]: true
      },
+     busuanzi: {
+        [type]: 'boolean',
+        [doc]: 'BuSuanZi site/page view counter\nhttps://busuanzi.ibruce.info',
+        [defaultValue]: false   
+     },
 	clipboard: {
 	    [type]: 'boolean',
 	    [doc]: 'Show the copy button in the highlighted code area',

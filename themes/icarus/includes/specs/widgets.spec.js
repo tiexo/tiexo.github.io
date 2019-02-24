@@ -9,6 +9,7 @@ const DEFAULT_WIDGETS = [
         location: 'Your location',
         avatar: null,
         gravatar: null,
+        avatar_rounded: false,
         follow_link: 'http://github.com/ppoffice',
         social_links: {
             Github: {
@@ -87,6 +88,11 @@ const ProfileSpec = {
         [type]: 'string',
         [doc]: 'Path or URL to the avatar to be shown in the profile widget',
         [defaultValue]: '/images/avatar.png'
+    },
+    avatar_rounded: {
+        [type]: 'boolean',
+        [doc]: 'Whether to show avatar image rounded or square',
+        [defaultValue]: false
     },
     gravatar: {
         [type]: 'string',
