@@ -4,7 +4,7 @@ layout: "page"
 ---
 
 ### 让我们以热烈的掌声感谢以下赞助商：
-- [Coding Pages](https://coding.net/v2/pages//) ，提供代码托管空间
+- [Github Pages](https://github.com/) ，提供代码托管空间
 - [Hexo](https://hexo.io/zh-cn/) ，提供程序源码
 - [Icarus](https://github.com/ppoffice/hexo-theme-icarus) ，提供主题美化
 - [Qzone-Photo-Outside](https://github.com/xunni1000/Qzone-Photo-Outside) ，生成QQ空间图片外链

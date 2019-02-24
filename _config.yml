@@ -12,7 +12,7 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url:  https://tiexo.coding.me/
+url:  https://tiexo.github.io
 root: /
 permalink: :abbrlink/
 permalink_defaults:
@@ -76,7 +76,7 @@ feed:
 nofollow:
     enable: true
     exclude:
-    - tiexo.coding.me
+    - tiexo.github.io
     - googlo.me
     - azfashao.com
     - login926.xyz
