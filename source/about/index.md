@@ -46,8 +46,6 @@ layout: "page"
 
 ### 每日推荐
 
-<div class="aplayer" data-id="0001Dsv71evou6" data-server="tencent" data-type="song" data-autoplay="true"></div>  
-
-### 一言
-
-<script type="text/javascript" src="https://api.lwl12.com/hitokoto/main/get?encode=js&charset=utf-8"></script><div id="lwlhitokoto"><script>lwlhitokoto()</script></div>
+<meting-js
+	auto="https://music.163.com/#/song?id=1313354324" autoplay="true">
+</meting-js>  
