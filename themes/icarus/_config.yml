@@ -92,11 +92,12 @@ plugins:
     # Baidu Analytics plugin settings (http://ppoffice.github.io/hexo-theme-icarus/2018/01/01/plugin/Analytics/#Baidu-Analytics)
     baidu-analytics:
         # Baidu Analytics tracking id
-        tracking_id: 066fa7a0be494a134c82c9e64f821f86
+        tracking_id: # 066fa7a0be494a134c82c9e64f821f86
     # Hotjar user feedback plugin (http://ppoffice.github.io/hexo-theme-icarus/2018/01/01/plugin/Analytics/#Hotjar)
     hotjar:
         # Hotjar site id
         site_id: 
+    busuanzi: true
 # CDN provider settings
 providers:
     # Name or URL of the JavaScript and/or stylesheet CDN provider

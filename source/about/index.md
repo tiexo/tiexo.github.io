@@ -36,16 +36,14 @@ layout: "page"
 
 - <i class="fa fa-lock" style="color: #00bb00;"></i> [乐趣公园](https://gitcafe.net//)—— 分享有趣，创造价值
 - [爱在发烧](http://azfashao.com)—— 分享音乐，分享心情，分享感动
-- <i class="fa fa-ban" style="color: #FF0000;"></i> <i class="fa fa-lock" style="color: #00bb00;"></i> [Raintone](https://login926.xyz/)—— 念念不忘，必有回响。
 - <i class="fa fa-lock" style="color: #00bb00;"></i> [哔哩萌](https://www.bilimoe.com/)—— 是不是选择任何一个方向，都会游向同一个宿命呢？
 - <i class="fa fa-lock" style="color: #00bb00;"></i> [清风小墨](https://windy.ink/)—— 此时相望不相闻，愿逐月华流照君。
 - [弋牧](http://emuia.com/)—— 行多久，方显执着；思多久，方能远见！
-- <i class="fa fa-ban" style="color: #FF0000;"></i> <i class="fa fa-lock" style="color: #00bb00;"></i> [MoeYi's Blog](https://b.gao4.pw/)—— 无
 - <i class="fa fa-lock" style="color: #00bb00;"></i> [Zidone](https://blog.zidone.cn/)—— 深自缄默 如云漂泊
 - <i class="fa fa-lock" style="color: #00bb00;"></i> [Jestom](https://blog.jestom.com/)—— 即使被判出局也要讓夢想回家！
 
 ### 每日推荐
 
 <meting-js
-	auto="https://music.163.com/#/song?id=1313354324" autoplay="true">
+	auto="https://music.163.com/#/song?id=1345848098" autoplay="true">
 </meting-js>  
