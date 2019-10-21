@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh">
-<head><meta name="generator" content="Hexo 3.9.0">
+<head>
     <meta charset="utf-8">
 <title>使用QQ空间相册生成图片外链 - 简单可依赖</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -10,18 +10,16 @@
     <meta name="description" content="图片外链是每个博客都要折腾的项目，我曾经使用过七牛、SM图床、微博图床等等，但七牛域名需要备案并且HTTPS流量收费，SM和微博则对图片尺度限制较大，连本站不露点的动漫图片都会被和谐。这个时候，我终于回想起曾经在狐吧看到的QQ空间相册外链项目…">
 <meta property="og:type" content="article">
 <meta property="og:title" content="使用QQ空间相册生成图片外链">
-<meta property="og:url" content="https://tiexo.github.io/e4ed098a/index.html">
+<meta property="og:url" content="https:&#x2F;&#x2F;tiexo.github.io&#x2F;e4ed098a&#x2F;index.html">
 <meta property="og:site_name" content="简单可依赖">
 <meta property="og:description" content="图片外链是每个博客都要折腾的项目，我曾经使用过七牛、SM图床、微博图床等等，但七牛域名需要备案并且HTTPS流量收费，SM和微博则对图片尺度限制较大，连本站不露点的动漫图片都会被和谐。这个时候，我终于回想起曾经在狐吧看到的QQ空间相册外链项目…">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://r.photo.store.qq.com/psb?/V11rnv1t2fVV1f/pMNIVnCwfKt8GVtB05P7REGs2RmOxToyev9cu78WtU4!/r/dFQBAAAAAAAAnull&bo=0AKzANACswADCSw!&rf=photolist&t=5qzoneimgout.png">
-<meta property="og:image" content="https://r.photo.store.qq.com/psb?/V11rnv1t2fVV1f/phMDoUQk4qls17QsKBtEi41RoICkdx6Cn*ZEuboVKPo!/r/dDQBAAAAAAAAnull&bo=EgHZABIB2QADCSw!&rf=photolist&t=5qzoneimgout.png">
-<meta property="og:image" content="https://r.photo.store.qq.com/psb?/V11rnv1t2fVV1f/8gZTpF0TMZ6kKVg4gzhEP84nIslgaK2m*iguj1*FLrU!/r/dFIBAAAAAAAAnull&bo=tAK7AbQCuwEDCSw!&rf=photolist&t=5qzoneimgout.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;r.photo.store.qq.com&#x2F;psb?&#x2F;V11rnv1t2fVV1f&#x2F;pMNIVnCwfKt8GVtB05P7REGs2RmOxToyev9cu78WtU4!&#x2F;r&#x2F;dFQBAAAAAAAAnull&amp;bo=0AKzANACswADCSw!&amp;rf=photolist&amp;t=5qzoneimgout.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;r.photo.store.qq.com&#x2F;psb?&#x2F;V11rnv1t2fVV1f&#x2F;phMDoUQk4qls17QsKBtEi41RoICkdx6Cn*ZEuboVKPo!&#x2F;r&#x2F;dDQBAAAAAAAAnull&amp;bo=EgHZABIB2QADCSw!&amp;rf=photolist&amp;t=5qzoneimgout.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;r.photo.store.qq.com&#x2F;psb?&#x2F;V11rnv1t2fVV1f&#x2F;8gZTpF0TMZ6kKVg4gzhEP84nIslgaK2m*iguj1*FLrU!&#x2F;r&#x2F;dFIBAAAAAAAAnull&amp;bo=tAK7AbQCuwEDCSw!&amp;rf=photolist&amp;t=5qzoneimgout.png">
 <meta property="og:updated_time" content="2018-11-16T11:33:26.101Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="使用QQ空间相册生成图片外链">
-<meta name="twitter:description" content="图片外链是每个博客都要折腾的项目，我曾经使用过七牛、SM图床、微博图床等等，但七牛域名需要备案并且HTTPS流量收费，SM和微博则对图片尺度限制较大，连本站不露点的动漫图片都会被和谐。这个时候，我终于回想起曾经在狐吧看到的QQ空间相册外链项目…">
-<meta name="twitter:image" content="https://r.photo.store.qq.com/psb?/V11rnv1t2fVV1f/pMNIVnCwfKt8GVtB05P7REGs2RmOxToyev9cu78WtU4!/r/dFQBAAAAAAAAnull&bo=0AKzANACswADCSw!&rf=photolist&t=5qzoneimgout.png">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;r.photo.store.qq.com&#x2F;psb?&#x2F;V11rnv1t2fVV1f&#x2F;pMNIVnCwfKt8GVtB05P7REGs2RmOxToyev9cu78WtU4!&#x2F;r&#x2F;dFQBAAAAAAAAnull&amp;bo=0AKzANACswADCSw!&amp;rf=photolist&amp;t=5qzoneimgout.png">
 
 
 
@@ -109,7 +107,7 @@
                 
                 
                 
-                <a class="navbar-item search" title="搜索" href="javascript:;">
+                <a class="navbar-item search" title="搜索" href="javascript:;" target="_blank" rel="noopener">
                     <i class="fas fa-search"></i>
                 </a>
                 
@@ -160,8 +158,8 @@
             <p>图片外链是每个博客都要折腾的项目，我曾经使用过七牛、SM图床、微博图床等等，但七牛域名需要备案并且HTTPS流量收费，SM和微博则对图片尺度限制较大，连本站不露点的动漫图片都会被和谐。<br>这个时候，我终于回想起曾经在狐吧看到的QQ空间相册外链项目…<br><a id="more"></a></p>
 <h3 id="QQ空间相册外链项目"><a href="#QQ空间相册外链项目" class="headerlink" title="QQ空间相册外链项目"></a>QQ空间相册外链项目</h3><p>目前该项目由Windows软件版和GM脚本版，地址分别如下：</p>
 <ul>
-<li><a href="https://github.com/xunni1000/Qzone-Photo-Outside" rel="external nofollow noopener noreferrer" target="_blank">Qzone-Photo-Outside</a></li>
-<li><a href="https://greasyfork.org/zh-CN/scripts/373731-qq%E7%9B%B8%E5%86%8C%E5%A4%96%E9%93%BE%E5%B7%A5%E5%85%B7" rel="external nofollow noopener noreferrer" target="_blank">QQ相册外链工具</a></li>
+<li><a href="https://github.com/xunni1000/Qzone-Photo-Outside" target="_blank" rel="external nofollow noopener noreferrer">Qzone-Photo-Outside</a></li>
+<li><a href="https://greasyfork.org/zh-CN/scripts/373731-qq%E7%9B%B8%E5%86%8C%E5%A4%96%E9%93%BE%E5%B7%A5%E5%85%B7" target="_blank" rel="external nofollow noopener noreferrer">QQ相册外链工具</a></li>
 </ul>
 <p>两个版本都比较简陋，但这些都不是重点，因为QQ空间的确有独到的优势。</p>
 <ul>
@@ -317,7 +315,7 @@
     
     
 
-<a id="back-to-top" title="回到顶端" href="javascript:;">
+<a id="back-to-top" title="回到顶端" href="javascript:;" target="_blank" rel="noopener">
     <i class="fas fa-chevron-up"></i>
 </a>
 <script src="/js/back-to-top.js" defer></script>
