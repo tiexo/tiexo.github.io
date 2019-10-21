@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="zh">
-<head><meta name="generator" content="Hexo 3.9.0">
+<head>
     <meta charset="utf-8">
 <title>降低评论门槛：使用Valine评论系统 - 简单可依赖</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -10,21 +10,19 @@
     <meta name="description" content="这次从Gitalk更换至Valine评论，主要出于两方面的因素考虑：  降低评论门槛，后者甚至不需要填写任何信息即可评论； 文章链接重新生成，导致之前的Gitalk评论数据丢失。  从昨晚开始折腾到现在，总算把基本功能设置好啦~">
 <meta property="og:type" content="article">
 <meta property="og:title" content="降低评论门槛：使用Valine评论系统">
-<meta property="og:url" content="https://tiexo.github.io/b23226a5/index.html">
+<meta property="og:url" content="https:&#x2F;&#x2F;tiexo.github.io&#x2F;b23226a5&#x2F;index.html">
 <meta property="og:site_name" content="简单可依赖">
 <meta property="og:description" content="这次从Gitalk更换至Valine评论，主要出于两方面的因素考虑：  降低评论门槛，后者甚至不需要填写任何信息即可评论； 文章链接重新生成，导致之前的Gitalk评论数据丢失。  从昨晚开始折腾到现在，总算把基本功能设置好啦~">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https://r.photo.store.qq.com/psb?/V11rnv1t2fVV1f/r6UZFUaiScjI2XHw*Cmr.rGkazDdccFyKKWkfldCGKI!/r/dFkAAAAAAAAAnull&bo=hQLIAIUCyAARCT4!&rf=photolist&t=5qzoneimgout.png">
-<meta property="og:image" content="https://r.photo.store.qq.com/psb?/V11rnv1t2fVV1f/b7A4KgzN*t3vPbVQh*6.Tzi5GeRjJhUGSOtbxM47kkQ!/r/dDUBAAAAAAAAnull&bo=ZgMbAWYDGwERCT4!&rf=photolist&t=5qzoneimgout.png">
-<meta property="og:image" content="https://r.photo.store.qq.com/psb?/V11rnv1t2fVV1f/7aA5dj0o7typPLbzDoVGaxC9SX.uvuglmkSkFH3cKU0!/r/dDQBAAAAAAAAnull&bo=WQSZAVkEmQERCT4!&rf=photolist&t=5qzoneimgout.png">
-<meta property="og:image" content="https://r.photo.store.qq.com/psb?/V11rnv1t2fVV1f/5WB*zTfwT6fTWMlhG*i.nyiO26IF5EVZjtklAlPx4LU!/r/dFMBAAAAAAAAnull&bo=FgJgARYCYAERCT4!&rf=photolist&t=5qzoneimgout.png">
-<meta property="og:image" content="https://r.photo.store.qq.com/psb?/V11rnv1t2fVV1f/9Kf.3FAD3FE7Nap4Jgdcj7XzSK42DanhrGrRKQB2Tkc!/r/dC4BAAAAAAAAnull&bo=sgIUAbICFAERCT4!&rf=photolist&t=5qzoneimgout.png">
-<meta property="og:image" content="https://r.photo.store.qq.com/psb?/V11rnv1t2fVV1f/9ZkFVT3pOKYk8PtPoHm7mVXVhNTIBZO518tsOOPpGjc!/r/dFMBAAAAAAAAnull&bo=VgOUAVYDlAERCT4!&rf=photolist&t=5qzoneimgout.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;r.photo.store.qq.com&#x2F;psb?&#x2F;V11rnv1t2fVV1f&#x2F;r6UZFUaiScjI2XHw*Cmr.rGkazDdccFyKKWkfldCGKI!&#x2F;r&#x2F;dFkAAAAAAAAAnull&amp;bo=hQLIAIUCyAARCT4!&amp;rf=photolist&amp;t=5qzoneimgout.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;r.photo.store.qq.com&#x2F;psb?&#x2F;V11rnv1t2fVV1f&#x2F;b7A4KgzN*t3vPbVQh*6.Tzi5GeRjJhUGSOtbxM47kkQ!&#x2F;r&#x2F;dDUBAAAAAAAAnull&amp;bo=ZgMbAWYDGwERCT4!&amp;rf=photolist&amp;t=5qzoneimgout.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;r.photo.store.qq.com&#x2F;psb?&#x2F;V11rnv1t2fVV1f&#x2F;7aA5dj0o7typPLbzDoVGaxC9SX.uvuglmkSkFH3cKU0!&#x2F;r&#x2F;dDQBAAAAAAAAnull&amp;bo=WQSZAVkEmQERCT4!&amp;rf=photolist&amp;t=5qzoneimgout.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;r.photo.store.qq.com&#x2F;psb?&#x2F;V11rnv1t2fVV1f&#x2F;5WB*zTfwT6fTWMlhG*i.nyiO26IF5EVZjtklAlPx4LU!&#x2F;r&#x2F;dFMBAAAAAAAAnull&amp;bo=FgJgARYCYAERCT4!&amp;rf=photolist&amp;t=5qzoneimgout.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;r.photo.store.qq.com&#x2F;psb?&#x2F;V11rnv1t2fVV1f&#x2F;9Kf.3FAD3FE7Nap4Jgdcj7XzSK42DanhrGrRKQB2Tkc!&#x2F;r&#x2F;dC4BAAAAAAAAnull&amp;bo=sgIUAbICFAERCT4!&amp;rf=photolist&amp;t=5qzoneimgout.png">
+<meta property="og:image" content="https:&#x2F;&#x2F;r.photo.store.qq.com&#x2F;psb?&#x2F;V11rnv1t2fVV1f&#x2F;9ZkFVT3pOKYk8PtPoHm7mVXVhNTIBZO518tsOOPpGjc!&#x2F;r&#x2F;dFMBAAAAAAAAnull&amp;bo=VgOUAVYDlAERCT4!&amp;rf=photolist&amp;t=5qzoneimgout.png">
 <meta property="og:updated_time" content="2018-11-16T11:34:55.841Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="降低评论门槛：使用Valine评论系统">
-<meta name="twitter:description" content="这次从Gitalk更换至Valine评论，主要出于两方面的因素考虑：  降低评论门槛，后者甚至不需要填写任何信息即可评论； 文章链接重新生成，导致之前的Gitalk评论数据丢失。  从昨晚开始折腾到现在，总算把基本功能设置好啦~">
-<meta name="twitter:image" content="https://r.photo.store.qq.com/psb?/V11rnv1t2fVV1f/r6UZFUaiScjI2XHw*Cmr.rGkazDdccFyKKWkfldCGKI!/r/dFkAAAAAAAAAnull&bo=hQLIAIUCyAARCT4!&rf=photolist&t=5qzoneimgout.png">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;r.photo.store.qq.com&#x2F;psb?&#x2F;V11rnv1t2fVV1f&#x2F;r6UZFUaiScjI2XHw*Cmr.rGkazDdccFyKKWkfldCGKI!&#x2F;r&#x2F;dFkAAAAAAAAAnull&amp;bo=hQLIAIUCyAARCT4!&amp;rf=photolist&amp;t=5qzoneimgout.png">
 
 
 
@@ -112,7 +110,7 @@
                 
                 
                 
-                <a class="navbar-item search" title="搜索" href="javascript:;">
+                <a class="navbar-item search" title="搜索" href="javascript:;" target="_blank" rel="noopener">
                     <i class="fas fa-search"></i>
                 </a>
                 
@@ -322,7 +320,7 @@
     
     
 
-<a id="back-to-top" title="回到顶端" href="javascript:;">
+<a id="back-to-top" title="回到顶端" href="javascript:;" target="_blank" rel="noopener">
     <i class="fas fa-chevron-up"></i>
 </a>
 <script src="/js/back-to-top.js" defer></script>
