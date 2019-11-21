@@ -8,7 +8,7 @@ layout: "page"
 - [Hexo](https://hexo.io/zh-cn/) ，提供程序源码
 - [Icarus](https://github.com/ppoffice/hexo-theme-icarus) ，提供主题美化
 - [Qzone-Photo-Outside](https://github.com/xunni1000/Qzone-Photo-Outside) ，生成QQ空间图片外链
-- [百度统计](https://tongji.baidu.com) ，负责统计功能
+- [不蒜子](http://busuanzi.ibruce.info/) ，负责统计功能
 - [腾讯云开发者平台](https://cloud.tencent.com/)，提供Cloud Studio管理
 - [Json-content](https://github.com/alexbruno/hexo-generator-json-content)，生成本地搜索数据
 - [Valine](https://valine.js.org)，提供评论支持
@@ -17,7 +17,6 @@ layout: "page"
 - [MetingJS](https://github.com/metowolf/MetingJS)，提供BGM API接口
 - [Jsdelivr](https://cdn.jsdelivr.net)，提供公共JS库加速服务
 - [Loli](https://css.loli.net)，提供公共JS库加速服务
-- [LWL](https://blog.lwl12.com)，提供一言API接口
 - [Abbrlink](https://github.com/Rozbo/hexo-abbrlink)，专注于生产链接
 - [Autonofollow](https://github.com/liuzc/hexo-autonofollow)，防止权重侧漏
 - [Baidu-url-submit](https://github.com/huiwang/hexo-baidu-url-submit)，百度主动推送插件
