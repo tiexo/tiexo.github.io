@@ -26,9 +26,9 @@ article:
     about: '大约'
     words: '个字'
 donate:
-	    title: '喜欢这篇文章？打赏一下作者吧'
-	    alipay: '支付宝'
-	    wechat: '微信'
+    title: '喜欢这篇文章？打赏一下作者吧'
+    alipay: '支付宝'
+    wechat: '微信'
 plugin:
     backtotop: '回到顶端'
     visit: '%s次访问'

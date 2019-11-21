@@ -50,8 +50,8 @@ module.exports = function (hexo) {
                 _package = 'pace';
             }
             if (_package === 'clipboard') {
-	                _package = 'clipboard.js';
-	            }
+                _package = 'clipboard.js';
+            }
         }
         if (provider !== null && cdn_providers.hasOwnProperty(provider)) {
             provider = cdn_providers[provider];

@@ -1,5 +1,5 @@
 # Version of the Icarus theme that is currently used
-version: 2.0.0
+version: 2.3.0
 # Path or URL to the website's icon
 favicon: /images/favicon.ico
 # Path or URL to RSS atom.xml
@@ -46,7 +46,7 @@ footer:
 # Article display settings
 article:
     # Code highlight theme (https://github.com/highlightjs/highlight.js/tree/master/src/styles)
-    highlight: github
+    highlight: 
     # Whether to show article thumbnail images
     thumbnail: true
     # Whether to show estimate article reading time
