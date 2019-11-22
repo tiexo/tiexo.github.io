@@ -4,7 +4,7 @@
 
 # Site
 title: 简单可依赖
-subtitle: 
+subtitle: 有限更新公司
 description: 
 author: 唐门
 language: zh-CN
@@ -77,13 +77,9 @@ nofollow:
     enable: true
     exclude:
     - tiexo.github.io
-    - googlo.me
-    - azfashao.com
-    - login926.xyz
+    - gitcafe.net
     - www.bilimoe.com
-    - windy.ink
     - emuia.com
-    - b.gao4.pw
     - blog.zidone.cn
     - blog.jestom.com
 
