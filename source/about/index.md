@@ -8,7 +8,6 @@ layout: "page"
 - [Hexo](https://hexo.io/zh-cn/) ，提供博客程序源码
 - [Icarus](https://github.com/ppoffice/hexo-theme-icarus) ，提供主题美化
 - [Qzone-Photo-Outside](https://github.com/xunni1000/Qzone-Photo-Outside) ，生成QQ空间图片外链
-- [不蒜子](http://busuanzi.ibruce.info/) ，负责统计功能
 - [Coding](https://cloudstudio.net/)，提供Cloud Studio云端开发空间
 - [Json-content](https://github.com/alexbruno/hexo-generator-json-content)，生成本地搜索数据
 - [Valine](https://valine.js.org)，提供评论支持
