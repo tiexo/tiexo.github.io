@@ -97,7 +97,7 @@ plugins:
     hotjar:
         # Hotjar site id
         site_id: 
-    busuanzi: true
+    busuanzi: 
 # CDN provider settings
 providers:
     # Name or URL of the JavaScript and/or stylesheet CDN provider
