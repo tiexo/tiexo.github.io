@@ -3,17 +3,11 @@
         <div class="level">
             <div class="level-start has-text-centered-mobile">
      
-                <p class="is-size-7">
+            
+                <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
                 &copy; <%= date(new Date(), 'YYYY') %> <%= author || title %>&nbsp;
-                Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & <a
-                        href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank">Icarus</a>
-                <% if (busuanzi) { %>
-               
-                <span id="busuanzi_container_site_uv">
-                <%- _p('plugin.visitor', '<span id="busuanzi_value_site_uv">0</span>') %>
-                </span>
-                <% } %>
-                </p>
+                <br> <span id="jinrishici-sentence">正在加载....</span>
+
             </div>
             <div class="level-end">
             <% if (Object.keys(links).length) { %>

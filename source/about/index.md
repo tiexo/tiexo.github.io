@@ -21,6 +21,7 @@ layout: "page"
 - [Autonofollow](https://github.com/liuzc/hexo-autonofollow)，防止权重侧漏
 - [Baidu-url-submit](https://github.com/huiwang/hexo-baidu-url-submit)，百度主动推送插件
 - [Outlook](https://outlook.live.com/owa/)，负责评论提醒邮件发送
+- [今日诗词](https://www.jinrishici.com/)，提供一言API
 
 以及那些上文未提及的、在本站运营过程中对我有所帮助的人们，谢谢！
 
