@@ -42,11 +42,21 @@ footer:
         Attribution 4.0 International:
             icon: fab fa-creative-commons-by
             url: 'https://creativecommons.org/licenses/by/4.0/'
+        Fork on GitHub:
+            icon: fab fa-github
+            url: 'https://github.com/tiexo/tiexo.github.io'
         
 # Article display settings
 article:
-    # Code highlight theme (https://github.com/highlightjs/highlight.js/tree/master/src/styles)
-    highlight: 
+     # Code highlight settings
+    highlight:
+        # Code highlight themes
+        # https://github.com/highlightjs/highlight.js/tree/master/src/styles
+        theme: atom-one-light
+        # Show code copying button
+        clipboard: true
+        # Default folding status of the code blocks. Can be "", "folded", "unfolded"
+        fold: unfolded
     # Whether to show article thumbnail images
     thumbnail: true
     # Whether to show estimate article reading time
