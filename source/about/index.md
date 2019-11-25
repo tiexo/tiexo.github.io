@@ -21,6 +21,7 @@ layout: "page"
 - [Baidu-url-submit](https://github.com/huiwang/hexo-baidu-url-submit)，百度主动推送插件
 - [Outlook](https://outlook.live.com/owa/)，负责评论提醒邮件发送
 - [今日诗词](https://www.jinrishici.com/)，提供一言API
+- [Travis CI](https://travis-ci.org/)，负责24小时持续集成部署
 
 以及那些上文未提及的、在本站运营过程中对我有所帮助的人们，谢谢！
 
@@ -40,7 +41,7 @@ layout: "page"
 
 欢迎各位小伙伴互换友链~！
 
-### 每日推荐
+### BGM
 
 <meting-js
 	auto="https://music.163.com/#/song?id=92939" autoplay="true">
