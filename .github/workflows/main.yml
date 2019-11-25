@@ -1,6 +1,9 @@
 name: HEXO CI
 
-on: [push]
+on:
+  push:
+    branches:
+      - blog
 
 jobs:
   build:
