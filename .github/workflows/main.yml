@@ -1,8 +1,6 @@
 name: HEXO CI
 
 on: [push]
- braches: 
-      - blog
 
 jobs:
   build:
