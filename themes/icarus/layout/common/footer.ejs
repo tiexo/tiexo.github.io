@@ -1,0 +1,32 @@
+<footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+     
+            
+                <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+                &copy; <%= date(new Date(), 'YYYY') %> <%= author || title %>&nbsp;
+                <br> <span id="jinrishici-sentence">正在加载....</span>
+
+            </div>
+            <div class="level-end">
+            <% if (Object.keys(links).length) { %>
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                <% for (let name in links) {
+                        let link = links[name]; %>
+                <p class="control">
+                    <a class="button is-white <%= typeof(link) !== 'string' ? 'is-large' : '' %>" target="_blank" title="<%= name %>" href="<%= url_for(typeof(link) === 'string' ? link : link.url) %>">
+                        <% if (typeof(link) === 'string') { %>
+                        <%= name %>
+                        <% } else { %>
+                        <i class="<%= link.icon %>"></i>
+                        <% } %>
+                    </a>
+                </p>
+                <% } %>
+                </div>
+            <% } %>
+            </div>
+        </div>
+    </div>
+</footer>
