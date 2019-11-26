@@ -41,7 +41,7 @@ layout: "page"
 
 欢迎各位小伙伴互换友链~！
 
-### BGM
+### 每日分享
 
 <meting-js
 	auto="https://music.163.com/#/song?id=92939" autoplay="true">
