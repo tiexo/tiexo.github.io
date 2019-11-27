@@ -31,16 +31,16 @@ date: 2018-11-03 16:41:34
 
 根据作者提醒，必须选择原图上传，但是对访问权限无限制。
 
-<div class="has-text-centered">![](//r.photo.store.qq.com/psb?/V11rnv1t2fVV1f/pMNIVnCwfKt8GVtB05P7REGs2RmOxToyev9cu78WtU4!/r/dFQBAAAAAAAAnull&bo=0AKzANACswADCSw!&rf=photolist&t=5qzoneimgout.png)</div>
+![](//r.photo.store.qq.com/psb?/V11rnv1t2fVV1f/pMNIVnCwfKt8GVtB05P7REGs2RmOxToyev9cu78WtU4!/r/dFQBAAAAAAAAnull&bo=0AKzANACswADCSw!&rf=photolist&t=5qzoneimgout.png)
 
 - 复制链接
 
 如果你用的GM脚本版，那么将鼠标移动到图片缩略图上面会显示“外链”字样，点击后会自动复制链接（无任何提示）。
 
-<div class="has-text-centered">![](//r.photo.store.qq.com/psb?/V11rnv1t2fVV1f/phMDoUQk4qls17QsKBtEi41RoICkdx6Cn*ZEuboVKPo!/r/dDQBAAAAAAAAnull&bo=EgHZABIB2QADCSw!&rf=photolist&t=5qzoneimgout.png)</div>
+![](//r.photo.store.qq.com/psb?/V11rnv1t2fVV1f/phMDoUQk4qls17QsKBtEi41RoICkdx6Cn*ZEuboVKPo!/r/dDQBAAAAAAAAnull&bo=EgHZABIB2QADCSw!&rf=photolist&t=5qzoneimgout.png)
 
 如果你用的是软件版，那么需要手动复制QQ空间图片链接，然后去软件点击粘贴，接着会自动复制转换后的外链。
 
-<div class="has-text-centered">![](//r.photo.store.qq.com/psb?/V11rnv1t2fVV1f/8gZTpF0TMZ6kKVg4gzhEP84nIslgaK2m*iguj1*FLrU!/r/dFIBAAAAAAAAnull&bo=tAK7AbQCuwEDCSw!&rf=photolist&t=5qzoneimgout.png)</div>
+![](//r.photo.store.qq.com/psb?/V11rnv1t2fVV1f/8gZTpF0TMZ6kKVg4gzhEP84nIslgaK2m*iguj1*FLrU!/r/dFIBAAAAAAAAnull&bo=tAK7AbQCuwEDCSw!&rf=photolist&t=5qzoneimgout.png)
 
 具体效果可以看看本站，根据作者所说已经稳定使用9年，应该没什么问题！
