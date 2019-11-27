@@ -18,7 +18,7 @@
 <meta property="og:description" content="这次从Gitalk更换至Valine评论，主要出于两方面的因素考虑：  降低评论门槛，后者甚至不需要填写任何信息即可评论； 文章链接重新生成，导致之前的Gitalk评论数据丢失。  从昨晚开始折腾到现在，总算把基本功能设置好啦~">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https:&#x2F;&#x2F;r.photo.store.qq.com&#x2F;psb?&#x2F;V11rnv1t26XYl4&#x2F;oiC6oYru46lv2k1ZmSL4Ze1oKZsy.J85JW2Q5RK5XVc!&#x2F;r&#x2F;dDUBAAAAAAAAnull&amp;bo=6AOVAegDlQERCT4!&amp;rf=photolist&amp;t=5qzoneimgout.png">
-<meta property="og:updated_time" content="2019-11-25T14:02:05.705Z">
+<meta property="og:updated_time" content="2019-11-27T02:45:55.354Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https:&#x2F;&#x2F;r.photo.store.qq.com&#x2F;psb?&#x2F;V11rnv1t26XYl4&#x2F;oiC6oYru46lv2k1ZmSL4Ze1oKZsy.J85JW2Q5RK5XVc!&#x2F;r&#x2F;dDUBAAAAAAAAnull&amp;bo=6AOVAegDlQERCT4!&amp;rf=photolist&amp;t=5qzoneimgout.png">
 
@@ -152,32 +152,24 @@
 <a id="more"></a>
 
 <h3 id="Valine评论启用"><a href="#Valine评论启用" class="headerlink" title="Valine评论启用"></a>Valine评论启用</h3><p>实际上本款主题是适配了Valine评论系统的，但是由于版本错乱，加上我自己修改过主题文件，所以还是花了些时间。</p>
-<div class="has-text-centered">![](//r.photo.store.qq.com/psb?/V11rnv1t2fVV1f/r6UZFUaiScjI2XHw*Cmr.rGkazDdccFyKKWkfldCGKI!/r/dFkAAAAAAAAAnull&bo=hQLIAIUCyAARCT4!&rf=photolist&t=5qzoneimgout.png)</div>
-
+<p><img src="//r.photo.store.qq.com/psb?/V11rnv1t2fVV1f/r6UZFUaiScjI2XHw*Cmr.rGkazDdccFyKKWkfldCGKI!/r/dFkAAAAAAAAAnull&bo=hQLIAIUCyAARCT4!&rf=photolist&t=5qzoneimgout.png" alt=""></p>
 <p>另外还有一些配置项没弄好，例如默认头像和评论者信息，后面再慢慢研究。</p>
 <h3 id="搭配Valine-Admin系统"><a href="#搭配Valine-Admin系统" class="headerlink" title="搭配Valine-Admin系统"></a>搭配Valine-Admin系统</h3><p>如果不搭配Valine-Admin系统使用，Valine在很多地方体验都不好，例如邮件通知和管理评论。<br>整个过程基本都是教程，其中在某些地方我也栽了跟头。</p>
 <ul>
 <li><strong>SMTP邮箱设置</strong></li>
 </ul>
-<p>这里需要注意的是，如果用QQ邮箱，必须开启独立密码并用授权码登录，配置好后再重启一下。</p>
-<div class="has-text-centered">![](//r.photo.store.qq.com/psb?/V11rnv1t2fVV1f/b7A4KgzN*t3vPbVQh*6.Tzi5GeRjJhUGSOtbxM47kkQ!/r/dDUBAAAAAAAAnull&bo=ZgMbAWYDGwERCT4!&rf=photolist&t=5qzoneimgout.png)</div>
-
+<p>这里需要注意的是，如果用QQ邮箱，必须开启独立密码并用授权码登录，配置好后再重启一下。<br><img src="//r.photo.store.qq.com/psb?/V11rnv1t2fVV1f/b7A4KgzN*t3vPbVQh*6.Tzi5GeRjJhUGSOtbxM47kkQ!/r/dDUBAAAAAAAAnull&bo=ZgMbAWYDGwERCT4!&rf=photolist&t=5qzoneimgout.png" alt=""></p>
 <p>应用日志提示成功就行了。</p>
 <ul>
 <li><strong>管理评论</strong></li>
 </ul>
-<p>管理评论的后台需要手动添加管理员账号，即<code>存储-_User</code>，依次在<code>email、username、password</code>三个单元格编辑，设置好邮箱、用户名和密码。</p>
-<div class="has-text-centered">![](//r.photo.store.qq.com/psb?/V11rnv1t2fVV1f/7aA5dj0o7typPLbzDoVGaxC9SX.uvuglmkSkFH3cKU0!/r/dDQBAAAAAAAAnull&bo=WQSZAVkEmQERCT4!&rf=photolist&t=5qzoneimgout.png)</div>
-
+<p>管理评论的后台需要手动添加管理员账号，即<code>存储-_User</code>，依次在<code>email、username、password</code>三个单元格编辑，设置好邮箱、用户名和密码。<br><img src="//r.photo.store.qq.com/psb?/V11rnv1t2fVV1f/7aA5dj0o7typPLbzDoVGaxC9SX.uvuglmkSkFH3cKU0!/r/dDQBAAAAAAAAnull&bo=WQSZAVkEmQERCT4!&rf=photolist&t=5qzoneimgout.png" alt=""></p>
 <p>接着访问管理后台，输入邮箱和密码登录，不需要使用用户名。</p>
-<div class="has-text-centered">![](//r.photo.store.qq.com/psb?/V11rnv1t2fVV1f/5WB*zTfwT6fTWMlhG*i.nyiO26IF5EVZjtklAlPx4LU!/r/dFMBAAAAAAAAnull&bo=FgJgARYCYAERCT4!&rf=photolist&t=5qzoneimgout.png)</div>
-
+<p><img src="//r.photo.store.qq.com/psb?/V11rnv1t2fVV1f/5WB*zTfwT6fTWMlhG*i.nyiO26IF5EVZjtklAlPx4LU!/r/dFMBAAAAAAAAnull&bo=FgJgARYCYAERCT4!&rf=photolist&t=5qzoneimgout.png" alt=""></p>
 <p>在这里就可以进行评论管理啦，还支持手动发送邮件通知。<br>另外，每次有新评论产生时，应用日志中都会有提示：</p>
-<div class="has-text-centered">![](//r.photo.store.qq.com/psb?/V11rnv1t2fVV1f/9Kf.3FAD3FE7Nap4Jgdcj7XzSK42DanhrGrRKQB2Tkc!/r/dC4BAAAAAAAAnull&bo=sgIUAbICFAERCT4!&rf=photolist&t=5qzoneimgout.png)</div>
-
+<p><img src="//r.photo.store.qq.com/psb?/V11rnv1t2fVV1f/9Kf.3FAD3FE7Nap4Jgdcj7XzSK42DanhrGrRKQB2Tkc!/r/dC4BAAAAAAAAnull&bo=sgIUAbICFAERCT4!&rf=photolist&t=5qzoneimgout.png" alt=""></p>
 <p>收到的提醒邮件</p>
-<div class="has-text-centered">![](//r.photo.store.qq.com/psb?/V11rnv1t2fVV1f/9ZkFVT3pOKYk8PtPoHm7mVXVhNTIBZO518tsOOPpGjc!/r/dFMBAAAAAAAAnull&bo=VgOUAVYDlAERCT4!&rf=photolist&t=5qzoneimgout.png)</div>
-
+<p><img src="//r.photo.store.qq.com/psb?/V11rnv1t2fVV1f/9ZkFVT3pOKYk8PtPoHm7mVXVhNTIBZO518tsOOPpGjc!/r/dFMBAAAAAAAAnull&bo=VgOUAVYDlAERCT4!&rf=photolist&t=5qzoneimgout.png" alt=""></p>
 <p>另外还有点击链接自动跳转到评论处，我还没弄好…<br>总之，现在评论是可以正常使用啦，后面的细节我再慢慢调整吧，勤快！</p>
 
         </div>
