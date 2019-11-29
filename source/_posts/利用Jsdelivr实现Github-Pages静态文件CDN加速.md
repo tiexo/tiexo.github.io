@@ -25,17 +25,17 @@ CDN加速不是一个新鲜的话题，但是受限于免费、无备案域名�
 
 其请求链接为
 
-```
+```html
 https://tiexo.github.io/js/xxx.js
 ```
 在主题引用处找到代码
 
-```
+```js
 <%- _js('js/xxx', true) %>
 ```
 将其修改为
 
-```
+```js
 <%- _js('https://cdn.jsdelivr.net/gh/tiexo/tiexo.github.io/js/xxx', true) %>
 ```
 
@@ -44,7 +44,7 @@ https://tiexo.github.io/js/xxx.js
 难点主要在于找到主题目录中的引用代码，之后直接按照格式替换链接即可。
 具体格式为
 
-```
+```html
 https://cdn.jsdelivr.net/gh/用户名/仓库名/文件路径
 ```
 

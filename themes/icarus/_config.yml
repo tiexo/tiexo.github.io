@@ -1,11 +1,11 @@
 # Version of the Icarus theme that is currently used
 version: 2.3.0
 # Path or URL to the website's icon
-favicon: https://cdn.jsdelivr.net/gh/tiexo/cdn/favicon.ico
+favicon: https://cdn.jsdelivr.net/gh/tiexo/tiexo.github.io/images/favicon.ico
 # Path or URL to RSS atom.xml
 rss: 
 # Path or URL to the website's logo to be shown on the left of the navigation bar or footer
-logo: https://cdn.jsdelivr.net/gh/tiexo/cdn/logo.svg
+logo: https://cdn.jsdelivr.net/gh/tiexo/tiexo.github.io/images/logo.svg
 title: 简单可依赖
 
 # Open Graph metadata (https://hexo.io/docs/helpers.html#open-graph)
