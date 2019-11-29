@@ -4,13 +4,13 @@ layout: "page"
 ---
 
 ### 让我们以热烈的掌声感谢以下赞助商：
-- [Github Pages](https://github.com/) ，提供代码托管空间
+- [Github Pages](https://github.com/) ，提供网站托管仓库
 - [Hexo](https://hexo.io/zh-cn/) ，提供博客程序源码
-- [Icarus](https://github.com/ppoffice/hexo-theme-icarus) ，提供主题美化
+- [Icarus](https://github.com/ppoffice/hexo-theme-icarus) ，添加主题美化
 - [Qzone-Photo-Outside](https://github.com/xunni1000/Qzone-Photo-Outside) ，生成QQ空间图片外链
 - [Coding](https://cloudstudio.net/)，提供Cloud Studio云端开发空间
 - [Json-content](https://github.com/alexbruno/hexo-generator-json-content)，生成本地搜索数据
-- [Valine](https://valine.js.org)，提供评论支持
+- [Valine](https://valine.js.org)，增加评论功能
 - [Valine-Admin](https://github.com/panjunwen/Valine-Admin)，提供评论管理和邮件通知功能
 - [Aplayer](https://github.com/DIYgod/APlayer)，负责音乐播放功能
 - [MetingJS](https://github.com/metowolf/MetingJS)，提供BGM API接口

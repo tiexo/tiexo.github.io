@@ -521,35 +521,35 @@ figure.highlight .section {
  *       valine评论样式
  * --------------------------------- */
 .v .vinput {
-  font-size: 0.85rem !important;
+  font-size: 0.9rem !important;
 }
 .v .veditor {
-  font-size: 0.85rem !important;
+  font-size: 0.9rem !important;
 }
 .v .vbtn {
-  font-size: 0.85rem !important;
+  font-size: 0.9rem !important;
 }
 .v .vinfo .col {
-  font-size: 0.85rem !important;
+  font-size: 0.9rem !important;
 }
 .v .vinfo .vcount .vnum {
-  font-size: 0.85rem !important;
+  font-size: 0.9rem !important;
 }
 .v .power {
   display: none !important;
 }
 .v .vlist .vcard .vhead .vnick {
-  font-size: 0.85rem !important;
+  font-size: 0.9rem !important;
 }
 .v .vlist .vcard .vhead .vsys {
-  font-size: 0.75rem !important;
+  font-size: 0.8rem !important;
 }
 .v .vlist .vcard .vh .vtime {
-  font-size: 0.75rem !important;
+  font-size: 0.8rem !important;
 }
 .v .vlist .vcard .vh .vat {
-  font-size: 0.75rem !important;
+  font-size: 0.8rem !important;
 }
 .v .vlist .vcard .vcontent {
-  font-size: 0.85rem !important;
+  font-size: 0.9rem !important;
 }
