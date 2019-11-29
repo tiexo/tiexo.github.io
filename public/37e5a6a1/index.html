@@ -7,20 +7,20 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-<title>使用QQ空间相册生成图片外链 - 简单可依赖</title>
+<title>通过Github Actions实现Hexo博客自动部署 - 简单可依赖</title>
 
 
-    <meta name="description" content="图片外链是每个博客都要折腾的项目，我曾经使用过七牛、SM图床、微博图床等等，但七牛域名需要备案并且HTTPS流量收费，SM和微博则对图片尺度限制较大，连本站不露点的动漫图片都会被和谐。这个时候，我终于回想起曾经在狐吧看到的QQ空间相册外链项目…">
+    <meta name="description" content="一开始打算通过Travis CI来实现此功能，后来发现Github正式开放了Actions功能，本着一站体验的原则，选择了后者。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="使用QQ空间相册生成图片外链">
-<meta property="og:url" content="https:&#x2F;&#x2F;tiexo.github.io&#x2F;e4ed098a&#x2F;index.html">
+<meta property="og:title" content="通过Github Actions实现Hexo博客自动部署">
+<meta property="og:url" content="https:&#x2F;&#x2F;tiexo.github.io&#x2F;37e5a6a1&#x2F;index.html">
 <meta property="og:site_name" content="简单可依赖">
-<meta property="og:description" content="图片外链是每个博客都要折腾的项目，我曾经使用过七牛、SM图床、微博图床等等，但七牛域名需要备案并且HTTPS流量收费，SM和微博则对图片尺度限制较大，连本站不露点的动漫图片都会被和谐。这个时候，我终于回想起曾经在狐吧看到的QQ空间相册外链项目…">
+<meta property="og:description" content="一开始打算通过Travis CI来实现此功能，后来发现Github正式开放了Actions功能，本着一站体验的原则，选择了后者。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="https:&#x2F;&#x2F;r.photo.store.qq.com&#x2F;psb?&#x2F;V11rnv1t26XYl4&#x2F;8VheMW*o4XdH3aHps4u6Zz2mttZ2s8BTOa1rEk6CT7s!&#x2F;r&#x2F;dEYBAAAAAAAAnull&amp;bo=6APBAegDwQERCT4!&amp;rf=photolist&amp;t=5qzoneimgout.png">
-<meta property="og:updated_time" content="2019-11-27T02:47:45.954Z">
+<meta property="og:image" content="https:&#x2F;&#x2F;r.photo.store.qq.com&#x2F;psb?&#x2F;V11rnv1t26XYl4&#x2F;8wGH3vQfWMfzu0iLeNWywm7ZbJUEDX0*71NQAbs8OrE!&#x2F;r&#x2F;dL8AAAAAAAAAnull&amp;bo=sAQQArAEEAIRCT4!&amp;rf=photolist&amp;t=5_yake_qzoneimgout.png">
+<meta property="og:updated_time" content="2019-11-29T15:13:32.972Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https:&#x2F;&#x2F;r.photo.store.qq.com&#x2F;psb?&#x2F;V11rnv1t26XYl4&#x2F;8VheMW*o4XdH3aHps4u6Zz2mttZ2s8BTOa1rEk6CT7s!&#x2F;r&#x2F;dEYBAAAAAAAAnull&amp;bo=6APBAegDwQERCT4!&amp;rf=photolist&amp;t=5qzoneimgout.png">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;r.photo.store.qq.com&#x2F;psb?&#x2F;V11rnv1t26XYl4&#x2F;8wGH3vQfWMfzu0iLeNWywm7ZbJUEDX0*71NQAbs8OrE!&#x2F;r&#x2F;dL8AAAAAAAAAnull&amp;bo=sAQQArAEEAIRCT4!&amp;rf=photolist&amp;t=5_yake_qzoneimgout.png">
 
 
 
@@ -71,7 +71,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="https://cdn.jsdelivr.net/gh/tiexo/tiexo.github.io/images/logo.svg" alt="使用QQ空间相册生成图片外链" height="28">
+                <img src="https://cdn.jsdelivr.net/gh/tiexo/tiexo.github.io/images/logo.svg" alt="通过Github Actions实现Hexo博客自动部署" height="28">
             
             </a>
         </div>
@@ -116,7 +116,7 @@
     
     <div class="card-image">
         <span class="image is-7by1">
-            <img class="thumbnail" src="//r.photo.store.qq.com/psb?/V11rnv1t26XYl4/8VheMW*o4XdH3aHps4u6Zz2mttZ2s8BTOa1rEk6CT7s!/r/dEYBAAAAAAAAnull&amp;bo=6APBAegDwQERCT4!&amp;rf=photolist&amp;t=5qzoneimgout.png" alt="使用QQ空间相册生成图片外链">
+            <img class="thumbnail" src="//r.photo.store.qq.com/psb?/V11rnv1t26XYl4/8wGH3vQfWMfzu0iLeNWywm7ZbJUEDX0*71NQAbs8OrE!/r/dL8AAAAAAAAAnull&amp;bo=sAQQArAEEAIRCT4!&amp;rf=photolist&amp;t=5_yake_qzoneimgout.png" alt="通过Github Actions实现Hexo博客自动部署">
         </span>
     </div>
     
@@ -124,13 +124,13 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2018-11-03T08:41:34.000Z">2018-11-03</time>
+                <time class="level-item has-text-grey" datetime="2019-11-29T15:02:26.000Z">2019-11-29</time>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    4 分钟 读完 (大约 621 个字)
+                    3 分钟 读完 (大约 504 个字)
                 </span>
                 
                 
@@ -139,41 +139,36 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                使用QQ空间相册生成图片外链
+                通过Github Actions实现Hexo博客自动部署
             
         </h1>
         <div class="content">
-            <p>图片外链是每个博客都要折腾的项目，我曾经使用过七牛、SM图床、微博图床等等，但七牛域名需要备案并且HTTPS流量收费，SM和微博则对图片尺度限制较大，连本站不露点的动漫图片都会被和谐。<br>这个时候，我终于回想起曾经在狐吧看到的QQ空间相册外链项目…</p>
+            <p>一开始打算通过Travis CI来实现此功能，后来发现Github正式开放了Actions功能，本着一站体验的原则，选择了后者。</p>
 <a id="more"></a>
 
-<h3 id="QQ空间相册外链项目"><a href="#QQ空间相册外链项目" class="headerlink" title="QQ空间相册外链项目"></a>QQ空间相册外链项目</h3><p>目前该项目由Windows软件版和GM脚本版，地址分别如下：</p>
+<h3 id="自动部署"><a href="#自动部署" class="headerlink" title="自动部署"></a>自动部署</h3><p>很早以前就听说了Travis CI自动部署的方案，但是我一直没觉得有什么优点，不过省了hexo d的命令而已。<br>在实际体验过后，依然没有感觉到…<br>但是我们折腾博客，从来就不是为了提高生产力，而是装逼罢了。</p>
+<h3 id="Actions"><a href="#Actions" class="headerlink" title="Actions"></a>Actions</h3><p>Github Actions和Travis CI的原理是一样的。</p>
 <ul>
-<li><a href="https://github.com/xunni1000/Qzone-Photo-Outside" target="_blank" rel="external nofollow noopener noreferrer">Qzone-Photo-Outside</a></li>
-<li><a href="https://greasyfork.org/zh-CN/scripts/373731-qq%E7%9B%B8%E5%86%8C%E5%A4%96%E9%93%BE%E5%B7%A5%E5%85%B7" target="_blank" rel="external nofollow noopener noreferrer">QQ相册外链工具</a></li>
+<li>生成SSH私钥</li>
 </ul>
-<p>两个版本都比较简陋，但这些都不是重点，因为QQ空间的确有独到的优势。</p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -f github-deploy-key</span><br></pre></td></tr></table></figure>
+<p>连续三次回车，会生成”<code>github-deploy-key</code>“和”<code>github-deploy-key.pub</code>“两个文件。</p>
 <ul>
-<li>支持HTTPS，这是大势所趋。</li>
-<li>稳定，除非QQ空间关闭或者接口被封。</li>
-<li>高速，QQ空间图片的加载速度绝对是一流的。</li>
-<li>限制少，不会动不动就和谐。</li>
-<li>保留原文件，像SM图床和微博图床都无法保留原文件。</li>
+<li>Setting</li>
 </ul>
-<p>所以，我把本站的所有图片全部迁移到QQ空间啦。</p>
-<h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3><p>实际上外链工具只是提供链接转换，仍然需要我们手动把图片上传到QQ空间相册里面。</p>
+<p>打开博客源码分支”<code>blog/settings/secrets</code>“点击”<code>Add new secrets</code>“</p>
+<p>name栏输入 HEXO_DEPLOY_PRI<br>value栏输入之前生成的 github-deploy-key文件里面的内容</p>
+<p>接着打开pages分支”<code>master/settings/keys</code>“点击”<code>Add deploy key</code>“</p>
+<p>title栏输入HEXO_DEPLOY_PUB<br>key栏输入之前生成的github-deploy-key.pub文件里面的内容</p>
 <ul>
-<li>选择原图上传</li>
+<li>yml文件</li>
 </ul>
-<p>根据作者提醒，必须选择原图上传，但是对访问权限无限制。</p>
-<p><img src="//r.photo.store.qq.com/psb?/V11rnv1t2fVV1f/pMNIVnCwfKt8GVtB05P7REGs2RmOxToyev9cu78WtU4!/r/dFQBAAAAAAAAnull&bo=0AKzANACswADCSw!&rf=photolist&t=5qzoneimgout.png" alt=""></p>
-<ul>
-<li>复制链接</li>
-</ul>
-<p>如果你用的GM脚本版，那么将鼠标移动到图片缩略图上面会显示“外链”字样，点击后会自动复制链接（无任何提示）。</p>
-<p><img src="//r.photo.store.qq.com/psb?/V11rnv1t2fVV1f/phMDoUQk4qls17QsKBtEi41RoICkdx6Cn*ZEuboVKPo!/r/dDQBAAAAAAAAnull&bo=EgHZABIB2QADCSw!&rf=photolist&t=5qzoneimgout.png" alt=""></p>
-<p>如果你用的是软件版，那么需要手动复制QQ空间图片链接，然后去软件点击粘贴，接着会自动复制转换后的外链。</p>
-<p><img src="//r.photo.store.qq.com/psb?/V11rnv1t2fVV1f/8gZTpF0TMZ6kKVg4gzhEP84nIslgaK2m*iguj1*FLrU!/r/dFIBAAAAAAAAnull&bo=tAK7AbQCuwEDCSw!&rf=photolist&t=5qzoneimgout.png" alt=""></p>
-<p>具体效果可以看看本站，根据作者所说已经稳定使用9年，应该没什么问题！</p>
+<p>打开博客源码分支”<code>blog/.github/workflows</code>“新建一个”<code>main.yml</code>“文件</p>
+<figure class="highlight yml hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-attr">name:</span> <span class="hljs-string">CI</span></span><br><span class="line"><span class="hljs-attr">on:</span></span><br><span class="line"><span class="hljs-attr">  push:</span></span><br><span class="line"><span class="hljs-attr">    branches:</span></span><br><span class="line"><span class="hljs-bullet">      -</span> <span class="hljs-string">blog</span></span><br><span class="line"><span class="hljs-attr">jobs:</span></span><br><span class="line"><span class="hljs-attr">  build:</span></span><br><span class="line"><span class="hljs-attr">    runs-on:</span> <span class="hljs-string">ubuntu-latest</span></span><br><span class="line"></span><br><span class="line"><span class="hljs-attr">    steps:</span></span><br><span class="line"><span class="hljs-attr">      - name:</span> <span class="hljs-string">Checkout</span> <span class="hljs-string">source</span></span><br><span class="line"><span class="hljs-attr">        uses:</span> <span class="hljs-string">actions/checkout@v1</span></span><br><span class="line"><span class="hljs-attr">        with:</span></span><br><span class="line"><span class="hljs-attr">          ref:</span> <span class="hljs-string">blog</span></span><br><span class="line"><span class="hljs-attr">      - name:</span> <span class="hljs-string">Use</span> <span class="hljs-string">Node.js</span> <span class="hljs-string">$&#123;&#123;</span> <span class="hljs-string">matrix.node_version</span> <span class="hljs-string">&#125;&#125;</span></span><br><span class="line"><span class="hljs-attr">        uses:</span> <span class="hljs-string">actions/setup-node@v1</span></span><br><span class="line"><span class="hljs-attr">        with:</span></span><br><span class="line"><span class="hljs-attr">          version:</span> <span class="hljs-string">$&#123;&#123;</span> <span class="hljs-string">matrix.node_version</span> <span class="hljs-string">&#125;&#125;</span></span><br><span class="line"><span class="hljs-attr">      - name:</span> <span class="hljs-string">Setup</span> <span class="hljs-string">hexo</span></span><br><span class="line"><span class="hljs-attr">        env:</span></span><br><span class="line"><span class="hljs-attr">          ACTION_DEPLOY_KEY:</span> <span class="hljs-string">$&#123;&#123;</span> <span class="hljs-string">secrets.ACTION_DEPLOY_KEY</span> <span class="hljs-string">&#125;&#125;</span></span><br><span class="line"><span class="hljs-attr">        run:</span> <span class="hljs-string">|</span></span><br><span class="line"><span class="hljs-string">          mkdir -p ~/.ssh/</span></span><br><span class="line"><span class="hljs-string">          echo "$ACTION_DEPLOY_KEY" &gt; ~/.ssh/id_rsa</span></span><br><span class="line"><span class="hljs-string">          chmod 600 ~/.ssh/id_rsa</span></span><br><span class="line"><span class="hljs-string">          ssh-keyscan github.com &gt;&gt; ~/.ssh/known_hosts</span></span><br><span class="line"><span class="hljs-string">          git config --global user.email "输入邮箱"</span></span><br><span class="line"><span class="hljs-string">          git config --global user.name "输入用户名"</span></span><br><span class="line"><span class="hljs-string">          npm install hexo-cli -g</span></span><br><span class="line"><span class="hljs-string">          npm install</span></span><br><span class="line"><span class="hljs-string"></span><span class="hljs-attr">      - name:</span> <span class="hljs-string">Hexo</span> <span class="hljs-string">deploy</span></span><br><span class="line"><span class="hljs-attr">        run:</span> <span class="hljs-string">|</span></span><br><span class="line"><span class="hljs-string">          hexo clean</span></span><br><span class="line"><span class="hljs-string">          hexo d</span></span><br></pre></td></tr></table></figure>
+<h3 id="自动部署-1"><a href="#自动部署-1" class="headerlink" title="自动部署"></a>自动部署</h3><p>接着git push推送一个commit到博客源码分支，点击Actions即可看见部署过程。</p>
+<p><img src="//r.photo.store.qq.com/psb?/V11rnv1t2fVV1f/2hXYYLvW48mRt9MqRvi5v5uaA9bzD9bDdmLs2xbbIuc!/r/dLYAAAAAAAAA&bo=DwMSAg8DEgIDCSw!&rf=viewer_4_yake_qzoneimgout.png" alt=""></p>
+<p>每次部署的时间大概在45s左右，实际上比hexo d还要慢些。</p>
+<p>主要参考资料：<a href="https://hdj.me/github-actions-hexo-cicd/" target="_blank" rel="external nofollow noopener noreferrer">https://hdj.me/github-actions-hexo-cicd/</a></p>
 
         </div>
         
@@ -189,17 +184,10 @@
 <div class="card card-transparent">
     <div class="level post-navigation is-flex-wrap is-mobile">
         
-        <div class="level-start">
-            <a class="level level-item has-link-grey  article-nav-prev" href="/8f21d967/">
-                <i class="level-item fas fa-chevron-left"></i>
-                <span class="level-item">股票账户的那点破事</span>
-            </a>
-        </div>
-        
         
         <div class="level-end">
-            <a class="level level-item has-link-grey  article-nav-next" href="/d2d7ecd5/">
-                <span class="level-item">Icarus主题更新至V2版本</span>
+            <a class="level level-item has-link-grey  article-nav-next" href="/1e1b3df9/">
+                <span class="level-item">利用Jsdelivr实现Github Pages静态文件CDN加速</span>
                 <i class="level-item fas fa-chevron-right"></i>
             </a>
         </div>

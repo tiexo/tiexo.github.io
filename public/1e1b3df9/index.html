@@ -18,7 +18,7 @@
 <meta property="og:description" content="CDN加速不是一个新鲜的话题，但是受限于免费、无备案域名等因素，实际上并没有什么选择。直到偶然发现Jsdelivr竟然可以对整个Git仓库进行CDN加速后…">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="https:&#x2F;&#x2F;r.photo.store.qq.com&#x2F;psb?&#x2F;V11rnv1t26XYl4&#x2F;pwAHe6tXhNTne6aRjCCEaTHOZvSG4rO48zhmoLoPcmQ!&#x2F;r&#x2F;dFQBAAAAAAAAnull&amp;bo=sATpAbAE6QERCT4!&amp;rf=photolist&amp;t=5_yake_qzoneimgout.png">
-<meta property="og:updated_time" content="2019-11-29T09:55:51.884Z">
+<meta property="og:updated_time" content="2019-11-29T12:08:20.327Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https:&#x2F;&#x2F;r.photo.store.qq.com&#x2F;psb?&#x2F;V11rnv1t26XYl4&#x2F;pwAHe6tXhNTne6aRjCCEaTHOZvSG4rO48zhmoLoPcmQ!&#x2F;r&#x2F;dFQBAAAAAAAAnull&amp;bo=sATpAbAE6QERCT4!&amp;rf=photolist&amp;t=5_yake_qzoneimgout.png">
 
@@ -28,7 +28,7 @@
 
 
 
-<link rel="icon" href="https://cdn.jsdelivr.net/gh/tiexo/cdn/favicon.ico">
+<link rel="icon" href="https://cdn.jsdelivr.net/gh/tiexo/tiexo.github.io/images/favicon.ico">
 
 
 <link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/bulma/0.7.2/css/bulma.css">
@@ -71,7 +71,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="https://cdn.jsdelivr.net/gh/tiexo/cdn/logo.svg" alt="利用Jsdelivr实现Github Pages静态文件CDN加速" height="28">
+                <img src="https://cdn.jsdelivr.net/gh/tiexo/tiexo.github.io/images/logo.svg" alt="利用Jsdelivr实现Github Pages静态文件CDN加速" height="28">
             
             </a>
         </div>
@@ -130,7 +130,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    3 分钟 读完 (大约 425 个字)
+                    3 分钟 读完 (大约 422 个字)
                 </span>
                 
                 
@@ -146,19 +146,19 @@
             <p>CDN加速不是一个新鲜的话题，但是受限于免费、无备案域名等因素，实际上并没有什么选择。直到偶然发现Jsdelivr竟然可以对整个Git仓库进行CDN加速后…</p>
 <a id="more"></a>
 
-<h3 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h3><p>图片的CDN方案有很多，这里就不讨论了，本站使用QQ空间作为图床，速度应该是顶尖的。<br>有兴趣的可以访问：<a href="https://tiexo.github.io/e4ed098a/">《使用QQ空间相册生成图片外链》</a></p>
+<h3 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h3><p>图片的CDN方案有很多，这里就不讨论了，本站使用QQ空间作为图床，速度应该是顶尖的。<br>有兴趣的可以访问：<a href="https://tiexo.github.io/e4ed098a/" target="_blank">《使用QQ空间相册生成图片外链》</a></p>
 <h3 id="公共JS-CSS库"><a href="#公共JS-CSS库" class="headerlink" title="公共JS/CSS库"></a>公共JS/CSS库</h3><p>公共库也有不少选择，比如七牛、360、Loli等。<br>本站除了Fontawesome使用七牛外，其他的都是Loli CDN。</p>
 <h3 id="私人文件"><a href="#私人文件" class="headerlink" title="私人文件"></a>私人文件</h3><p>本文今天介绍的主要是私人文件，譬如Github Pages仓库中CSS和JS两个文件夹里面的JS和CSS文件，以及搜索插件生成的JSON文件等。</p>
 <p>其请求链接为</p>
-<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://tiexo.github.io/js/xxx.js</span><br></pre></td></tr></table></figure>
+<figure class="highlight html hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://tiexo.github.io/js/xxx.js</span><br></pre></td></tr></table></figure>
 <p>在主题引用处找到代码</p>
-<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%- _js(&apos;js/xxx&apos;, true) %&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%- _js(<span class="hljs-string">'js/xxx'</span>, <span class="hljs-literal">true</span>) %&gt;</span><br></pre></td></tr></table></figure>
 <p>将其修改为</p>
-<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%- _js(&apos;https://cdn.jsdelivr.net/gh/tiexo/tiexo.github.io/js/xxx&apos;, true) %&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight js hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;%- _js(<span class="hljs-string">'https://cdn.jsdelivr.net/gh/tiexo/tiexo.github.io/js/xxx'</span>, <span class="hljs-literal">true</span>) %&gt;</span><br></pre></td></tr></table></figure>
 
 <p>其原理就是Jsdelivr会将所有Git仓库中的文件CDN化，我们使用文件的CDN链接替换其自身的链接，从而实现了CDN加速。</p>
 <p>难点主要在于找到主题目录中的引用代码，之后直接按照格式替换链接即可。<br>具体格式为</p>
-<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://cdn.jsdelivr.net/gh/用户名/仓库名/文件路径</span><br></pre></td></tr></table></figure>
+<figure class="highlight html hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://cdn.jsdelivr.net/gh/用户名/仓库名/文件路径</span><br></pre></td></tr></table></figure>
 
 <h3 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h3><p>CDN都是有缓存的，可能修改某处文件后网站页面不会及时更新。</p>
 <h3 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h3><p>至少比github.io要快吧？</p>
@@ -176,6 +176,13 @@
 
 <div class="card card-transparent">
     <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/37e5a6a1/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">通过Github Actions实现Hexo博客自动部署</span>
+            </a>
+        </div>
         
         
         <div class="level-end">
@@ -252,7 +259,7 @@
                 </p>
                 
                 <p class="control">
-                    <a class="button is-white is-large" target="_blank" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/" rel="external nofollow noopener noreferrer">
+                    <a class="button is-white is-large" target="_blank" title="本站采用知识共享署名4.0国际许可协议进行许可" href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noopener noreferrer">
                         
                         <i class="fab fa-creative-commons-by"></i>
                         
@@ -260,7 +267,7 @@
                 </p>
                 
                 <p class="control">
-                    <a class="button is-white is-large" target="_blank" title="Fork on GitHub" href="https://github.com/tiexo/tiexo.github.io" rel="external nofollow noopener noreferrer">
+                    <a class="button is-white is-large" target="_blank" title="前往GitHub" href="https://github.com/tiexo/tiexo.github.io" rel="external nofollow noopener noreferrer">
                         
                         <i class="fab fa-github"></i>
                         
