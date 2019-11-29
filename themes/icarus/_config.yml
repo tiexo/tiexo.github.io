@@ -39,10 +39,10 @@ footer:
         Creative Commons:
             icon: fab fa-creative-commons
             url: 'https://creativecommons.org/'
-        Attribution 4.0 International:
+        本站采用知识共享署名4.0国际许可协议进行许可:
             icon: fab fa-creative-commons-by
-            url: 'https://creativecommons.org/licenses/by/4.0/'
-        Fork on GitHub:
+            url: 'https://creativecommons.org/licenses/by/4.0/deed.zh'
+        前往GitHub:
             icon: fab fa-github
             url: 'https://github.com/tiexo/tiexo.github.io'
         
