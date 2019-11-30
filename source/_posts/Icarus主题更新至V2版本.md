@@ -12,7 +12,7 @@ date: 2018-11-03 11:47:47
 
 根据官方文档，V2版本的主要更新内容如下：
 
-![](//r.photo.store.qq.com/psb?/V11rnv1t2fVV1f/cB9f77OwGijRy1eysEbI7THuSteQDSTUip1Vfhqzs6s!/r/dFYAAAAAAAAAnull&bo=XwMqA18DKgMRCT4!&rf=photolist&t=5qzoneimgout.png)
+<div align=center><img src="//r.photo.store.qq.com/psb?/V11rnv1t2fVV1f/cB9f77OwGijRy1eysEbI7THuSteQDSTUip1Vfhqzs6s!/r/dFYAAAAAAAAAnull&bo=XwMqA18DKgMRCT4!&rf=photolist&t=5qzoneimgout.png)"></div>
 
 根据我个人的感受来说，主题设计变得更加现代化，配置更加灵活。
 其中有不少新特性都是之前大家反馈的内容，譬如多布局切换和CDN加速，总体感觉还是很棒的。

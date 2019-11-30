@@ -32,7 +32,7 @@ date: 2019-11-29 15:38:14
 
 旧版是先输入hexo s命令，接着选择“`访问链接—修改端口号为4000`”，点击链接即可进行预览。
 
-![](//r.photo.store.qq.com/psb?/V11rnv1t2fVV1f/I73PO2Sb*jzd8pz2n46yZbOuJZm1m9j.2Qkjk3Y2pSI!/r/dFQBAAAAAAAAnull&bo=NQI0ATUCNAEDCSw!&rf=photolist&t=5_yake_qzoneimgout.png)
+<div align=center><img src="//r.photo.store.qq.com/psb?/V11rnv1t2fVV1f/I73PO2Sb*jzd8pz2n46yZbOuJZm1m9j.2Qkjk3Y2pSI!/r/dFQBAAAAAAAAnull&bo=NQI0ATUCNAEDCSw!&rf=photolist&t=5_yake_qzoneimgout.png"></div>
 
 但是新版去掉了图形化的界面，反而没有之前方便了。
 
@@ -53,11 +53,11 @@ apps:
 {% endcodeblock %}
 以后每次想要预览时，只需要点击“`查看—命令面板`”，输入"`preview`"点击"`open preview tab`"，选择"`hexo s`"即可。
 
-![](//r.photo.store.qq.com/psb?/V11rnv1t2fVV1f/PLQy*uJyIc0ah0ca6PJeh0mcBF5PWc57Hgy8SNhOfUg!/r/dFIBAAAAAAAAnull&bo=ywHaAMsB2gADCSw!&rf=photolist&t=5_yake_qzoneimgout.png)
+<div align=center><img src="//r.photo.store.qq.com/psb?/V11rnv1t2fVV1f/PLQy*uJyIc0ah0ca6PJeh0mcBF5PWc57Hgy8SNhOfUg!/r/dFIBAAAAAAAAnull&bo=ywHaAMsB2gADCSw!&rf=photolist&t=5_yake_qzoneimgout.png"></div>
 
 点击"`open in browser`"可以在浏览器中打开新标签页。
 
-![](//r.photo.store.qq.com/psb?/V11rnv1t2fVV1f/7HniNNl*qWVA.xuICbVpKE6RofZ9G3rNnhJ*Xp.z6Vg!/r/dL8AAAAAAAAAnull&bo=JAeeAyQHngMDCSw!&rf=photolist&t=5_yake_qzoneimgout.png)
+<div align=center><img src="//r.photo.store.qq.com/psb?/V11rnv1t2fVV1f/7HniNNl*qWVA.xuICbVpKE6RofZ9G3rNnhJ*Xp.z6Vg!/r/dL8AAAAAAAAAnull&bo=JAeeAyQHngMDCSw!&rf=photolist&t=5_yake_qzoneimgout.png"></div>
 
 不过，我发现修改某些文件后，预览页面并不会实时变动，而是要重新hexo g生成，还有待考察。
 
@@ -65,13 +65,15 @@ apps:
 
 旧版是在“版本”中依次选择“`提交—推送`”即可，分别对应git commit和git push。
 
-![](//r.photo.store.qq.com/psb?/V11rnv1t2fVV1f/fHF9AovBV4bUsld2TGtiWm1k2.oF*a00hBkWHp0Heqo!/r/dL8AAAAAAAAAnull&bo=MAImAjACJgIDCSw!&rf=photolist&t=5_yake_qzoneimgout.png)
+<div align=center><img src="//r.photo.store.qq.com/psb?/V11rnv1t2fVV1f/fHF9AovBV4bUsld2TGtiWm1k2.oF*a00hBkWHp0Heqo!/r/dL8AAAAAAAAAnull&bo=MAImAjACJgIDCSw!&rf=photolist&t=5_yake_qzoneimgout.png"></div>
 
-新版则是先在“`源代码管理`”提交commit，接着点击左下角的“`同步按钮`”，就会自动推送到git仓库了。
+新版则是先在“`源代码管理`”提交commit
 
-![](//r.photo.store.qq.com/psb?/V11rnv1t2fVV1f/Nr6WaVSm9QaNcy*qJnsp.ERIejUccEi6KQb9sjyl0YM!/r/dFQBAAAAAAAAnull&bo=nwFnAZ8BZwEDCSw!&rf=photolist&t=5_yake_qzoneimgout.png)
+<div align=center><img src="//r.photo.store.qq.com/psb?/V11rnv1t2fVV1f/Nr6WaVSm9QaNcy*qJnsp.ERIejUccEi6KQb9sjyl0YM!/r/dFQBAAAAAAAAnull&bo=nwFnAZ8BZwEDCSw!&rf=photolist&t=5_yake_qzoneimgout.png"></div>
 
-![](//r.photo.store.qq.com/psb?/V11rnv1t2fVV1f/d6dfg04B3sA.M3qkTt5vKH09f1TZjsnQV7BtAjLoOHw!/r/dLYAAAAAAAAAnull&bo=MQFyADEBcgADCSw!&rf=photolist&t=5_yake_qzoneimgout.png)
+接着点击左下角的“`同步按钮`”，就会自动推送到git仓库了。
+
+<div align=center><img src="//r.photo.store.qq.com/psb?/V11rnv1t2fVV1f/d6dfg04B3sA.M3qkTt5vKH09f1TZjsnQV7BtAjLoOHw!/r/dLYAAAAAAAAAnull&bo=MQFyADEBcgADCSw!&rf=photolist&t=5_yake_qzoneimgout.png"></div>
 
 当然，你也可以直接输入git命令进行提交和推送。
 
