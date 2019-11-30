@@ -5,11 +5,8 @@ permalink: /404
 ---
 <!DOCTYPE html>
 <html>
-<head>
-         <meta charset="UTF-8" />
-         <title>404</title>                               </head>
 <body>
-
+<script type="text/javascript" src="//qzonestyle.gtimg.cn/qzone/hybrid/app/404/search_children.js" charset="utf-8" homePageUrl="https://tiexo.github.io" homePageName="3秒后自动返回网站首页"></script>
 <script>
     setTimeout(function () {
         window.location.href = '//' +  document.domain;
