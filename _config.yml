@@ -66,9 +66,9 @@ archive_generator:
  
 ## RSS订阅 
 feed:
-  type: atom
-  path: atom.xml
-  limit: 20
+  type: 
+  path: 
+  limit: 
   hub:
   content:
   

@@ -73,7 +73,6 @@ comment:
     notify: false           
     verify: false           
     placeholder: 友情提醒：你甚至不需要填写昵称、邮箱、网址就能匿名评论！（填写邮箱可以接收回复提醒） 
-    avatar: robohash 
 
 # Share plugin settings (http://ppoffice.github.io/hexo-theme-icarus/categories/Configuration/Share-Plugins)
 share:
@@ -90,7 +89,7 @@ plugins:
     # Enable the Outdated Browser plugin (http://outdatedbrowser.com/)
     outdated-browser: false
     # Enable page animations (http://animejs.com/)
-    animejs: false
+    animejs: true
     # Enable the MathJax plugin (http://ppoffice.github.io/hexo-theme-icarus/2018/01/01/plugin/MathJax/)
     mathjax: false
     # Show the back to top button on mobile devices
@@ -102,12 +101,15 @@ plugins:
     # Baidu Analytics plugin settings (http://ppoffice.github.io/hexo-theme-icarus/2018/01/01/plugin/Analytics/#Baidu-Analytics)
     baidu-analytics:
         # Baidu Analytics tracking id
-        tracking_id: # 066fa7a0be494a134c82c9e64f821f86
+        tracking_id: 
     # Hotjar user feedback plugin (http://ppoffice.github.io/hexo-theme-icarus/2018/01/01/plugin/Analytics/#Hotjar)
     hotjar:
         # Hotjar site id
         site_id: 
-    busuanzi: 
+    busuanzi: false
+     # Show a loading progress bar at top of the page
+    progressbar: false
+
 # CDN provider settings
 providers:
     # Name or URL of the JavaScript and/or stylesheet CDN provider
