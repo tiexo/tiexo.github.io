@@ -1,5 +1,5 @@
 ---
-title: 404 Not Found：该页无法显示
+title: 404 Not Found：网页已被删除
 comments: false
 permalink: /404
 ---
@@ -9,7 +9,6 @@ permalink: /404
          <meta charset="UTF-8" />
          <title>404</title>                               </head>
 <body>
- <script type="text/javascript" src="//qzonestyle.gtimg.cn/qzone/hybrid/app/404/search_children.js" homePageName="返回首页" homePageUrl="https://tiexo.github.io"></script>
 
 <script>
     setTimeout(function () {
