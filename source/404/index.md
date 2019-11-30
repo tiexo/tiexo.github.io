@@ -5,11 +5,17 @@ permalink: /404
 ---
 <!DOCTYPE html>
 <html>
-    <head>
+<head>
          <meta charset="UTF-8" />
-         <title>404</title>                                                                                                                                        
-    </head>
-    <body>
-         <script type="text/javascript" src="//qzonestyle.gtimg.cn/qzone/hybrid/app/404/search_children.js" homePageName="返回首页" homePageUrl="https://tiexo.github.io"></script>
-true</body>
+         <title>404</title>                               </head>
+<body>
+ <script type="text/javascript" src="//qzonestyle.gtimg.cn/qzone/hybrid/app/404/search_children.js" homePageName="返回首页" homePageUrl="https://tiexo.github.io"></script>
+
+<script>
+    setTimeout(function () {
+        window.location.href = '//' +  document.domain;
+    }, 3000);
+</script>
+
+</body>
 </html>
