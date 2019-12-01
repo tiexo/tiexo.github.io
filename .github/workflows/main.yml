@@ -28,8 +28,10 @@ jobs:
           git config --global user.email "179292705@qq.com"
           git config --global user.name "tiexo"
           npm install hexo-cli -g
-          npm install gulp -g
           npm install
+          npm install gulp -g
+          npm install gulp-minify-css gulp-uglify gulp-htmlmin gulp-htmlclean gulp --save
+
       - name: Hexo deploy
         run: |
           hexo clean
