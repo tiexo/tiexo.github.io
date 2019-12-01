@@ -22,6 +22,10 @@ layout: "page"
 - [Outlook](https://outlook.live.com/owa/)，负责评论提醒邮件发送
 - [今日诗词](https://www.jinrishici.com/)，提供一言API
 - [Github Actions](https://help.github.com/en/actions)，负责24小时持续集成并自动部署
+- [Gulp](https://www.gulpjs.com.cn/)，压缩静态文件
+- [QQ空间](https://qzone.qq.com/)，提供高速图床
+- [konachan](https://konachan.com/)，提供文章封面图
+- [腾讯公益](https://www.qq.com/404/)，提供公益404页面
 
 以及那些上文未提及的、在本站运营过程中对我有所帮助的人们，谢谢！
 

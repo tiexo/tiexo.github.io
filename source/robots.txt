@@ -9,7 +9,7 @@ Disallow: /js/
 Disallow: /css/
 Disallow: /content.json
 Disallow: /images/
-Disallow: /404/
+Disallow: /404.html/
 Disallow: /baidu_urls.txt/
 
-Sitemap: https://www.tiexo.cn/sitemap.xml
+Sitemap: https://tiexo.github.io/sitemap.xml
