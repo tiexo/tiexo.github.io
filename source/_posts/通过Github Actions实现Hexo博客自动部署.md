@@ -86,4 +86,6 @@ jobs:
 
 每次部署的时间大概在45s左右，实际上比hexo d还要慢些。
 
-主要参考资料：https://hdj.me/github-actions-hexo-cicd/
+### 参考资料
+
+- https://hdj.me/github-actions-hexo-cicd/

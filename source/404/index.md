@@ -1,6 +1,5 @@
 ---
 title: 404 Not Found：网页已被删除
-comments: false
 permalink: /404
 layout: false
 ---
