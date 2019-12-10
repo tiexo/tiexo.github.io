@@ -1,82 +1,66 @@
 var gulp = require('gulp');
-var minifycss = require('gulp-minify-css');
+var minifycss = require('gulp-clean-css');
 var uglify = require('gulp-uglify');
 var htmlmin = require('gulp-htmlmin');
 var htmlclean = require('gulp-htmlclean');
-var imagemin = require('gulp-imagemin');
 var babel = require('gulp-babel');
 
-// 压缩css文件
-gulp.task('minify-css', function (done) {
+// 压缩 public 目录 css
+gulp.task('minify-css', function() {
+    var option = {
+        rebase: false,
+        //advanced: true,               //类型：Boolean 默认：true [是否开启高级优化（合并选择器等）]
+        compatibility: '*',         //保留ie7及以下兼容写法 类型：String 默认：''or'*' [启用兼容模式； 'ie7'：IE7兼容模式，'ie8'：IE8兼容模式，'*'：IE9+兼容模式]
+        //keepBreaks: true,             //类型：Boolean 默认：false [是否保留换行]
+        //keepSpecialComments: '*'      //保留所有特殊前缀 当你用autoprefixer生成的浏览器前缀，如果不加这个参数，有可能将会删除你的部分前缀
+    }
     return gulp.src('./public/**/*.css')
         .pipe(minifycss())
         .pipe(gulp.dest('./public'));
-    done();
+});
+// 压缩 public 目录 html
+gulp.task('minify-html', function() {
+    var cleanOptions = {
+        protect: /<\!--%fooTemplate\b.*?%-->/g,             //忽略处理
+        unprotect: /<script [^>]*\btype="text\/x-handlebars-template"[\s\S]+?<\/script>/ig //特殊处理
+    }
+    var minOption = {
+        collapseWhitespace: true,           //压缩HTML
+        collapseBooleanAttributes: true,    //省略布尔属性的值  <input checked="true"/> ==> <input />
+        removeEmptyAttributes: true,        //删除所有空格作属性值    <input id="" /> ==> <input />
+        removeScriptTypeAttributes: true,   //删除<script>的type="text/javascript"
+        removeStyleLinkTypeAttributes: true,//删除<style>和<link>的type="text/css"
+        removeComments: false,               //清除HTML注释
+        minifyJS: true,                     //压缩页面JS
+        minifyCSS: true,                    //压缩页面CSS
+        minifyURLs: true                    //替换页面URL
+    };  
+  return gulp.src('./public/**/*.html')
+    .pipe(htmlclean())
+    .pipe(htmlmin({
+         removeComments: true,
+         minifyJS: true,
+         minifyCSS: true,
+         minifyURLs: true,
+    }))
+    .pipe(gulp.dest('./public'))
+});
+// 压缩 public/js 目录 js
+gulp.task('minify-js', function() {
+    return gulp.src('./public/js/**/*.js')
+
+    //↓下面这些是新增的
+    .pipe(babel({ 
+        presets: ['@babel/env']  
+    }))
+    //↑上面这些是新增的
+
+    .pipe(uglify())
+    .pipe(gulp.dest('./public'));
 });
 
-// 压缩html文件
-gulp.task('minify-html', function (done) {
-    return gulp.src('./public/**/*.html')
-        .pipe(htmlclean())
-        .pipe(htmlmin({
-            removeComments: true,
-            minifyJS: true,
-            minifyCSS: true,
-            minifyURLs: true,
-        }))
-        .pipe(gulp.dest('./public'));
-    done();
-});
-
-// 压缩js文件
-gulp.task('minify-js', function (done) {
-    return gulp.src(['./public/**/*.js', '!./public/**/*.min.js'])
-        .pipe(babel({
-            //将ES6代码转译为可执行的JS代码
-            presets: ['es2015'] // es5检查机制
-        }))
-        .pipe(uglify())
-        .pipe(gulp.dest('./public'));
-    done();
-});
-
-// 压缩 public/images 目录内图片(Version<3)
-// gulp.task('minify-images', function () {
-//     gulp.src('./public/images/**/*.*')
-//         .pipe(imagemin({
-//             optimizationLevel: 5, //类型：Number  默认：3  取值范围：0-7（优化等级）
-//             progressive: true, //类型：Boolean 默认：false 无损压缩jpg图片
-//             interlaced: false, //类型：Boolean 默认：false 隔行扫描gif进行渲染
-//             multipass: false, //类型：Boolean 默认：false 多次优化svg直到完全优化
-//         }))
-//         .pipe(gulp.dest('./public/images'));
-// });
-
-// 压缩 public/images 目录内图片(Version>3)
-gulp.task('minify-images', function (done) {
-    gulp.src('./public/images/**/*.*')
-        .pipe(imagemin([
-            imagemin.gifsicle({interlaced: true}),
-            imagemin.jpegtran({progressive: true}),
-            imagemin.optipng({optimizationLevel: 5}),
-            imagemin.svgo({
-                plugins: [
-                    {removeViewBox: true},
-                    {cleanupIDs: false}
-                ]
-            })
-        ]))
-        .pipe(gulp.dest('./public/images'));
-    done();
-});
-
-//4.0以前的写法 
-//gulp.task('default', [
-//  'minify-html', 'minify-css', 'minify-js', 'minify-images'
-//]);
-//4.0以后的写法
 // 执行 gulp 命令时执行的任务
-gulp.task('default', gulp.series(gulp.parallel('minify-html', 'minify-css', 'minify-js', 'minify-images')), function () {
-    console.log("----------gulp Finished----------");
-    // Do something after a, b, and c are finished.
-});
+// gulp 4.0 适用的方式
+gulp.task('default', gulp.parallel('minify-html', 'minify-css', 'minify-js'
+ //build the website
+));
