@@ -1,1 +1,378 @@
-<!DOCTYPE html><html lang="zh"><head><meta charset="utf-8"><meta name="generator" content="Hexo 4.1.0"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"><title>利用Jsdelivr实现Github Pages静态文件CDN加速 - 简单可依赖</title><meta name="description" content="CDN加速不是一个新鲜的话题，但是受限于免费、无备案域名等因素，实际上并没有什么选择。直到偶然发现Jsdelivr竟然可以对整个Git仓库进行CDN加速后…"><meta property="og:type" content="article"><meta property="og:title" content="利用Jsdelivr实现Github Pages静态文件CDN加速"><meta property="og:url" content="https:&#x2F;&#x2F;tiexo.github.io&#x2F;1e1b3df9&#x2F;index.html"><meta property="og:site_name" content="简单可依赖"><meta property="og:description" content="CDN加速不是一个新鲜的话题，但是受限于免费、无备案域名等因素，实际上并没有什么选择。直到偶然发现Jsdelivr竟然可以对整个Git仓库进行CDN加速后…"><meta property="og:locale" content="zh_CN"><meta property="og:image" content="https:&#x2F;&#x2F;r.photo.store.qq.com&#x2F;psb?&#x2F;V11rnv1t26XYl4&#x2F;pwAHe6tXhNTne6aRjCCEaTHOZvSG4rO48zhmoLoPcmQ!&#x2F;r&#x2F;dFQBAAAAAAAAnull&amp;bo&#x3D;sATpAbAE6QERCT4!&amp;rf&#x3D;photolist&amp;t&#x3D;5_yake_qzoneimgout.png"><meta property="article:published_time" content="2019-11-29T09:38:23.000Z"><meta property="article:modified_time" content="2019-11-29T12:08:20.327Z"><meta property="article:author" content="唐门"><meta name="twitter:card" content="summary"><meta name="twitter:image" content="https:&#x2F;&#x2F;r.photo.store.qq.com&#x2F;psb?&#x2F;V11rnv1t26XYl4&#x2F;pwAHe6tXhNTne6aRjCCEaTHOZvSG4rO48zhmoLoPcmQ!&#x2F;r&#x2F;dFQBAAAAAAAAnull&amp;bo&#x3D;sATpAbAE6QERCT4!&amp;rf&#x3D;photolist&amp;t&#x3D;5_yake_qzoneimgout.png"><link rel="icon" href="https://cdn.jsdelivr.net/gh/tiexo/tiexo.github.io/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/bulma/0.7.2/css/bulma.css"><link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/5.4.1/css/all.css"><link rel="stylesheet" href="https://fonts.loli.net/css?family=Ubuntu:400,600|Source+Code+Pro"><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css"><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/lightgallery/1.6.8/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/justifiedGallery/3.7.0/css/justifiedGallery.min.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/tiexo/tiexo.github.io/css/back-to-top.css"><link rel="stylesheet" href="/css/style.css"></head><body class="is-1-column"><nav class="navbar navbar-main"><div class="container"><div class="navbar-brand is-flex-center"> <a class="navbar-item navbar-logo" href="/"><img src="https://cdn.jsdelivr.net/gh/tiexo/tiexo.github.io/images/logo.svg" alt="利用Jsdelivr实现Github Pages静态文件CDN加速" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"> <a class="navbar-item" href="/">首页</a> <a class="navbar-item" href="/archives">更多文章</a> <a class="navbar-item" href="/about">留言</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" title="关注我" href="https://weibo.com/940517409" rel="external nofollow noopener noreferrer"><i class="fab fa-weibo"></i></a><a class="navbar-item search" title="搜索" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column is-12 has-order-2 column-main"><div class="card"><div class="card-image"> <span class="image is-7by1"><img class="thumbnail" src="//r.photo.store.qq.com/psb?/V11rnv1t26XYl4/pwAHe6tXhNTne6aRjCCEaTHOZvSG4rO48zhmoLoPcmQ!/r/dFQBAAAAAAAAnull&amp;bo=sATpAbAE6QERCT4!&amp;rf=photolist&amp;t=5_yake_qzoneimgout.png" alt="利用Jsdelivr实现Github Pages静态文件CDN加速"></span></div><div class="card-content article"><div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto"><div class="level-left"> <time class="level-item has-text-grey" datetime="2019-11-29T09:38:23.000Z">2019-11-29</time> <span class="level-item has-text-grey">3 分钟 读完 (大约 422 个字)</span></div></div><h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal"> 利用Jsdelivr实现Github Pages静态文件CDN加速</h1><div class="content"><p>CDN加速不是一个新鲜的话题，但是受限于免费、无备案域名等因素，实际上并没有什么选择。直到偶然发现Jsdelivr竟然可以对整个Git仓库进行CDN加速后…</p><a id="more"></a><h3 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h3><p>图片的CDN方案有很多，这里就不讨论了，本站使用QQ空间作为图床，速度应该是顶尖的。<br>有兴趣的可以访问：<a href="https://tiexo.github.io/e4ed098a/" target="_blank">《使用QQ空间相册生成图片外链》</a></p><h3 id="公共JS-CSS库"><a href="#公共JS-CSS库" class="headerlink" title="公共JS/CSS库"></a>公共JS/CSS库</h3><p>公共库也有不少选择，比如七牛、360、Loli等。<br>本站除了Fontawesome使用七牛外，其他的都是Loli CDN。</p><h3 id="私人文件"><a href="#私人文件" class="headerlink" title="私人文件"></a>私人文件</h3><p>本文今天介绍的主要是私人文件，譬如Github Pages仓库中CSS和JS两个文件夹里面的JS和CSS文件，以及搜索插件生成的JSON文件等。</p><p>其请求链接为</p><figure class="highlight html hljs"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">https://tiexo.github.io/js/xxx.js</span></pre></td></tr></table></figure><p>在主题引用处找到代码</p><figure class="highlight js hljs"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">&lt;%- _js(<span class="hljs-string">'js/xxx'</span>, <span class="hljs-literal">true</span>) %&gt;</span></pre></td></tr></table></figure><p>将其修改为</p><figure class="highlight js hljs"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">&lt;%- _js(<span class="hljs-string">'https://cdn.jsdelivr.net/gh/tiexo/tiexo.github.io/js/xxx'</span>, <span class="hljs-literal">true</span>) %&gt;</span></pre></td></tr></table></figure><p>其原理就是Jsdelivr会将所有Git仓库中的文件CDN化，我们使用文件的CDN链接替换其自身的链接，从而实现了CDN加速。</p><p>难点主要在于找到主题目录中的引用代码，之后直接按照格式替换链接即可。<br>具体格式为</p><figure class="highlight html hljs"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">https://cdn.jsdelivr.net/gh/用户名/仓库名/文件路径</span></pre></td></tr></table></figure><h3 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h3><p>CDN都是有缓存的，可能修改某处文件后网站页面不会及时更新。</p><h3 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h3><p>至少比github.io要快吧？</p></div></div></div><div class="card card-transparent"><div class="level post-navigation is-flex-wrap is-mobile"><div class="level-start"><a class="level level-item has-link-grey article-nav-prev" href="/37e5a6a1/"><i class="level-item fas fa-chevron-left"></i> <span class="level-item">通过Github Actions实现Hexo博客自动部署</span></a></div><div class="level-end"> <a class="level level-item has-link-grey article-nav-next" href="/6ea6b07d/"><span class="level-item">熟悉CODING企业版Cloud Studio的使用</span><i class="level-item fas fa-chevron-right"></i></a></div></div></div><div class="card"><div class="card-content"><h3 class="title is-5 has-text-weight-normal">评论</h3><div id="valine-thread" class="content"></div><script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script><script src="//cdn.jsdelivr.net/npm/valine/dist/Valine.min.js"></script><script>new Valine({el:"#valine-thread",avatar:"retro",notify:!1,verify:!1,app_id:"abgFVBqdMOLN6JUSYDzs65l7-gzGzoHsz",app_key:"ABNl0bM58BsayDkGQeombaXF",placeholder:"友情提醒：你甚至不需要填写昵称、邮箱、网址就能匿名评论！（填写邮箱可以接收回复提醒）"})</script><script>if(window.location.hash)var checkExist=setInterval(function(){$(window.location.hash).length&&($("html, body").animate({scrollTop:$(window.location.hash).offset().top-90},1e3),clearInterval(checkExist))},100)</script></div></div></div></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start has-text-centered-mobile"><script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script> &copy; 2019 唐门&nbsp;<br> <span id="jinrishici-sentence">正在加载....</span></div><div class="level-end"><div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle"><p class="control"><a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/" rel="external nofollow noopener noreferrer"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-white is-large" target="_blank" title="本站采用署名-非商业性使用-相同方式共享4.0国际许可协议" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="external nofollow noopener noreferrer"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-white is-large" target="_blank" title="前往GitHub" href="https://github.com/tiexo/tiexo.github.io" rel="external nofollow noopener noreferrer"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdnjs.loli.net/ajax/libs/jquery/3.3.1/jquery.min.js"></script><script src="https://cdnjs.loli.net/ajax/libs/moment.js/2.22.2/moment-with-locales.min.js"></script><script>moment.locale("zh-CN")</script><script>var IcarusThemeSettings={article:{highlight:{clipboard:!0,fold:"unfolded"}}}</script><script src="https://cdnjs.loli.net/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" defer="defer"></script><script src="https://cdnjs.loli.net/ajax/libs/lightgallery/1.6.8/js/lightgallery.min.js" defer="defer"></script><script src="https://cdnjs.loli.net/ajax/libs/justifiedGallery/3.7.0/js/jquery.justifiedGallery.min.js" defer="defer"></script><script src="https://cdn.jsdelivr.net/gh/tiexo/tiexo.github.io/js/gallery.js" defer="defer"></script><script src="https://cdn.jsdelivr.net/gh/tiexo/tiexo.github.io/js/animation.js"></script><a id="back-to-top" title="回到顶端" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="https://cdn.jsdelivr.net/gh/tiexo/tiexo.github.io/js/back-to-top.js" defer="defer"></script><script src="https://cdn.jsdelivr.net/gh/tiexo/tiexo.github.io/js/main.js" defer="defer"></script><div class="searchbox ins-search"><div class="searchbox-container ins-search-container"><div class="searchbox-input-wrapper"> <input type="text" class="searchbox-input ins-search-input" placeholder="想要查找什么..."><span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span></div><div class="searchbox-result-wrapper ins-section-wrapper"><div class="ins-section-container"></div></div></div></div><script>window.INSIGHT_CONFIG={TRANSLATION:{POSTS:"文章",PAGES:"页面",CATEGORIES:"分类",TAGS:"标签",UNTITLED:"(无标题)"},CONTENT_URL:"https://cdn.jsdelivr.net/gh/tiexo/tiexo.github.io/content.json"}</script><script src="https://cdn.jsdelivr.net/gh/tiexo/tiexo.github.io/js/insight.js" defer="defer"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/tiexo/tiexo.github.io/css/search.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/tiexo/tiexo.github.io/css/insight.css"></body></html>
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+
+<meta name="generator" content="Hexo 4.1.0">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<title>利用Jsdelivr实现Github Pages静态文件CDN加速 - 简单可依赖</title>
+
+
+    <meta name="description" content="CDN加速不是一个新鲜的话题，但是受限于免费、无备案域名等因素，实际上并没有什么选择。直到偶然发现Jsdelivr竟然可以对整个Git仓库进行CDN加速后…">
+<meta property="og:type" content="article">
+<meta property="og:title" content="利用Jsdelivr实现Github Pages静态文件CDN加速">
+<meta property="og:url" content="https:&#x2F;&#x2F;tiexo.github.io&#x2F;1e1b3df9&#x2F;index.html">
+<meta property="og:site_name" content="简单可依赖">
+<meta property="og:description" content="CDN加速不是一个新鲜的话题，但是受限于免费、无备案域名等因素，实际上并没有什么选择。直到偶然发现Jsdelivr竟然可以对整个Git仓库进行CDN加速后…">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https:&#x2F;&#x2F;r.photo.store.qq.com&#x2F;psb?&#x2F;V11rnv1t26XYl4&#x2F;pwAHe6tXhNTne6aRjCCEaTHOZvSG4rO48zhmoLoPcmQ!&#x2F;r&#x2F;dFQBAAAAAAAAnull&amp;bo&#x3D;sATpAbAE6QERCT4!&amp;rf&#x3D;photolist&amp;t&#x3D;5_yake_qzoneimgout.png">
+<meta property="article:published_time" content="2019-11-29T09:38:23.000Z">
+<meta property="article:modified_time" content="2019-11-29T12:08:20.327Z">
+<meta property="article:author" content="唐门">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https:&#x2F;&#x2F;r.photo.store.qq.com&#x2F;psb?&#x2F;V11rnv1t26XYl4&#x2F;pwAHe6tXhNTne6aRjCCEaTHOZvSG4rO48zhmoLoPcmQ!&#x2F;r&#x2F;dFQBAAAAAAAAnull&amp;bo&#x3D;sATpAbAE6QERCT4!&amp;rf&#x3D;photolist&amp;t&#x3D;5_yake_qzoneimgout.png">
+
+
+
+
+
+
+
+<link rel="icon" href="https://cdn.jsdelivr.net/gh/tiexo/tiexo.github.io/images/favicon.ico">
+
+
+<link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/bulma/0.7.2/css/bulma.css">
+<link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/5.4.1/css/all.css">
+<link rel="stylesheet" href="https://fonts.loli.net/css?family=Ubuntu:400,600|Source+Code+Pro">
+<link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
+
+
+    
+    
+<link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/lightgallery/1.6.8/css/lightgallery.min.css">
+<link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/justifiedGallery/3.7.0/css/justifiedGallery.min.css">
+
+    
+    
+    
+    
+<style>body>.footer,body>.navbar,body>.section{opacity:0}</style>
+
+    
+    
+    
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/tiexo/tiexo.github.io/css/back-to-top.css">
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+<link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="is-1-column">
+    <nav class="navbar navbar-main">
+    <div class="container">
+        <div class="navbar-brand is-flex-center">
+            <a class="navbar-item navbar-logo" href="/">
+            
+                <img src="https://cdn.jsdelivr.net/gh/tiexo/tiexo.github.io/images/logo.svg" alt="利用Jsdelivr实现Github Pages静态文件CDN加速" height="28">
+            
+            </a>
+        </div>
+        <div class="navbar-menu">
+            
+            <div class="navbar-start">
+                
+                <a class="navbar-item" href="/">首页</a>
+                
+                <a class="navbar-item" href="/archives">更多文章</a>
+                
+                <a class="navbar-item" href="/about">留言</a>
+                
+            </div>
+            
+            <div class="navbar-end">
+                
+                    
+                    <a class="navbar-item" target="_blank" title="关注我" href="https://weibo.com/940517409" rel="external nofollow noopener noreferrer">
+                        
+                        <i class="fab fa-weibo"></i>
+                        
+                    </a>
+                    
+                
+                
+                
+                <a class="navbar-item search" title="搜索" href="javascript:;">
+                    <i class="fas fa-search"></i>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+</nav>
+    
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-12 has-order-2 column-main">
+<div class="card">
+    
+    <div class="card-image">
+        <span class="image is-7by1">
+            <img class="thumbnail" src="//r.photo.store.qq.com/psb?/V11rnv1t26XYl4/pwAHe6tXhNTne6aRjCCEaTHOZvSG4rO48zhmoLoPcmQ!/r/dFQBAAAAAAAAnull&amp;bo=sATpAbAE6QERCT4!&amp;rf=photolist&amp;t=5_yake_qzoneimgout.png" alt="利用Jsdelivr实现Github Pages静态文件CDN加速">
+        </span>
+    </div>
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-11-29T09:38:23.000Z">2019-11-29</time>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    3 分钟 读完 (大约 422 个字)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                利用Jsdelivr实现Github Pages静态文件CDN加速
+            
+        </h1>
+        <div class="content">
+            <p>CDN加速不是一个新鲜的话题，但是受限于免费、无备案域名等因素，实际上并没有什么选择。直到偶然发现Jsdelivr竟然可以对整个Git仓库进行CDN加速后…</p>
+<a id="more"></a>
+
+<h3 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h3><p>图片的CDN方案有很多，这里就不讨论了，本站使用QQ空间作为图床，速度应该是顶尖的。<br>有兴趣的可以访问：<a href="https://tiexo.github.io/e4ed098a/" target="_blank">《使用QQ空间相册生成图片外链》</a></p>
+<h3 id="公共JS-CSS库"><a href="#公共JS-CSS库" class="headerlink" title="公共JS/CSS库"></a>公共JS/CSS库</h3><p>公共库也有不少选择，比如七牛、360、Loli等。<br>本站除了Fontawesome使用七牛外，其他的都是Loli CDN。</p>
+<h3 id="私人文件"><a href="#私人文件" class="headerlink" title="私人文件"></a>私人文件</h3><p>本文今天介绍的主要是私人文件，譬如Github Pages仓库中CSS和JS两个文件夹里面的JS和CSS文件，以及搜索插件生成的JSON文件等。</p>
+<p>其请求链接为</p>
+<figure class="highlight html hljs"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">https://tiexo.github.io/js/xxx.js</span></pre></td></tr></table></figure>
+<p>在主题引用处找到代码</p>
+<figure class="highlight js hljs"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">&lt;%- _js(<span class="hljs-string">'js/xxx'</span>, <span class="hljs-literal">true</span>) %&gt;</span></pre></td></tr></table></figure>
+<p>将其修改为</p>
+<figure class="highlight js hljs"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">&lt;%- _js(<span class="hljs-string">'https://cdn.jsdelivr.net/gh/tiexo/tiexo.github.io/js/xxx'</span>, <span class="hljs-literal">true</span>) %&gt;</span></pre></td></tr></table></figure>
+
+<p>其原理就是Jsdelivr会将所有Git仓库中的文件CDN化，我们使用文件的CDN链接替换其自身的链接，从而实现了CDN加速。</p>
+<p>难点主要在于找到主题目录中的引用代码，之后直接按照格式替换链接即可。<br>具体格式为</p>
+<figure class="highlight html hljs"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line">https://cdn.jsdelivr.net/gh/用户名/仓库名/文件路径</span></pre></td></tr></table></figure>
+
+<h3 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h3><p>CDN都是有缓存的，可能修改某处文件后网站页面不会及时更新。</p>
+<h3 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h3><p>至少比github.io要快吧？</p>
+
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+<div class="card card-transparent">
+    <div class="level post-navigation is-flex-wrap is-mobile">
+        
+        <div class="level-start">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/37e5a6a1/">
+                <i class="level-item fas fa-chevron-left"></i>
+                <span class="level-item">通过Github Actions实现Hexo博客自动部署</span>
+            </a>
+        </div>
+        
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/6ea6b07d/">
+                <span class="level-item">熟悉CODING企业版Cloud Studio的使用</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
+        
+    </div>
+</div>
+
+
+
+<div class="card">
+    <div class="card-content">
+        <h3 class="title is-5 has-text-weight-normal">评论</h3>
+        
+<div id="valine-thread" class="content"></div>
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/valine/dist/Valine.min.js"></script>
+<script>
+    new Valine({
+        el: '#valine-thread' ,
+        avatar: 'retro' , 
+        notify: false,
+        verify: false,
+        app_id: 'abgFVBqdMOLN6JUSYDzs65l7-gzGzoHsz',
+        app_key: 'ABNl0bM58BsayDkGQeombaXF',
+        placeholder: '友情提醒：你甚至不需要填写昵称、邮箱、网址就能匿名评论！（填写邮箱可以接收回复提醒）'
+    });
+</script>
+
+<script>
+    if(window.location.hash){
+        var checkExist = setInterval(function() {
+           if ($(window.location.hash).length) {
+              $('html, body').animate({scrollTop: $(window.location.hash).offset().top-90}, 1000);
+              clearInterval(checkExist);
+           }
+        }, 100);
+    }
+</script>
+
+
+    </div>
+</div>
+</div>
+                
+                
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+    <div class="container">
+        <div class="level">
+            <div class="level-start has-text-centered-mobile">
+     
+            
+                <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+                &copy; 2019 唐门&nbsp;
+                <br> <span id="jinrishici-sentence">正在加载....</span>
+
+            </div>
+            <div class="level-end">
+            
+                <div class="field has-addons is-flex-center-mobile has-mt-5-mobile is-flex-wrap is-flex-middle">
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="Creative Commons" href="https://creativecommons.org/" rel="external nofollow noopener noreferrer">
+                        
+                        <i class="fab fa-creative-commons"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="本站采用署名-非商业性使用-相同方式共享4.0国际许可协议" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="external nofollow noopener noreferrer">
+                        
+                        <i class="fab fa-creative-commons-by"></i>
+                        
+                    </a>
+                </p>
+                
+                <p class="control">
+                    <a class="button is-white is-large" target="_blank" title="前往GitHub" href="https://github.com/tiexo/tiexo.github.io" rel="external nofollow noopener noreferrer">
+                        
+                        <i class="fab fa-github"></i>
+                        
+                    </a>
+                </p>
+                
+                </div>
+            
+            </div>
+        </div>
+    </div>
+</footer>
+    <script src="https://cdnjs.loli.net/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.loli.net/ajax/libs/moment.js/2.22.2/moment-with-locales.min.js"></script>
+<script>moment.locale("zh-CN");</script>
+
+<script>
+var IcarusThemeSettings = {
+    article: {
+        highlight: {
+            clipboard: true,
+            fold: 'unfolded'
+        }
+    }
+};
+</script>
+
+
+    <script src="https://cdnjs.loli.net/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" defer></script>
+
+
+
+    
+    
+<script src="https://cdnjs.loli.net/ajax/libs/lightgallery/1.6.8/js/lightgallery.min.js" defer></script>
+<script src="https://cdnjs.loli.net/ajax/libs/justifiedGallery/3.7.0/js/jquery.justifiedGallery.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/gh/tiexo/tiexo.github.io/js/gallery.js" defer></script>
+
+    
+    
+    
+    
+<script src="https://cdn.jsdelivr.net/gh/tiexo/tiexo.github.io/js/animation.js"></script>
+
+    
+    
+    
+    
+<a id="back-to-top" title="回到顶端" href="javascript:;">
+    <i class="fas fa-chevron-up"></i>
+</a>
+<script src="https://cdn.jsdelivr.net/gh/tiexo/tiexo.github.io/js/back-to-top.js" defer></script>
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+<script src="https://cdn.jsdelivr.net/gh/tiexo/tiexo.github.io/js/main.js" defer></script>
+
+    
+    <div class="searchbox ins-search">
+    <div class="searchbox-container ins-search-container">
+        <div class="searchbox-input-wrapper">
+            <input type="text" class="searchbox-input ins-search-input" placeholder="想要查找什么...">
+            <span class="searchbox-close ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="searchbox-result-wrapper ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: '文章',
+                PAGES: '页面',
+                CATEGORIES: '分类',
+                TAGS: '标签',
+                UNTITLED: '(无标题)',
+            },
+            CONTENT_URL: 'https://cdn.jsdelivr.net/gh/tiexo/tiexo.github.io/content.json',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+<script src="https://cdn.jsdelivr.net/gh/tiexo/tiexo.github.io/js/insight.js" defer></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/tiexo/tiexo.github.io/css/search.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/tiexo/tiexo.github.io/css/insight.css">
+    
+</body>
+</html>

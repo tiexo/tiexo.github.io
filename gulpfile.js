@@ -47,7 +47,7 @@ gulp.task('minify-html', function() {
 });
 // 压缩 public/js 目录 js
 gulp.task('minify-js', function() {
-    return gulp.src('./public/js/**/*.js')
+    return gulp.src('./public/**/*.js')
 
     //↓下面这些是新增的
     .pipe(babel({ 
