@@ -36,6 +36,8 @@ pipeline {
             steps {
                 echo "部署中..."
                 sh 'npm install hexo-deployer-git --save' 
+                sh 'git config --global user.email "179292705@qq.com"'
+                sh 'git config --global user.name "tiexo"'
                 sh 'hexo d' 
                 echo "部署完成"
             }
