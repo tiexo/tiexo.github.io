@@ -6,8 +6,7 @@ pipeline {
             steps {
                 checkout(
                     [$class: 'GitSCM', branches: [[name: env.GIT_BUILD_REF]], 
-                    userRemoteConfigs: [[url: env.GIT_REPO_URL, credentialsId: env.CREDENTIALS_ID]]]
-                )
+                    userRemoteConfigs: [[url: 'git@e.coding.net:tiexo/tiexo.git', credentialsId: 'd97fbfce-5ce3-4fd2-b503-56d5d1df1072']]])
             }
         }
 
