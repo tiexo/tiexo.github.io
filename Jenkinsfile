@@ -5,7 +5,7 @@ pipeline {
     stages  {
         stage("检出") {
             steps {
-             checkout([$class: 'GitSCM', branches: [[name: blog]], userRemoteConfigs: [[url: 'git@e.coding.net:tiexo/tiexo.git', credentialsId: '0dbd7982-bcf9-49d8-a313-c60cf9be89d5']]])
+             checkout([$class: 'GitSCM', branches: [[name: env.GIT_BUILD_REF]], userRemoteConfigs: [[url: 'git@e.coding.net:tiexo/tiexo.git', credentialsId: '0dbd7982-bcf9-49d8-a313-c60cf9be89d5']]])
       }
     }
   }
