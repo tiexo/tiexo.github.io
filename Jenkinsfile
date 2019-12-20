@@ -39,12 +39,6 @@ pipeline {
                 sh 'hexo clean' 
                 sh 'hexo g ' 
                 sh 'gulp'
-                sh 'mkdir -p ~/.ssh/'
-                sh 'echo "$ACTION_DEPLOY_KEY" > ~/.ssh/id_rsa'
-                sh 'chmod 600 ~/.ssh/id_rsa'
-                sh 'ssh-keyscan coding.net >> ~/.ssh/known_hosts'
-                sh 'git config --global user.email "179292705@qq.com"'
-                sh 'git config --global user.name "tiexo"'
                 sh 'hexo d' 
                 echo "部署完成"
             }
