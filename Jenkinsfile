@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        label "node-12"
+        label "node-10"
     }
     stages  {
         stage("检出") {
