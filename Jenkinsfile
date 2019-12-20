@@ -16,6 +16,8 @@ pipeline {
                 echo "构建中..."
                 sh 'node -v'
                 sh 'npm install -g hexo-cli' 
+                sh 'npm install gulp -g'
+                sh 'npm install'
                 echo "构建完成."
             }
         }
@@ -34,7 +36,7 @@ pipeline {
             steps {
                 echo "部署中..."
                 sh 'npm install hexo-deployer-git --save' 
-                sh 'hexo deploy' 
+                sh 'hexo d' 
                 echo "部署完成"
             }
         }
