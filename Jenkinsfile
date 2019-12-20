@@ -6,19 +6,14 @@ pipeline {
             steps {
                 checkout(
                     [$class: 'GitSCM', branches: [[name: env.GIT_BUILD_REF]], 
-                    userRemoteConfigs: [[url: 'git@e.coding.net:tiexo/tiexo.git', credentialsId: 'd97fbfce-5ce3-4fd2-b503-56d5d1df1072']]])
+                    userRemoteConfigs: [[url: 'git@e.coding.net:tiexo/tiexo.git', credentialsId: '0dbd7982-bcf9-49d8-a313-c60cf9be89d5']]])
             }
         }
 
         stage("构建") {
             steps {
                 echo "构建中..."
-                sh 'npm config set registry http://mirrors.cloud.tencent.com/npm/'
-                sh 'npm install -g hexo-cli' 
-                sh 'npm install gulp -g'
-                sh 'npm install'
-                sh 'npm install hexo-deployer-git --save' 
-                sh 'hexo -v'
+
                 echo "构建完成."
             }
         }
@@ -26,8 +21,6 @@ pipeline {
         stage("测试") {
             steps {
                 echo "单元测试中..."
-                sh 'hexo clean' 
-                sh 'hexo g ' 
                 sh 'ssh -T git@e.coding.net'
                 echo "单元测试完成."
             }
