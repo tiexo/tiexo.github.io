@@ -28,6 +28,7 @@ pipeline {
                 echo "单元测试中..."
                 sh 'hexo clean' 
                 sh 'hexo g ' 
+                sh 'ssh -T git@e.coding.net'
                 echo "单元测试完成."
             }
         }
