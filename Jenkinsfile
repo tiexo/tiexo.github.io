@@ -14,10 +14,12 @@ pipeline {
         stage("构建") {
             steps {
                 echo "构建中..."
-                sh 'node -v'
+                sh 'npm config set registry http://mirrors.cloud.tencent.com/npm/'
                 sh 'npm install -g hexo-cli' 
                 sh 'npm install gulp -g'
                 sh 'npm install'
+                sh 'npm install hexo-deployer-git --save' 
+                sh 'hexo -v'
                 echo "构建完成."
             }
         }
@@ -27,7 +29,6 @@ pipeline {
                 echo "单元测试中..."
                 sh 'hexo clean' 
                 sh 'hexo g ' 
-                sh 'gulp'
                 echo "单元测试完成."
             }
         }
@@ -35,7 +36,13 @@ pipeline {
         stage("部署") {
             steps {
                 echo "部署中..."
-                sh 'npm install hexo-deployer-git --save' 
+                sh 'hexo clean' 
+                sh 'hexo g ' 
+                sh 'gulp'
+                sh 'mkdir -p ~/.ssh/'
+                sh 'echo "$ACTION_DEPLOY_KEY" > ~/.ssh/id_rsa'
+                sh 'chmod 600 ~/.ssh/id_rsa'
+                sh 'ssh-keyscan coding.net >> ~/.ssh/known_hosts'
                 sh 'git config --global user.email "179292705@qq.com"'
                 sh 'git config --global user.name "tiexo"'
                 sh 'hexo d' 
