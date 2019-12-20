@@ -8,7 +8,6 @@ stage("检出") {
       }
     }
   }
-}
       stage("构建") {
             steps {
                 echo "构建中..."
