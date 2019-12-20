@@ -21,6 +21,10 @@ pipeline {
         stage("测试") {
             steps {
                 echo "单元测试中..."
+                 sh 'mkdir -p ~/.ssh/'
+               sh 'echo "credentialsId" > ~/.ssh/id_rsa'
+               sh 'chmod 600 ~/.ssh/id_rsa'
+               sh 'ssh-keyscan e.coding.net >> ~/.ssh/known_hosts'
                 sh 'ssh -T git@e.coding.net'
                 echo "单元测试完成."
             }
