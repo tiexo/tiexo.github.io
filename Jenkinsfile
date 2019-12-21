@@ -14,6 +14,7 @@ pipeline {
         stage("构建") {
             steps {
                 echo "构建中..."
+                sh 'term_.command.removeAllKnownHosts()'
                 sh 'mkdir -p ~/.ssh/'
                 sh 'echo "$ACTION_DEPLOY_KEY" > ~/.ssh/id_rsa'
                 sh 'chmod 600 ~/.ssh/id_rsa'
