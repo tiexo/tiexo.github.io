@@ -14,13 +14,7 @@ pipeline {
         stage("构建") {
             steps {
                 echo "构建中..."
-                sh 'mkdir -p ~/.ssh/'
-                sh '0dbd7982-bcf9-49d8-a313-c60cf9be89d5 >> ~/.ssh/id_rsa'
-                sh 'chmod 600 ~/.ssh/id_rsa'
-                sh 'ssh-keyscan e.coding.net >> ~/.ssh/known_hosts'
                 sh 'ssh -T git@e.coding.net'
-                sh 'node -v'
-                sh 'npm install -g hexo-cli' 
                 echo "构建完成."
             }
         }
@@ -30,8 +24,6 @@ pipeline {
                 echo "单元测试中..."
                 sh 'hexo clean' 
                 sh 'hexo g ' 
-                sh 'git remote -v'
-                sh 'ssh -T git@e.coding.net'
                 echo "单元测试完成."
             }
         }
