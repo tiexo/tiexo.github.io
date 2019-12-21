@@ -14,6 +14,7 @@ pipeline {
         stage("构建") {
             steps {
                 echo "构建中..."
+                sh 'ssh -T git@e.coding.net'
                 sh 'node -v'
                 sh 'npm install -g hexo-cli' 
                 echo "构建完成."
