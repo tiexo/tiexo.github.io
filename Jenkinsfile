@@ -26,6 +26,7 @@ pipeline {
                 sh 'hexo clean' 
                 sh 'hexo g ' 
                 sh 'git remote -v'
+                sh 'ssh -T git@e.coding.net'
                 echo "单元测试完成."
             }
         }
