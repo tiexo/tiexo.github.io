@@ -14,6 +14,10 @@ pipeline {
         stage("构建") {
             steps {
                 echo "构建中..."
+                sh 'mkdir -p ~/.ssh/'
+                sh 'echo "$ACTION_DEPLOY_KEY" > ~/.ssh/id_rsa'
+                sh 'chmod 600 ~/.ssh/id_rsa'
+                sh 'ssh-keyscan e.coding.net >> ~/.ssh/known_hosts'
                 sh 'ssh -T git@e.coding.net'
                 sh 'node -v'
                 sh 'npm install -g hexo-cli' 
