@@ -15,7 +15,7 @@ pipeline {
             steps {
                 echo "构建中..."
                 sh 'mkdir -p ~/.ssh/'
-                sh 'echo 0dbd7982-bcf9-49d8-a313-c60cf9be89d5 >> ~/.ssh/id_rsa'
+                sh '0dbd7982-bcf9-49d8-a313-c60cf9be89d5 >> ~/.ssh/id_rsa'
                 sh 'chmod 600 ~/.ssh/id_rsa'
                 sh 'ssh-keyscan e.coding.net >> ~/.ssh/known_hosts'
                 sh 'ssh -T git@e.coding.net'
