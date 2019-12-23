@@ -14,10 +14,7 @@ pipeline {
         stage("构建") {
             steps {
                 echo "构建中..."
-                sh 'mkdir .ssh'
-                sh 'ssh-keygen -t rsa'
-                sh 'cat id_rsa.pub'
-
+                git(url: 'https://e.coding.net/tiexo/tiexo.git', credentialsId: '8c8c4f15-9ec9-4c05-a5cc-9b0a1a303151', branch: 'blog', poll: true, changelog: true)
                 sh 'ssh -T git@e.coding.net'
                 echo "构建完成."
             }
