@@ -15,6 +15,7 @@ pipeline {
         stage("构建") {
             steps {
                 echo "构建中..."
+                sh 'git'
                 echo "构建完成."
             }
         }
