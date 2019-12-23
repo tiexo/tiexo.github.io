@@ -4,6 +4,7 @@ pipeline {
         
         stage("检出") {
             steps {
+                sh 'git credential-manager uninstall'
                 checkout(
                     [$class: 'GitSCM',  branches: [[name: env.GIT_BUILD_REF]],
                     userRemoteConfigs: [[url: 'https://e.coding.net/tiexo/tiexo.git', credentialsId: '8c8c4f15-9ec9-4c05-a5cc-9b0a1a303151']]]
