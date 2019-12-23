@@ -2,8 +2,24 @@
 <%- _js(cdn('moment', '2.22.2', 'min/moment-with-locales.min.js')) %>
 <script>moment.locale("<%= get_config('language', 'en') %>");</script>
 
+<%
+let externalLink = get_config('external_link');
+if (typeof externalLink === 'boolean') {
+    externalLink = { enable: externalLink, exclude: [] };
+} else {
+    externalLink = {
+        enable: typeof externalLink.enable === 'boolean' ? externalLink.enable : true,
+        exclude: externalLink.exclude || []
+    };
+}
+%>
+
 <script>
 var IcarusThemeSettings = {
+    site: {
+        url: '<%= config.url %>',
+        external_link: <%- JSON.stringify(externalLink) %>
+    },
     article: {
         highlight: {
             clipboard: <%= get_config('article.highlight.clipboard', true) %>,

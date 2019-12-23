@@ -12,7 +12,7 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url:  https://tiexo.github.io/
+url:  https://a0shfe.coding-pages.com/
 root: /
 permalink: :abbrlink/
 permalink_defaults:
@@ -92,6 +92,6 @@ abbrlink:
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   - type: git
-    repo: git@e.coding.net:tiexo/tiexo.git
+    repo: git@github.com:tiexo/tiexo.github.io.git
     branch: master
   - type: baidu_url_submitter
