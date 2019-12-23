@@ -14,8 +14,8 @@ pipeline {
         stage("构建") {
             steps {
                 echo "构建中..."
-                sh 'ssh-keygen -t rsa -C 179292705@qq.com'
-                sh 'chown tiexo:tiexo id_rsa id_rsa.pub'
+                sh 'mkdir .ssh'
+                sh 'ssh-keygen -t rsa'
                 sh 'cat id_rsa.pub'
 
                 sh 'ssh -T git@e.coding.net'
