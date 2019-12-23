@@ -1,5 +1,5 @@
 # Version of the Icarus theme that is currently used
-version: 2.3.0
+version: 2.6.0
 # Path or URL to the website's icon
 favicon: https://cdn.jsdelivr.net/gh/tiexo/tiexo.github.io/images/favicon.ico
 # Path or URL to RSS atom.xml
@@ -36,15 +36,15 @@ navbar:
 footer:
     # Links to be shown on the right of the footer section
     links:
-        Creative Commons:
-            icon: fab fa-creative-commons
-            url: 'https://creativecommons.org/'
-        本站采用署名-非商业性使用-相同方式共享4.0国际许可协议:
-            icon: fab fa-creative-commons-by
-            url: 'https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh'
+        前往Coding Pages:
+            icon: fab fa-thumbs-o-up
+            url: 'https://a0shfe.coding-pages.com/'
         前往GitHub Pages:
             icon: fab fa-github
             url: 'https://tiexo.github.io/'
+        本站采用署名-非商业性使用-相同方式共享4.0国际许可协议:
+            icon: fab fa-creative-commons-by
+            url: 'https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh'
         
 # Article display settings
 article:

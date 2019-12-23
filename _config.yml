@@ -39,7 +39,7 @@ relative_link: false
 future: true
 highlight:
   enable: true
-  auto_detect: false
+  line_number: true
   tab_replace:
 
 # Category & Tag
@@ -62,14 +62,11 @@ pagination_dir: page
 ## hexo-generator-archive
 archive_generator:
   per_page: 100
+  yearly: true
+  monthly: true
  
-## RSS订阅 
-feed:
-  type: 
-  path: 
-  limit: 
-  hub:
-  content:
+marked:
+  gfm: false
   
 
 ## Themes: https://hexo.io/themes/
