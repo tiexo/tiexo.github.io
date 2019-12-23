@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+Allow: /archives/
+Allow: /about/
+
+Disallow: /categories/
+Disallow: /tags/
+Disallow: /js/
+Disallow: /css/
+Disallow: /content.json
+Disallow: /images/
+Disallow: /404.html/
+Disallow: /baidu_urls.txt/
+
+Sitemap: https://tiexo.github.io/sitemap.xml
