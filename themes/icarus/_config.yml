@@ -37,7 +37,7 @@ footer:
     # Links to be shown on the right of the footer section
     links:
         前往Coding Pages:
-            icon: fab fa-thumbs-o-up
+            icon: fab fa-github-alt
             url: 'https://a0shfe.coding-pages.com/'
         前往GitHub Pages:
             icon: fab fa-github
