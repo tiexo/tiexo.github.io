@@ -1,9 +1,9 @@
 ### 让我们以热烈的掌声感谢以下赞助商：
-- [Github Pages](https://github.com/) ，提供网站托管仓库
+- [Github](https://github.com/) & [Coding](https://coding.net/)  ，双线部署
 - [Hexo](https://hexo.io/zh-cn/) ，提供博客程序源码
 - [Icarus](https://github.com/ppoffice/hexo-theme-icarus) ，添加主题美化
 - [Qzone-Photo-Outside](https://github.com/xunni1000/Qzone-Photo-Outside) ，生成QQ相册图片外链
-- [Coding](https://cloudstudio.net/)，提供Cloud Studio云端开发空间
+- [腾讯云开发者平台](https://cloudstudio.net/)，提供Cloud Studio云端开发空间
 - [Json-content](https://github.com/alexbruno/hexo-generator-json-content)，生成本地搜索数据
 - [Valine](https://valine.js.org)，增加评论功能
 - [Valine-Admin](https://github.com/panjunwen/Valine-Admin)，提供评论管理和邮件通知功能
@@ -15,13 +15,13 @@
 - [Baidu-url-submit](https://github.com/huiwang/hexo-baidu-url-submit)，百度主动推送插件
 - [Outlook](https://outlook.live.com/owa/)，负责评论提醒邮件发送
 - [今日诗词](https://www.jinrishici.com/)，提供一言API
-- [Github Actions](https://help.github.com/en/actions)，负责24小时持续集成并自动部署
+- [Github Actions](https://help.github.com/en/actions) & [Coding持续集成](https://help.coding.net/docs/devops/ci/introduce.html)，负责24小时持续集成并自动部署
 - [Gulp](https://www.gulpjs.com.cn/)，压缩静态文件
 - [QQ相册](https://qzone.qq.com/)，提供高速图床
 - [konachan](https://konachan.com/)，提供文章封面图
 - [腾讯公益](https://www.qq.com/404/)，提供公益404页面
 
-以及那些上文未提及的、在本站运营过程中对我有所帮助的人们，谢谢！
+以及那些上文未提及的、在本站运营过程中对我提供帮助的人们，谢谢！
 
 
 ### 免责申明
