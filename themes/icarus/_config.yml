@@ -43,7 +43,7 @@ footer:
             icon: fab fa-github
             url: 'https://tiexo.github.io/'
         本站采用署名-非商业性使用-相同方式共享4.0国际许可协议:
-            icon: fab fa-creative-commons-by
+            icon: fab fa-creative-commons
             url: 'https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh'
         
 # Article display settings
