@@ -18,15 +18,15 @@ date: 2019-12-24 15:50:08
 
 我反复搜索了网上的资料，唯一相关的一篇官方推荐文章也是这么操作的，详见：[《使用 CODING 进行 Hexo 项目的持续集成》](https://blog.coding.net/blog/Hexo)，但是没有提到过SSH权限受限的问题。
 
-<div align=center><img src="//r.photo.store.qq.com/psc?/V11rnv1t2fVV1f/3pY6KhS62k*1Vm7UATlxq75*WwyFfc2cA8jrVi7eo6BS7j.ePW9uN4d9nb6SxZIxaK82LWy90tt58mxiicI5heo7WumtZERstzHqC*B0Tx4!/anull&bo=dQIOAXUCDgEDCSw!&rf=photolist&t=5/r/_yake_qzoneimgout.png"/></div>
+<div align=center><img src="//r.photo.store.qq.com/psc?/V11rnv1t2fVV1f/3pY6KhS62k*1Vm7UATlxq75*WwyFfc2cA8jrVi7eo6BS7j.ePW9uN4d9nb6SxZIxaK82LWy90tt58mxiicI5heo7WumtZERstzHqC*B0Tx4!/anull&bo=dQIOAXUCDgEDCSw!&rf=photolist&t=5/r/_yake_qzoneimgout.png"></div>
 
 根据我的逻辑，SSH就是一对密钥，将公钥放到被推送的仓库，私钥放到持续集成的工作空间就行了。
 
 而coding的持续集成是通过调用凭据来进行验证的，但是这么设置后依然无效。
 
-<div align=center><img src="//r.photo.store.qq.com/psc?/V11rnv1t2fVV1f/3pY6KhS62k*1Vm7UATlxq7m*O9IqBm8uqcci2dNR9cJyiTHNg7gZwgjMyZYeWBaTwp.BAhINh8641rc94X5K6cpfTJWhqSgsbUBEC5lyXyw!/anull&bo=3gXXAd4F1wEDCSw!&rf=photolist&t=5/r/_yake_qzoneimgout.png"/></div>
+<div align=center><img src="//r.photo.store.qq.com/psc?/V11rnv1t2fVV1f/3pY6KhS62k*1Vm7UATlxq7m*O9IqBm8uqcci2dNR9cJyiTHNg7gZwgjMyZYeWBaTwp.BAhINh8641rc94X5K6cpfTJWhqSgsbUBEC5lyXyw!/anull&bo=3gXXAd4F1wEDCSw!&rf=photolist&t=5/r/_yake_qzoneimgout.png"></div>
 
-<div align=center><img src="//r.photo.store.qq.com/psc?/V11rnv1t2fVV1f/3pY6KhS62k*1Vm7UATlxq89B7b938ShkpxIZFvDr3a*tGHuTh6tMBAbbkt5kTThNbOSHx19EnFB59l7eheASTDj4i8AJdX.S9c1iXHgPv7w!/anull&bo=8wWQAfMFkAEDCSw!&rf=photolist&t=5/r/_yake_qzoneimgout.png"/></div>
+<div align=center><img src="//r.photo.store.qq.com/psc?/V11rnv1t2fVV1f/3pY6KhS62k*1Vm7UATlxq89B7b938ShkpxIZFvDr3a*tGHuTh6tMBAbbkt5kTThNbOSHx19EnFB59l7eheASTDj4i8AJdX.S9c1iXHgPv7w!/anull&bo=8wWQAfMFkAEDCSw!&rf=photolist&t=5/r/_yake_qzoneimgout.png"></div>
 
 思考过后，我觉得可能是密钥的生成方式有问题，因为我并不是在持续集成的工作空间生成的，而是通过外部cloud studio用ssh-keygen -f命令生成一对密钥。（但github也是如此操作的，却有效）
 
@@ -44,7 +44,15 @@ date: 2019-12-24 15:50:08
 
 不过，只要参考原文的步骤，确实能实现持续集成+自动部署的目的。
 
-<div align=center><img src="//r.photo.store.qq.com/psc?/V11rnv1t2fVV1f/3pY6KhS62k*1Vm7UATlxq0TWI4y.e5MAAh1eN*zxjPLp9Hs7J8o6*8NsrawSJ1L2k8.1Arf8XAItQYBVfhjLgNve1GeDafW02.M3SWF7n4E!/anull&bo=KQMSAikDEgIDCSw!&rf=photolist&t=5/r/_yake_qzoneimgout.png"/></div>
+持续集成记录：
+
+<div align=center><img src="//r.photo.store.qq.com/psc?/V11rnv1t2fVV1f/3pY6KhS62k*1Vm7UATlxq0TWI4y.e5MAAh1eN*zxjPLp9Hs7J8o6*8NsrawSJ1L2k8.1Arf8XAItQYBVfhjLgNve1GeDafW02.M3SWF7n4E!/anull&bo=KQMSAikDEgIDCSw!&rf=photolist&t=5/r/_yake_qzoneimgout.png"></div>
+
+只是目前耗时较长，github那边只要1分钟就能完成。
+
+自动部署记录：
+
+<div align=center><img src="//r.photo.store.qq.com/psc?/V11rnv1t2fVV1f/3pY6KhS62k*1Vm7UATlxq1UlgHfiPVqrlrF0CDSzvB10qnKmwwnU*jTUg1R1h8VJwjCF0h3DozieOtAgBLjkOhVAYZhGivXkqCJqPGL2vkI!/anull&bo=ogQtAaIELQEDCSw!&rf=photolist&t=5/r/_yake_qzoneimgout.png"></div>
 
 ### 后语
 
