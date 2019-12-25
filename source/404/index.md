@@ -6,7 +6,7 @@ layout: false
 <!DOCTYPE html>
 <html>
 <body>
-<script type="text/javascript" src="//qzonestyle.gtimg.cn/qzone/hybrid/app/404/search_children.js" charset="utf-8" homePageUrl="https://tiexo.github.io" homePageName="5秒后自动返回网站首页"></script>
+<script type="text/javascript" src="//qzonestyle.gtimg.cn/qzone/hybrid/app/404/search_children.js" charset="utf-8" homePageUrl="https://a0shfe.coding-pages.com/" homePageName="5秒后自动返回网站首页"></script>
 <script>
     setTimeout(function () {
         window.location.href = '//' +  document.domain;
