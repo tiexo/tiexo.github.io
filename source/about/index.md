@@ -40,7 +40,6 @@ layout: "page"
 - <i class="fa fa-lock" style="color: #00bb00;"></i> [乐趣公园](https://gitcafe.net//)—— 分享有趣，创造价值
 - <i class="fa fa-lock" style="color: #00bb00;"></i> [哔哩萌](https://www.bilimoe.com/)—— 是不是选择任何一个方向，都会游向同一个宿命呢？
 - [弋牧](http://emuia.com/)—— 行多久，方显执着；思多久，方能远见！
-- <i class="fa fa-lock" style="color: #00bb00;"></i> [Zidone](https://blog.zidone.cn/)—— 深自缄默 如云漂泊
 
 欢迎各位小伙伴互换友链~！
 
