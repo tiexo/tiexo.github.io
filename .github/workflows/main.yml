@@ -12,18 +12,18 @@ jobs:
         uses: actions/checkout@v1
         with:
           ref: blog
+
       - name: Use Node.js 
         uses: actions/setup-node@v1
         with:
           node-version: '12.x'
-	  - name: Cache Node.js modules
+
+      - name: Cache node modules
         uses: actions/cache@v1
         with:
-        path: ~/.npm 
-        key: ${{ runner.OS }}-node-${{ hashFiles('**/package-lock.json') }}
-        restore-keys: |
-        ${{ runner.OS }}-node-
-        ${{ runner.OS }}-
+          path: ~/.npm 
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+
       - name: Setup hexo
         env:
           ACTION_DEPLOY_KEY: ${{ secrets.ACTION_DEPLOY_KEY }}
@@ -37,6 +37,7 @@ jobs:
           npm install hexo-cli -g
           npm install gulp -g
           npm install
+ 
       - name: Hexo deploy
         run: |
           hexo clean
