@@ -6,15 +6,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-	strategy:
-      matrix:
-        node-version: [12]
     steps:
-      - name: Cache node modules
-        uses: actions/cache@v1
-        with:
-          path: node_modules
-          key: ${{ runner.OS }}-${{ hashFiles('**/package-lock.json') }}
       - name: Checkout source
         uses: actions/checkout@v1
         with:
@@ -23,6 +15,11 @@ jobs:
         uses: actions/setup-node@v1
         with:
           version: ${{ matrix.node_version }}
+	  - name: Cache node modules
+         uses: actions/cache@v1
+         with:
+          path: node_modules
+          key: ${{ runner.OS }}-${{ hashFiles('**/package-lock.json') }}
       - name: Setup hexo
         env:
           ACTION_DEPLOY_KEY: ${{ secrets.ACTION_DEPLOY_KEY }}
