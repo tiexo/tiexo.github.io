@@ -15,6 +15,7 @@ pipeline {
       steps {
         echo '构建中...'
         sh 'npm install hexo-cli -g'
+        sh 'npm install gulp -g'
         sh 'npm install'
         echo '构建完成.'
       }
