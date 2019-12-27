@@ -6,14 +6,15 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+	strategy:
+      matrix:
+        node-version: [12]
     steps:
-      - name: Cache NPM dependencies
+      - name: Cache node modules
         uses: actions/cache@v1
         with:
-        path: node_modules
-        key: ${{ runner.OS }}-npm-cache-${{ hashFiles('**/package-lock.json') }}
-        restore-keys: |
-          ${{ runner.OS }}-npm-cache-
+          path: node_modules
+          key: ${{ runner.OS }}-${{ hashFiles('**/package-lock.json') }}
       - name: Checkout source
         uses: actions/checkout@v1
         with:
