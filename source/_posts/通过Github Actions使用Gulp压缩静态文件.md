@@ -174,7 +174,3 @@ html压缩前24KB，压缩后17KB，减少29%的体积
 <div align=center><img src="//r.photo.store.qq.com/psb?/V11rnv1t2fVV1f/5jblezObgabMOwcPvTa9KdlBf8LGp5kENleaNbPVVI0!/r/dDQBAAAAAAAAnull&bo=XgIdAV4CHQEDCSw!&rf=photolist&t=5_yake_qzoneimgout.png"></div>
 
 css和js也有接近30%的压缩，图片则没有效果，因为除了logo和ico全是用的CDN
-
-### 参考资料
-
-- https://segmentfault.com/a/1190000019842178

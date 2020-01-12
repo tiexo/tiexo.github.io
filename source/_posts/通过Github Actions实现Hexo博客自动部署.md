@@ -85,7 +85,3 @@ jobs:
 <div align=center><img src="//r.photo.store.qq.com/psb?/V11rnv1t2fVV1f/2hXYYLvW48mRt9MqRvi5v5uaA9bzD9bDdmLs2xbbIuc!/r/dLYAAAAAAAAA&bo=DwMSAg8DEgIDCSw!&rf=viewer_4_yake_qzoneimgout.png"></div>
 
 每次部署的时间大概在45s左右，实际上比hexo d还要慢些。
-
-### 参考资料
-
-- https://hdj.me/github-actions-hexo-cicd/

@@ -124,7 +124,3 @@ gulp.task('minify-js', function() {
 gulp.task('minify-js', function() {
     return gulp.src('./public/**/*.js')
 ```
-
-### 参考资料
-
-- https://www.imczw.com/post/tech/gulp_and_es6.html
