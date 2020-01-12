@@ -14,10 +14,11 @@ pipeline {
     stage('环境') {
       steps {
         echo '构建中...'
+        sh 'npm config set registry https://registry.npm.taobao.org'
         sh 'npm install hexo-cli -g'
         sh 'npm install gulp -g'
         sh 'npm install'
-        echo '构建完成.'
+        echo '构建完成'
       }
     }
     stage('生产') {
@@ -26,7 +27,7 @@ pipeline {
         sh 'hexo clean'
         sh 'hexo g'
         sh 'gulp'
-        echo '生产完成.'
+        echo '生产完成'
       }
     }
     stage('部署') {
