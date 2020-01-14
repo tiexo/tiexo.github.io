@@ -2,7 +2,6 @@ var gulp = require('gulp');
 var minifycss = require('gulp-clean-css');
 var uglify = require('gulp-uglify');
 var htmlmin = require('gulp-htmlmin');
-var htmlclean = require('gulp-htmlclean');
 var babel = require('gulp-babel');
 
 // 压缩 public 目录 css
