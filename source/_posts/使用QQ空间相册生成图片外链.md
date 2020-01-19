@@ -42,5 +42,5 @@ date: 2018-11-03 16:41:34
 如果你用的是软件版，那么需要手动复制QQ空间图片链接，然后去软件点击粘贴，接着会自动复制转换后的外链。
 
 <div align=center><img src="//r.photo.store.qq.com/psb?/V11rnv1t2fVV1f/8gZTpF0TMZ6kKVg4gzhEP84nIslgaK2m*iguj1*FLrU!/r/dFIBAAAAAAAAnull&bo=tAK7AbQCuwEDCSw!&rf=photolist&t=5qzoneimgout.png"></div>
-
+<br>
 具体效果可以看看本站，根据作者所说已经稳定使用9年，应该没什么问题！

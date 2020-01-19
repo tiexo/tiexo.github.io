@@ -83,5 +83,5 @@ jobs:
 接着git push推送一个commit到博客源码分支，点击Actions即可看见部署过程。
 
 <div align=center><img src="//r.photo.store.qq.com/psb?/V11rnv1t2fVV1f/2hXYYLvW48mRt9MqRvi5v5uaA9bzD9bDdmLs2xbbIuc!/r/dLYAAAAAAAAA&bo=DwMSAg8DEgIDCSw!&rf=viewer_4_yake_qzoneimgout.png"></div>
-
+<br>
 每次部署的时间大概在45s左右，实际上比hexo d还要慢些。

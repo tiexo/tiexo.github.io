@@ -49,6 +49,6 @@ date: 2018-10-22 13:49:52
 收到的提醒邮件
 
 <div align=center><img src="//r.photo.store.qq.com/psb?/V11rnv1t2fVV1f/9ZkFVT3pOKYk8PtPoHm7mVXVhNTIBZO518tsOOPpGjc!/r/dFMBAAAAAAAAnull&bo=VgOUAVYDlAERCT4!&rf=photolist&t=5qzoneimgout.png"></div>
-
+<br>
 另外还有点击链接自动跳转到评论处，我还没弄好...
 总之，现在评论是可以正常使用啦，后面的细节我再慢慢调整吧，勤快！
