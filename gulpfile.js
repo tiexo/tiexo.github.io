@@ -36,6 +36,7 @@ gulp.task('minify-html', function() {
         minifyURLs: true                    //替换页面URL
     };  
   return gulp.src('./public/**/*.html')
+    .pipe(htmlclean())
     .pipe(htmlmin({
          removeComments: true,
          minifyJS: true,
