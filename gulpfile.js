@@ -30,13 +30,12 @@ gulp.task('minify-html', function() {
         removeEmptyAttributes: true,        //删除所有空格作属性值    <input id="" /> ==> <input />
         removeScriptTypeAttributes: true,   //删除<script>的type="text/javascript"
         removeStyleLinkTypeAttributes: true,//删除<style>和<link>的type="text/css"
-        removeComments: false,               //清除HTML注释
+        removeComments: true,               //清除HTML注释
         minifyJS: true,                     //压缩页面JS
         minifyCSS: true,                    //压缩页面CSS
         minifyURLs: true                    //替换页面URL
     };  
   return gulp.src('./public/**/*.html')
-    .pipe(htmlclean())
     .pipe(htmlmin({
          removeComments: true,
          minifyJS: true,
