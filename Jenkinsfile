@@ -17,7 +17,6 @@ pipeline {
         sh 'npm config set registry https://registry.npm.taobao.org'
         sh 'npm install hexo-cli -g'
         sh 'npm install gulp -g'
-        sh 'npm rebuild node-sass -g'
         sh 'npm install'
         echo '构建完成'
       }
@@ -26,6 +25,7 @@ pipeline {
       steps {
         echo '生产中...'
         sh 'hexo clean'
+        sh 'npm rebuild node-sass -g'
         sh 'hexo g'
         sh 'gulp'
         echo '生产完成'
