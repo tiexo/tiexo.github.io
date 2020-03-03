@@ -25,7 +25,6 @@ pipeline {
       steps {
         echo '生产中...'
         sh 'hexo clean'
-        sh 'sudo npm rebuild node-sass --save'
         sh 'hexo g'
         sh 'gulp'
         echo '生产完成'
