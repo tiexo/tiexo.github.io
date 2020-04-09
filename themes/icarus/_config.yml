@@ -3,11 +3,11 @@ version: 3.0.0
 # Icarus theme variant, can be "default" or "cyberpunk"
 variant: default
 # Path or URL to the website's logo
-logo: https://cdn.jsdelivr.net/gh/tiexo/tiexo.github.io/images/logo.svg
+logo: https://cdn.jsdelivr.net/gh/tiexo/tiexo.github.io/img/logo.svg
 # Page metadata configurations
 head:
     # URL or path to the website's icon
-    favicon:  https://cdn.jsdelivr.net/gh/tiexo/tiexo.github.io/images/favicon.ico
+    favicon:  https://cdn.jsdelivr.net/gh/tiexo/tiexo.github.io/img/favicon.ico
     # Open Graph metadata
     # https://hexo.io/docs/helpers.html#open-graph
     open_graph:

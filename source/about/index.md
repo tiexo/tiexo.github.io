@@ -43,6 +43,10 @@ layout: "page"
 
 欢迎各位小伙伴互换友链~！
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+<script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>  
+
 <meting-js
 	auto="https://music.163.com/#/song?id=316686" autoplay="true" fixed="true">
-</meting-js>  
+</meting-js>
