@@ -20,7 +20,6 @@ class Footer extends Component {
                 <div class="level">
                     <div class="level-start">
                     <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
- 
                     <p>
                      <span dangerouslySetInnerHTML={{ __html: `&copy; ${siteYear} ${author || siteTitle}` }}></span>
                     &nbsp;&nbsp;<br /><span id="jinrishici-sentence">正在加载....</span>
