@@ -48,5 +48,5 @@ layout: "page"
 <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>  
 
 <meting-js
-	auto="https://music.163.com/#/song?id=316686" autoplay="true" fixed="true">
+	auto="https://y.qq.com/n/yqq/song/001RGrEX3ija5X.html" fixed="true" autoplay="true">
 </meting-js>
