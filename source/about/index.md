@@ -8,14 +8,14 @@ layout: "page"
 - [Hexo](https://hexo.io/zh-cn/) ，提供博客程序源码
 - [Icarus](https://github.com/ppoffice/hexo-theme-icarus) ，添加主题美化
 - [Qzone-Photo-Outside](https://github.com/xunni1000/Qzone-Photo-Outside) ，生成QQ相册图片外链
-- [腾讯云开发者平台](https://cloudstudio.net/)，提供Cloud Studio云端开发空间
+- [CODING](https://cloudstudio.net/)，提供Cloud Studio云端开发空间
 - [Json-content](https://github.com/alexbruno/hexo-generator-json-content)，生成本地搜索数据
 - [Valine](https://valine.js.org)，增加评论功能
 - [Valine-Admin](https://github.com/panjunwen/Valine-Admin)，提供评论管理和邮件通知功能
 - [Aplayer](https://github.com/DIYgod/APlayer)，负责音乐播放功能
 - [MetingJS](https://github.com/metowolf/MetingJS)，提供BGM API接口
 - [Jsdelivr](https://cdn.jsdelivr.net)，提供git仓库文件CDN加速服务
-- [Loli](https://css.loli.net) & [七牛云](http://www.staticfile.org/)，提供公共库加速服务
+- [Loli](https://css.loli.net)，提供公共库加速服务
 - [Abbrlink](https://github.com/Rozbo/hexo-abbrlink)，专注于生产链接
 - [Baidu-url-submit](https://github.com/huiwang/hexo-baidu-url-submit)，百度主动推送插件
 - [Outlook](https://outlook.live.com/owa/)，负责评论提醒邮件发送
@@ -48,5 +48,5 @@ layout: "page"
 <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>  
 
 <meting-js
-	auto="https://music.163.com/#/song?id=316686" autoplay="true" fixed="true">
+	auto="https://y.qq.com/n/yqq/song/003jD85A0WVki4.html" fixed="true">
 </meting-js>
