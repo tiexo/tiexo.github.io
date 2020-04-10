@@ -8,7 +8,8 @@ $navbar-item-margin-h ?= 0
 
 .navbar-main
     box-shadow: $shadow
-
+    & > .container
+            display: flex
     .navbar-menu, .navbar-start, .navbar-end
         align-items: stretch
         display: flex
@@ -39,14 +40,9 @@ $navbar-item-margin-h ?= 0
 
     +until($navbar-breakpoint)
         .navbar-menu
-            justify-content: center
+           
             box-shadow: none
 
-        .navbar-start
-            margin-right: 0
-
-        .navbar-end
-            margin-left: 0
 
 .navbar-logo
     img
