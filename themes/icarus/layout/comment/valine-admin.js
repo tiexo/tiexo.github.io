@@ -1,4 +1,3 @@
-< script >
 if (window.location.hash) {
     var checkExist = setInterval(function () {
         if ($(window.location.hash).length) {
@@ -9,4 +8,3 @@ if (window.location.hash) {
         }
     }, 100);
 }
-<  / script >
