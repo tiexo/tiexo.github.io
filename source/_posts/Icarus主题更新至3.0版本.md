@@ -78,29 +78,66 @@ if (window.location.hash) {
 }
 ```
 
-### node_modules/hexo-component-inferno/lib/view/comment/valine.js
+### themes/icarus/layout/comment/valine.js
 
-修改：引入valine-admin.js文件，去掉av-min.js，升级valine版本
+修改：新增文件（复制node_modules/hexo-component-inferno/lib/view/comment/valine.js，并修改）
 
 ```jsx
-var js = "new Valine({\n            el: '#valine-thread' ,\n            notify: ".concat(notify, ",\n            verify: ").concat(verify, ",\n            appId: '").concat(appId, "',\n            appKey: '").concat(appKey, "',\n            placeholder: '").concat(placeholder, "',\n            avatar: '").concat(avatar, "',\n            avatarForce: ").concat(avatarForce, ",\n            meta: ").concat(JSON.stringify(meta), ",\n            pageSize: ").concat(pageSize, ",\n            visitor: ").concat(visitor, ",\n            highlight: ").concat(highlight, ",\n            recordIP: ").concat(recordIp, "\n        });");
-      return (0, _inferno.createFragment)([(0, _inferno.createVNode)(1, "div", "content", null, 1, {
-        "id": "valine-thread"
-      }), (0, _inferno.createVNode)(1, "script", null, null, 1, {
-        "src": "//cdn.jsdelivr.net/gh/tiexo/tiexo.github.io@blog/themes/icarus/layout/comment/valine-admin.js"
-      }), (0, _inferno.createVNode)(1, "script", null, null, 1, {
-        "src": jsUrl
-      }), (0, _inferno.createVNode)(1, "script", null, null, 1, {
-        "dangerouslySetInnerHTML": {
-          __html: js
+var _require2 = require('hexo-component-inferno/lib/util/cache'),
+cacheComponent = _require2.cacheComponent;
+
+_createClass(Valine, [{
+            key: "render",
+            value: function render() {
+                var _this$props = this.props,
+                appId = _this$props.appId,
+                appKey = _this$props.appKey,
+                notify = _this$props.notify,
+                verify = _this$props.verify,
+                enableQQ = _this$props.enableQQ,
+                placeholder = _this$props.placeholder,
+                _this$props$avatar = _this$props.avatar,
+
+                var js = "new Valine({\n            el: '#valine-thread' ,\n            notify: ".concat(notify, ",\n            verify: ").concat(verify, ",\n            appId: '").concat(appId, "',\n            appKey: '").concat(appKey, "',\n            placeholder: '").concat(placeholder, "',\n            avatar: '").concat(avatar, "',\n            avatarForce: ").concat(avatarForce, ",\n            meta: ").concat(JSON.stringify(meta), ",\n            pageSize: ").concat(pageSize, ",\n            visitor: ").concat(visitor, ",\n            enableQQ: ").concat(enableQQ, ",\n            highlight: ").concat(highlight, ",\n            recordIP: ").concat(recordIp, "\n        });");
+                return (0, _inferno.createFragment)([(0, _inferno.createVNode)(1, "div", "content", null, 1, {
+                            "id": "valine-thread"
+                        }), (0, _inferno.createVNode)(1, "script", null, null, 1, {
+                            "src": "//cdn.jsdelivr.net/gh/tiexo/tiexo.github.io@blog/themes/icarus/layout/comment/valine-admin.js"
+                        }), (0, _inferno.createVNode)(1, "script", null, null, 1, {
+                            "src": "//cdn.jsdelivr.net/npm/valine/dist/Valine.min.js"
+                        }), (0, _inferno.createVNode)(1, "script", null, null, 1, {
+                            "dangerouslySetInnerHTML": {
+                                __html: js
+                            }
+                        })], 4);
+            }
         }
-      })], 4);
-    }
-  }]);
-```
+    ]);
 
-```jsx
-jsUrl: helper.cdn('valine', '1.4.4', 'dist/Valine.min.js')
+return Valine;
+}
+(Component);
+
+Valine.Cacheable = cacheComponent(Valine, 'comment.valine', function (props) {
+    var comment = props.comment,
+    helper = props.helper;
+    return {
+        appId: comment.app_id,
+        appKey: comment.app_key,
+        notify: comment.notify,
+        verify: comment.verify,
+        enableQQ: comment.enableQQ,
+        placeholder: comment.placeholder,
+        avatar: comment.avatar,
+        avatarForce: comment.avatar_force,
+        meta: comment.meta,
+        pageSize: comment.page_size,
+        visitor: comment.visitor,
+        highlight: comment.highlight,
+        recordIp: comment.record_ip
+    };
+});
+module.exports = Valine;
 ```
 
 ### themes/icarus/scripts/index.js
