@@ -122,6 +122,7 @@ comment:
     notify: false           
     verify: false           
     placeholder: 友情提醒：你甚至不需要填写昵称、邮箱、网址就能匿名评论！（填写邮箱可以接收回复提醒） 
+    enableQQ: true
 # Plugin configurations
 plugins:
     # Enable page startup animations
