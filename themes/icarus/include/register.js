@@ -14,7 +14,7 @@ module.exports = hexo => {
     require('hexo-component-inferno/lib/core/view').init(hexo);
 
     const hooks = [
-        'after_render:html',
+        '_after_html_render',
         'after_post_render'
     ];
     const filters = [
