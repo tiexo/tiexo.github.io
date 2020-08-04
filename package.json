@@ -16,13 +16,13 @@
     "hexo": "^5.0.0",
     "hexo-abbrlink": "^2.2.1",
     "hexo-baidu-url-submit": "0.0.6",
-    "hexo-component-inferno": "^0.4.0",
+    "hexo-component-inferno": "^0.5.0",
     "hexo-deployer-git": "^2.1.0",
     "hexo-generator-archive": "^1.0.0",
     "hexo-generator-category": "^1.0.0",
     "hexo-generator-index": "^1.0.0",
     "hexo-generator-json-content": "^4.2.3",
-    "hexo-generator-sitemap": "^2.0.0",
+    "hexo-generator-sitemap": "^2.1.0",
     "hexo-generator-tag": "^1.0.0",
     "hexo-renderer-inferno": "^0.1.3",
     "hexo-renderer-marked": "^3.0.0",
@@ -33,8 +33,8 @@
     "npm-check": "^5.9.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.10.5",
-    "@babel/preset-env": "^7.10.4",
+    "@babel/core": "^7.11.0",
+    "@babel/preset-env": "^7.11.0",
     "gulp-babel": "^8.0.0"
   }
 }
