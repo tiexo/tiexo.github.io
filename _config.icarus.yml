@@ -1,0 +1,87 @@
+version: 4.0.0
+variant: default
+logo: 'https://cdn.jsdelivr.net/gh/tiexo/tiexo.github.io/img/logo.svg'
+head:
+    favicon: 'https://cdn.jsdelivr.net/gh/tiexo/tiexo.github.io/img/favicon.ico'
+    open_graph:
+        title: 
+        type: blog
+        url: 
+        image: 
+        site_name: 
+        author: 
+        description: 
+        twitter_card: 
+        twitter_id: 
+        twitter_site: 
+        google_plus: 
+        fb_admins: 
+        fb_app_id: 
+    structured_data:
+        title: 
+        description: 
+        url: 
+        author: 
+        image: 
+    meta:
+        - ''
+    rss: 
+navbar:
+    menu:
+        首页: /
+        更多文章: /archives
+        留言: /about
+    links:
+        关注我:
+            icon: fab fa-weibo
+            url: 'https://weibo.com/940517409'
+footer:
+    links:
+        前往Coding Pages:
+            icon: fab fa-github-alt
+            url: 'https://a0shfe.coding-pages.com/'
+        前往GitHub Pages:
+            icon: fab fa-github
+            url: 'https://tiexo.github.io/'
+        本站采用署名-非商业性使用-相同方式共享4.0国际许可协议:
+            icon: fab fa-creative-commons
+            url: 'https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh'
+article:
+    highlight:
+        theme: atom-one-light
+        clipboard: true
+        fold: unfolded
+    thumbnail: true
+    readtime: true
+search:
+    type: insight
+comment:
+    type: valine
+    app_id: abgFVBqdMOLN6JUSYDzs65l7-gzGzoHsz
+    app_key: ABNl0bM58BsayDkGQeombaXF
+    notify: false
+    verify: false
+    placeholder: 友情提醒：你甚至不需要填写昵称、邮箱、网址就能匿名评论！（填写邮箱可以接收回复提醒）
+    enableQQ: true
+plugins:
+    animejs: true
+    back_to_top: true
+    baidu_analytics:
+        tracking_id: 
+    busuanzi: false
+    cnzz:
+        id: 
+        web_id: 
+    gallery: true
+    google_analytics:
+        tracking_id: 
+    hotjar:
+        site_id: 
+    katex: false
+    mathjax: false
+    outdated_browser: false
+    progressbar: false
+providers:
+    cdn: loli
+    fontcdn: loli
+    iconcdn: loli
