@@ -1,6 +1,6 @@
 ---
 title: 使用QQ空间相册生成图片外链
-thumbnail: >-
+cover: >-
   //r.photo.store.qq.com/psb?/V11rnv1t26XYl4/8VheMW*o4XdH3aHps4u6Zz2mttZ2s8BTOa1rEk6CT7s!/r/dEYBAAAAAAAAnull&bo=6APBAegDwQERCT4!&rf=photolist&t=5qzoneimgout.png
 abbrlink: e4ed098a
 date: 2018-11-03 16:41:34

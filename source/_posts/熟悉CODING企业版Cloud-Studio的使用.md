@@ -1,6 +1,6 @@
 ---
 title: 熟悉CODING企业版Cloud Studio的使用
-thumbnail: >-
+cover: >-
   //r.photo.store.qq.com/psb?/V11rnv1t26XYl4/lHceXUWapSGWTjMdktWyTFqUEd1o.8FaXxH.fW6bo38!/r/dFIBAAAAAAAAnull&bo=sAQBArAEAQIRCT4!&rf=photolist&t=5_yake_qzoneimgout.png
 abbrlink: 6ea6b07d
 date: 2019-11-29 15:38:14

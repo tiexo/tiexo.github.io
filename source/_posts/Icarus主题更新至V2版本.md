@@ -1,6 +1,6 @@
 ---
 title: Icarus主题更新至V2版本
-thumbnail: '//r.photo.store.qq.com/psb?/V11rnv1t26XYl4/t9xubrC00SFg7zYZClhiZjYXD9CEVKSF6X0CS7Y5nMg!/r/dDABAAAAAAAAnull&bo=5gOQAeYDkAERCT4!&rf=photolist&t=5qzoneimgout.png'
+cover: '//r.photo.store.qq.com/psb?/V11rnv1t26XYl4/t9xubrC00SFg7zYZClhiZjYXD9CEVKSF6X0CS7Y5nMg!/r/dDABAAAAAAAAnull&bo=5gOQAeYDkAERCT4!&rf=photolist&t=5qzoneimgout.png'
 abbrlink: d2d7ecd5
 date: 2018-11-03 11:47:47
 ---

@@ -3,7 +3,7 @@
 title: 通过Github Actions使用Gulp压缩静态文件
 date: 2019-12-01 20:27:40
 abbrlink: '28061956'
-thumbnail: //r.photo.store.qq.com/psb?/V11rnv1t26XYl4/PAde*GMGt3LUUCYqbR64OPMtZ5LfpNJ9lD3YVIvfqSo!/r/dAgBAAAAAAAAnull&bo=rwQFAq8EBQIRCT4!&rf=photolist&t=5_yake_qzoneimgout.png
+cover: //r.photo.store.qq.com/psb?/V11rnv1t26XYl4/PAde*GMGt3LUUCYqbR64OPMtZ5LfpNJ9lD3YVIvfqSo!/r/dAgBAAAAAAAAnull&bo=rwQFAq8EBQIRCT4!&rf=photolist&t=5_yake_qzoneimgout.png
 
 ---
 

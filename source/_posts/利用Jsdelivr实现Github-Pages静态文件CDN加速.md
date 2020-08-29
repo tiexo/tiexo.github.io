@@ -1,6 +1,6 @@
 ---
 title: 利用Jsdelivr实现Github Pages静态文件CDN加速
-thumbnail: >-
+cover: >-
   //r.photo.store.qq.com/psb?/V11rnv1t26XYl4/pwAHe6tXhNTne6aRjCCEaTHOZvSG4rO48zhmoLoPcmQ!/r/dFQBAAAAAAAAnull&bo=sATpAbAE6QERCT4!&rf=photolist&t=5_yake_qzoneimgout.png
 abbrlink: 1e1b3df9
 date: 2019-11-29 17:38:23

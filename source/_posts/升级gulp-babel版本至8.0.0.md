@@ -1,6 +1,6 @@
 ---
 title: 升级gulp-babel版本至8.0.0
-thumbnail: >-
+cover: >-
   //r.photo.store.qq.com/psb?/V11rnv1t26XYl4/tCWA6E6Y1FBEjTT5tl4VR2epiqWqEpHxaT4JhcJtseU!/r/dFIBAAAAAAAAnull&bo=sAQPArAEDwIRCT4!&rf=photolist&t=5_yake_qzoneimgout.png
 abbrlink: dd1aca07
 date: 2019-12-10 16:35:37

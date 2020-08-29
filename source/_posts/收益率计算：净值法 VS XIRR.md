@@ -1,6 +1,6 @@
 ---
 title: 收益率计算：净值法 VS XIRR
-thumbnail: >-
+cover: >-
   //r.photo.store.qq.com/psc?/V11rnv1t26XYl4/3pY6KhS62k*1Vm7UATlxq7NxTMCOIBymrk9UiWAXHlfoPJFeF8GjrmLV76zPmd4RliYaGAPsu3akLQ0ys5Yl25TWy*c26ZydWInXmRdrGKM!/anull&bo=rwQbAq8EGwIRCT4!&rf=photolist&t=5/r/_yake_qzoneimgout.png
 abbrlink: c02d8c7e
 date: 2020-01-19 13:19:06

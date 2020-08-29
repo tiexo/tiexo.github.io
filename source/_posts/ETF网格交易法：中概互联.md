@@ -1,6 +1,6 @@
 ---
 title: ETF网格交易法：中概互联
-thumbnail: >-
+cover: >-
   //r.photo.store.qq.com/psc?/V11rnv1t26XYl4/3pY6KhS62k*1Vm7UATlxq5spk.PnDzLu14cFNVPJI4M7rwit2*6qbzgknIQGShKvjEaG0a1Ke4CCEO3Bxhs0ZIdmWQbuwYPJPK42J3fp7Tk!/anull&bo=sAQoArAEKAIRCT4!&rf=photolist&t=5/r/_yake_qzoneimgout.png
 abbrlink: df41e991
 date: 2020-01-09 16:01:21

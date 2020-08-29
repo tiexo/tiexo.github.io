@@ -1,6 +1,6 @@
 ---
 title: 降低评论门槛：使用Valine评论系统
-thumbnail: //r.photo.store.qq.com/psb?/V11rnv1t26XYl4/oiC6oYru46lv2k1ZmSL4Ze1oKZsy.J85JW2Q5RK5XVc!/r/dDUBAAAAAAAAnull&bo=6AOVAegDlQERCT4!&rf=photolist&t=5qzoneimgout.png
+cover: //r.photo.store.qq.com/psb?/V11rnv1t26XYl4/oiC6oYru46lv2k1ZmSL4Ze1oKZsy.J85JW2Q5RK5XVc!/r/dDUBAAAAAAAAnull&bo=6AOVAegDlQERCT4!&rf=photolist&t=5qzoneimgout.png
 abbrlink: b23226a5
 date: 2018-10-22 13:49:52
 ---

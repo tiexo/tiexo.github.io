@@ -1,6 +1,6 @@
 ---
 title: Icarus主题更新至3.0版本
-thumbnail: >-
+cover: >-
   //r.photo.store.qq.com/psc?/V11rnv1t26XYl4/w47sCHZ1vIeYe.9hWkknXaHu5YOxN2fjPmQdlCENxvsj6j95Aa3X*xZJi5VrWoBL2EiDxfLI55*ta*gdBa.Feg!!/mnull&bo=sATpAbAE6QERCT4!&rf=photolist&t=5/r/_yake_qzoneimgout.png
 abbrlink: faca3062
 date: 2020-04-15 13:31:35

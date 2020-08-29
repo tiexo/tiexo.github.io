@@ -1,6 +1,6 @@
 ---
 title: 通过Github Actions实现Hexo博客自动部署
-thumbnail: >-
+cover: >-
   //r.photo.store.qq.com/psb?/V11rnv1t26XYl4/8wGH3vQfWMfzu0iLeNWywm7ZbJUEDX0*71NQAbs8OrE!/r/dL8AAAAAAAAAnull&bo=sAQQArAEEAIRCT4!&rf=photolist&t=5_yake_qzoneimgout.png
 abbrlink: 37e5a6a1
 date: 2019-11-29 23:02:26

@@ -1,6 +1,6 @@
 ---
 title: CODING企业版持续集成+自动部署HEXO博客
-thumbnail: >-
+cover: >-
   //r.photo.store.qq.com/psc?/V11rnv1t26XYl4/3pY6KhS62k*1Vm7UATlxq2f6b84kJpYGSrSKf2TeSRkOI82iwbONeIhtFihbX42tu4jtF5UBmVGGLEFtdR6OjPrPJjxB6rUWFlO70raP3qE!/anull&bo=sATmAbAE5gERCT4!&rf=photolist&t=5/r/_yake_qzoneimgout.png
 abbrlink: 2724904e
 date: 2019-12-24 15:50:08
