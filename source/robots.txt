@@ -7,9 +7,9 @@ Disallow: /categories/
 Disallow: /tags/
 Disallow: /js/
 Disallow: /css/
-Disallow: /content.json
-Disallow: /images/
+Disallow: /content.json/
+Disallow: /img/
 Disallow: /404.html/
 Disallow: /baidu_urls.txt/
 
-Sitemap: https://tiexo.github.io/sitemap.xml
+Sitemap: https://a0shfe.coding-pages.com/sitemap.xml

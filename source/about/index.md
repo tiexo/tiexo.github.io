@@ -36,7 +36,6 @@ layout: "page"
 
 ( 注：<i class="fa fa-ban" style="color: #FF0000;"></i> 为不可访问状态，<i class="fa fa-lock" style="color: #00bb00;"></i> 为HTTPS安全认证 )
 
-- <i class="fa fa-lock" style="color: #00bb00;"></i> [乐趣公园](https://gitcafe.net//)—— 分享有趣，创造价值
 - <i class="fa fa-lock" style="color: #00bb00;"></i> [哔哩萌](https://www.bilimoe.com/)—— 是不是选择任何一个方向，都会游向同一个宿命呢？
 - [弋牧](http://emuia.com/)—— 行多久，方显执着；思多久，方能远见！
 
