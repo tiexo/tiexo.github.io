@@ -5,7 +5,7 @@ head:
     favicon: 'https://cdn.jsdelivr.net/gh/tiexo/tiexo.github.io/img/favicon.ico'
     open_graph:
         title: 
-        type: blog
+        type: 
         url: 
         image: 
         site_name: 
@@ -53,6 +53,13 @@ article:
         fold: unfolded
     thumbnail: true
     readtime: true
+
+    licenses:
+        Creative Commons:
+            icon: fab fa-creative-commons
+            url: 'https://creativecommons.org/'
+        'CC BY-NC-SA 4.0': 'https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh'
+
 search:
     type: insight
 comment:
