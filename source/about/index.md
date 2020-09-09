@@ -32,15 +32,6 @@ layout: "page"
 
 本人在此发布文章（包括但不限于汉字、拼音、阿拉伯字母 、图片、影像，以及前述之各种任意组合等等）均为随意敲击键盘所出，用于检验本人电脑键盘录入、屏幕显示的机械、光电性能，并不代表本人观点。
 
-### 友情链接
-
-( 注：<i class="fa fa-ban" style="color: #FF0000;"></i> 为不可访问状态，<i class="fa fa-lock" style="color: #00bb00;"></i> 为HTTPS安全认证 )
-
-- <i class="fa fa-lock" style="color: #00bb00;"></i> [哔哩萌](https://www.bilimoe.com/)—— 是不是选择任何一个方向，都会游向同一个宿命呢？
-- [弋牧](http://emuia.com/)—— 行多久，方显执着；思多久，方能远见！
-
-欢迎各位小伙伴互换友链~！
-
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
 <script src="https://cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>  
