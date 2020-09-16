@@ -1,4 +1,3 @@
-  
 /* eslint-disable node/no-unsupported-features/node-builtins */
 (function($, moment, ClipboardJS, config) {
     $('.article img:not(".not-gallery-item")').each(function() {
@@ -19,10 +18,6 @@
             $('.justified-gallery > p > .gallery-item').unwrap();
         }
         $('.justified-gallery').justifiedGallery();
-    }
-
-    if (!$('.columns .column-right-shadow').children().length) {
-        $('.columns .column-right-shadow').append($('.columns .column-right').children().clone());
     }
 
     if (typeof moment === 'function') {
