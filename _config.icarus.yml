@@ -37,9 +37,6 @@ navbar:
             url: 'https://weibo.com/940517409'
 footer:
     links:
-        前往Coding Pages:
-            icon: fab fa-github-alt
-            url: 'https://a0shfe.coding-pages.com/'
         前往GitHub Pages:
             icon: fab fa-github
             url: 'https://tiexo.github.io/'

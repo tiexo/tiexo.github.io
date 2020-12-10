@@ -4,7 +4,7 @@ layout: "page"
 ---
 
 ### 让我们以热烈的掌声感谢以下赞助商：
-- [Github](https://github.com/) & [Coding](https://coding.net/)  ，双线部署
+- [Github](https://github.com/)  ，部署静态网站
 - [Hexo](https://hexo.io/zh-cn/) ，提供博客程序源码
 - [Icarus](https://github.com/ppoffice/hexo-theme-icarus) ，添加主题美化
 - [CODING](https://cloudstudio.net/)，提供Cloud Studio云端开发空间
