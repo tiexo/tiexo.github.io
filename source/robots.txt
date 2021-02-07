@@ -12,4 +12,4 @@ Disallow: /img/
 Disallow: /404.html/
 Disallow: /baidu_urls.txt/
 
-Sitemap: https://a0shfe.coding-pages.com/sitemap.xml
+Sitemap: https://tiexo.github.io/sitemap.xml
