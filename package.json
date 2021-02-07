@@ -33,8 +33,8 @@
     "npm-check": "^5.9.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.10",
-    "@babel/preset-env": "^7.12.11",
+    "@babel/core": "^7.12.13",
+    "@babel/preset-env": "^7.12.13",
     "gulp-babel": "^8.0.0"
   }
 }
