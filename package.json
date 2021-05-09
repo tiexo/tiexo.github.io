@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "hexo": {
-    "version": "5.2.0"
+    "version": "5.4.0"
   },
   "dependencies": {
     "babel-core": "^6.26.3",
@@ -16,7 +16,7 @@
     "hexo": "^5.4.0",
     "hexo-abbrlink": "^2.2.1",
     "hexo-baidu-url-submit": "0.0.6",
-    "hexo-component-inferno": "^0.10.5",
+    "hexo-component-inferno": "^0.11.2",
     "hexo-deployer-git": "^3.0.0",
     "hexo-generator-archive": "^1.0.0",
     "hexo-generator-category": "^1.0.0",
