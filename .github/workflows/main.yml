@@ -6,13 +6,11 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout source
         uses: actions/checkout@v1
         with:
-          ref: blog
-		  
+          ref: blog		  
       - name: Configration hexo repo
         env:
           ACTION_DEPLOY_KEY: ${{ secrets.HEXO_DEPLOY_PRI }}
@@ -23,14 +21,12 @@ jobs:
           ssh-keyscan github.com >> ~/.ssh/known_hosts
           git config --global user.email "tangmen.cn@gmail.com"
           git config --global user.name "tiexo" 
-
       - name: Use Node.js 
         uses: actions/setup-node@v1
         with:
-          node-version: '12.x'
-		  
+          node-version: '12.x'		  
       - name: Setup Hexo
         run: |
          npm install hexo-cli -g
-		 npm install gulp -g
+		     npm install gulp -g
          npm install 
